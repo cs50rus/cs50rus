@@ -480,26 +480,26 @@ say hello world.
 
 102
 00:05:57,560 --> 00:06:00,882
-But we'll see which types of
-lines of code require this.
+Но мы еще посмотрим какие типы 
+строчек кода требуют закрытия
 
 103
 00:06:00,882 --> 00:06:02,840
-So on the left, we have
-an idea from last week.
+Итак, слева у нас идея
+прошлой недели.
 
 104
 00:06:02,840 --> 00:06:06,930
-On the right, we have an idea from this
-week, as we'll soon see on my computer,
+Справа у нас идея этой недели
+и мы скоро увидим на моем компьютере,
 
 105
 00:06:06,930 --> 00:06:08,930
-but they are functionally equivalent.
+что функционально они идентичны.
 
 106
 00:06:08,930 --> 00:06:10,440
-They do the same thing.
+Они делают одно и то же.
 
 107
 00:06:10,440 --> 00:06:13,940
