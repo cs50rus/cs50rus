@@ -61,9 +61,7 @@ DAVID MALAN: Всем привет, это CS50,
 14
 00:01:52,490 --> 00:01:55,280
 хотя там есть всякие английские или 
-похожие на английские слова
-even though there's some English
-or English-like words in there,
+похожие на английские слова,
 
 15
 00:01:55,280 --> 00:01:58,200
@@ -275,7 +273,7 @@ MIT хаков
 
 58
 00:03:57,440 --> 00:03:58,700
-AUDIENCE: Типа начинать программу
+ЗАЛ: Типа начинать программу
 
 59
 00:03:58,700 --> 00:03:59,850
@@ -945,340 +943,333 @@ How do I go about running it?
 
 200
 00:10:28,110 --> 00:10:32,390
-Well, how do you run a
-program on your Mac or PC?
+Ну, как вы запускаете
+программу на компьютере?
 
 201
 00:10:32,390 --> 00:10:34,590
-What do you typically do?
+Что вы обычно делаете?
 
 202
 00:10:34,590 --> 00:10:36,180
-You double-click it, right?
+Дважды щёлкаете по ней, верно?
 
 203
 00:10:36,180 --> 00:10:39,730
-Unfortunately, there doesn't seem to be
-anything obvious to double-click here.
+К сожалению, здесь нет ничего,
+по чему можно было бы щёлкнуть.
 
 204
 00:10:39,730 --> 00:10:41,370
-In fact, there's no icon on my screen.
+На моём экране даже никакого значка нет.
 
 205
 00:10:41,370 --> 00:10:44,100
-And in fact, there's no
-program, per se, yet.
+На самом деле, как таковой пока
+нет и самой программы.
 
 206
 00:10:44,100 --> 00:10:47,760
-Because computers, recall from last
-week, don't understand English.
+Ведь компьютеры, как мы помним,
+не понимают английский язык.
 
 207
 00:10:47,760 --> 00:10:49,740
-They don't technically
-understand C, per.
+Технически, они и язык C
+не понимают.
 
 208
 00:10:49,740 --> 00:10:52,440
-Se what is the language that
-computers speak and understand?
+Но тогда какой язык они вообще
+знают и понимают?
 
 209
 00:10:52,440 --> 00:10:53,235
-AUDIENCE: Binary.
+ЗАЛ: Двоичный.
 
 210
 00:10:53,235 --> 00:10:55,110
-DAVID MALAN: Yeah, so
-binary, zeros and ones.
+DAVID MALAN: Именно, двоичный.
+Нули и единицы.
 
 211
 00:10:55,110 --> 00:10:56,943
-And yet, this clearly
-is not zeros and ones.
+А здесь, как мы видим,
+совсем не нули и единицы.
 
 212
 00:10:56,943 --> 00:11:00,030
-And frankly, none of us would have
-a good time if coding involved,
+И, честно говоря, никому из нас
+не понравился бы процесс написания кода,
 
 213
 00:11:00,030 --> 00:11:03,240
-these days, literally writing zeros
-and ones, which, in some sense,
+включающий в себя буквальную запись нулей
+и единиц, что, в некотором смысле,
 
 214
 00:11:03,240 --> 00:11:06,450
-it did involve way back in the day.
+некогда и правда представляло собой
+программирование.
 
 215
 00:11:06,450 --> 00:11:09,510
-But nowadays, it turns out there's
-a solution to this problem.
+Но в настоящее время существует
+решение этой проблемы.
 
 216
 00:11:09,510 --> 00:11:12,660
-This, as cryptic as it looks
-to most of us in this room,
+Вот с этим, как бы загадочно оно
+ни выглядело для большинства из вас,
 
 217
 00:11:12,660 --> 00:11:15,540
-at least you can imagine
-eventually getting comfortable,
+вы хоть как-то сможете свыкнуться,
 
 218
 00:11:15,540 --> 00:11:18,700
-probably, with this syntax, once
-you learn the rules and the syntax
+как только познакомитесь с синтаксисом,
+правилами
 
 219
 00:11:18,700 --> 00:11:19,530
-and so forth.
+и так далее.
 
 220
 00:11:19,530 --> 00:11:22,260
-But we need to convert it
-somehow to zeros and ones.
+Но нужно как-то преобразовать это
+в нули и единицы.
 
 221
 00:11:22,260 --> 00:11:25,110
-And how to do that is
-perhaps not obvious.
+Возможно, не совсем очевидно,
+как именно.
 
 222
 00:11:25,110 --> 00:11:31,110
-So it turns out if we want to convert
-code like this to zeros and ones
+Оказывается, что для преобразования
+такого кода в нули и единицы,
 
 223
 00:11:31,110 --> 00:11:34,770
-that the computer understands, there
-needs to be some intermediate step.
+понятные компьютеру, необходимо наличие
+промежуточного этапа.
 
 224
 00:11:34,770 --> 00:11:38,370
-I actually need, on my Mac or PC
-or this cloud-based environment,
+Мне нужно, чтобы на моём компьютере или
+в этом облачном окружении
 
 225
 00:11:38,370 --> 00:11:43,200
-a program that is going to take
-as input my source code, which
+была программа, которая бы взяла
+мой исходный код,
 
 226
 00:11:43,200 --> 00:11:45,650
-is that language called
-C, and is going to produce
+написанный на языке C, и выдала на выходе
 
 227
 00:11:45,650 --> 00:11:48,000
-as output what's called machine code.
+то, что называется машинным кодом.
 
 228
 00:11:48,000 --> 00:11:53,400
-So source code is something like C or
-Python or Java or C++ and maybe other
+Исходный код - то, что написано на C,
+Python, Java, C++ или другом языке,
 
 229
 00:11:53,400 --> 00:11:54,660
-languages you've heard about.
+о котором вы могли слышать.
 
 230
 00:11:54,660 --> 00:11:58,170
-It's English-like syntax in
-which you write programs.
+Языке с подобным английскому синтаксисом,
+на котором вы пишете программы.
 
 231
 00:11:58,170 --> 00:12:02,760
-Machine code is the zeros and ones that
-every computer actually understands.
+Машинный же код - это нули и единицы,
+которые понимает каждый компьютер.
 
 232
 00:12:02,760 --> 00:12:05,970
-So to get from source
-code to machine code,
+Итак, для перехода от исходного кода
+к машинному
 
 233
 00:12:05,970 --> 00:12:08,773
-there needs to be some kind of
-algorithm or, more specifically,
+необходим некий алгоритм или,
+если быть точнее,
 
 234
 00:12:08,773 --> 00:12:10,690
-a piece of software that
-does that conversion.
+подпрограмма, осуществляющая преобразование.
 
 235
 00:12:10,690 --> 00:12:14,230
-And that piece of software is what
-we're going to start calling a compiler.
+И такую подпрограмму мы будем называть
+компилятором.
 
 236
 00:12:14,230 --> 00:12:17,790
-So we're going to write code literally
-by just typing commands at a keyboard.
+Мы будем писать код, буквально набирая
+команды с клавиатуры.
 
 237
 00:12:17,790 --> 00:12:20,160
-We're going to save
-those commands in a file,
+Потом будем сохранять эти команды в файл,
 
 238
 00:12:20,160 --> 00:12:21,900
-just like you saved
-your code in Scratch.
+точно так же, как вы сохраняли код в Scratch.
 
 239
 00:12:21,900 --> 00:12:24,990
-But before I can run my program and
-do the equivalent of double-clicking
+Но прежде, чем я смогу запустить программу,
+выполнив двойной щелчок или что-то подобное,
 
 240
 00:12:24,990 --> 00:12:28,200
-on it, I need to run
-it through a compiler
+мне необходимо прогнать её через компилятор
 
 241
 00:12:28,200 --> 00:12:30,640
-and produce output,
-which is zeros and ones.
+и получить результат, состоящий
+из нулей и единиц.
 
 242
 00:12:30,640 --> 00:12:33,000
-So how do I go about doing that?
+Так, ну и как же мне это сделать?
 
 243
 00:12:33,000 --> 00:12:35,640
-This is the first of the
-more esoteric commands,
+Это первая из более эзотерических команд,
 
 244
 00:12:35,640 --> 00:12:38,880
-but it turns out it's relatively
-straightforward to do.
+но оказывается, что её
+относительно просто выполнить.
 
 245
 00:12:38,880 --> 00:12:40,680
-At the top of my
-programming environment--
+В верхней части моей среды программирования--
 
 246
 00:12:40,680 --> 00:12:43,380
-again, I have my code here at top left.
+опять же, код у меня тут сверху слева,
 
 247
 00:12:43,380 --> 00:12:45,780
-And if I scroll down to the
-bottom, I have this, again,
+а если прокрутить экран до самого низа,
+то здесь находится
 
 248
 00:12:45,780 --> 00:12:47,322
-so-called terminal window.
+так называемое окно терминала.
 
 249
 00:12:47,322 --> 00:12:49,530
-And the dollar sign is just
-a weird human convention.
+Символ доллара - это просто
+странная человеческая условность.
 
 250
 00:12:49,530 --> 00:12:51,930
-The dollar sign just
-means type something here.
+Он означает что-то вроде
+"введи сюда что-нибудь".
 
 251
 00:12:51,930 --> 00:12:54,540
-That's your so-called
-prompt, or your shell.
+Это ваша так называемая командная строка
+или командная оболочка.
 
 252
 00:12:54,540 --> 00:12:59,700
-But the blinking cursor is just inviting
-me to type a command at this prompt.
+Мигающий курсор предлагает мне
+ввести команду в этой строке.
 
 253
 00:12:59,700 --> 00:13:04,740
-The first command I'm going to type
-is what's called Clang for C language.
+В качестве первой команды я собираюсь
+использовать команду Clang из языка C.
 
 254
 00:13:04,740 --> 00:13:09,210
-Clang is the name of a program
-that exists to compile code.
+Clang - это название программы,
+предназначенной для компиляции кода.
 
 255
 00:13:09,210 --> 00:13:10,650
-Someone else wrote this.
+Её не я написал.
 
 256
 00:13:10,650 --> 00:13:14,100
-Someone else online built this program
-called Clang-- a whole group of people,
+Кто-то другой создал её и назвал Clang--
+группа людей,
 
 257
 00:13:14,100 --> 00:13:14,640
-in fact.
+если быть точным.
 
 258
 00:13:14,640 --> 00:13:18,210
-Made it freely available for me and you
-to download onto your own Macs or PCs
+Они выложили её в свободный доступ, чтобы
+мы с вами могли использовать её на компьютерах
 
 259
 00:13:18,210 --> 00:13:19,990
-or this sandbox environment.
+или в такой вот изолированной среде.
 
 260
 00:13:19,990 --> 00:13:23,110
-And we can use Clang to convert
-source code to machine code.
+И мы можем использовать Clang для преобразования
+исходного кода в машинный.
 
 261
 00:13:23,110 --> 00:13:26,940
-So I'm going to go ahead
-and run Clang hello.c.
+Так что теперь я просто запущу команду
+Clang hello.c.
 
 262
 00:13:26,940 --> 00:13:29,860
-I've not hit Enter yet,
-but the moment I hit Enter,
+Я пока ещё не нажал клавишу Enter,
+но в тот момент, когда я это сделаю,
 
 263
 00:13:29,860 --> 00:13:31,360
-we're going to see something happen.
+кое-что произойдёт.
 
 264
 00:13:31,360 --> 00:13:33,720
-Let me go up to this
-little folder icon up here,
+Давайте я щёлкну по этому маленькому
+значку папки вот здесь,
 
 265
 00:13:33,720 --> 00:13:37,020
-and you can actually see all of
-the files in my current sandbox,
+и вы увидите все файлы в моей
+текущей, так сказать, песочнице,
 
 266
 00:13:37,020 --> 00:13:38,710
-so to speak, my programming environment.
+моей среде программирования.
 
 267
 00:13:38,710 --> 00:13:41,752
-There's, of course, only one, because
-the only file I've created thus far
+Файл здесь только один, потому что
+единственным созданным мной файлом
 
 268
 00:13:41,752 --> 00:13:43,170
-is called hello.c.
+является hello.c.
 
 269
 00:13:43,170 --> 00:13:45,720
-But notice what happens
-the moment I hit Enter,
+Но обратите внимание на то,
+что произойдёт после нажатия Enter,
 
 270
 00:13:45,720 --> 00:13:47,940
-after having typed out Clang hello.c.
+то есть после выполнения команды Clang hello.c.
 
 271
 00:13:47,940 --> 00:13:50,610
@@ -1286,145 +1277,140 @@ after having typed out Clang hello.c.
 
 272
 00:13:50,610 --> 00:13:54,150
-So clearly something
-else exists now, and it's
+Определённо, появилось что-то новое,
 
 273
 00:13:54,150 --> 00:13:56,490
-a really stupid name and very cryptic.
+что-то странное и с очень глупым именем.
 
 274
 00:13:56,490 --> 00:14:02,520
-It's a.out, but you can perhaps
-guess what's inside of that new file.
+Это файл a.out, но вы, возможно, догадываетесь,
+что находится внутри него.
 
 275
 00:14:02,520 --> 00:14:03,842
-What might be inside of it?
+Что там может быть?
 
 276
 00:14:03,842 --> 00:14:04,800
-AUDIENCE: Machine code.
+ЗАЛ: Машинный код.
 
 277
 00:14:04,800 --> 00:14:06,133
-DAVID MALAN: Yeah, machine code.
+DAVID MALAN: Именно, машинный код.
 
 278
 00:14:06,133 --> 00:14:09,540
-So it stands for assembly output,
-but that just means machine code.
+Вообще говоря, это вывод сборки,
+но это то же самое, что машинный код.
 
 279
 00:14:09,540 --> 00:14:13,110
-So inside of this file are a
-whole bunch of zeros and ones
+Внутри этого файла есть только
+набор нулей и единиц,
 
 280
 00:14:13,110 --> 00:14:16,437
-that correspond to this
-code, but in binary,
+которые соответствуют этому коду,
+но в двоичном виде,
 
 281
 00:14:16,437 --> 00:14:18,270
-in the language the
-computer can understand.
+то есть на языке, понятном компьютеру.
 
 282
 00:14:18,270 --> 00:14:20,640
-So literally what I just did was this--
+Так что я сейчас сделал буквально следующее--
 
 283
 00:14:20,640 --> 00:14:24,450
-I took as input code that
-looks like this, written in C.
+Я взял вот такой исходный код,
+написанный на языке C.
 
 284
 00:14:24,450 --> 00:14:28,148
-I ran it as input into the compiler and
-produced this output, zeros and ones.
+Я подал его на вход компилятора и на выходе
+получил результат из нулей и единиц.
 
 285
 00:14:28,148 --> 00:14:29,940
-And those zeros and
-ones were automatically
+И эти нули и единицы были автоматически
 
 286
 00:14:29,940 --> 00:14:35,113
-saved for me inside of a file that,
-by human convention, is called a.out.
+сохранены в файл, который, по умолчанию,
+называется a.out.
 
 287
 00:14:35,113 --> 00:14:37,530
-All right, but someone proposed
-earlier, to run a program,
+Хорошо, но кто-то предложил раньше,
+что для запуска программы
 
 288
 00:14:37,530 --> 00:14:40,088
-typically, on your Mac and
-PC, you just double-click it.
+на компьютере нужно просто
+дважды щёлкнуть по ней.
 
 289
 00:14:40,088 --> 00:14:41,880
-But there's really
-nothing to double-click.
+Но у нас тут не по чему щёлкать.
 
 290
 00:14:41,880 --> 00:14:44,940
-And in fact, if I double-click on
-this, it's going to look really weird,
+Даже если я дважды щёлкну вот так,
+результат будет странным,
 
 291
 00:14:44,940 --> 00:14:46,380
-and the computer's not
-going to understand it.
+потому что компьютер не поймёт,
+что нужно сделать.
 
 292
 00:14:46,380 --> 00:14:48,930
-Because it's zeros and ones
-that aren't meant to be clicked.
+Это ведь просто нули и единицы,
+они не предназначены для щелчков.
 
 293
 00:14:48,930 --> 00:14:52,598
-They're meant to be executed
-at this command prompt.
+Но зато они предназначены для выполнения
+в командной строке.
 
 294
 00:14:52,598 --> 00:14:53,890
-So let me go ahead and do this.
+Давайте я покажу.
 
 295
 00:14:53,890 --> 00:14:54,807
-This, too, is cryptic.
+Это тоже может выглядеть не очень непонятно,
 
 296
 00:14:54,807 --> 00:14:58,740
-But I'm going to go
-ahead and do ./a.out.
+но я просто возьму и выполню команду
+./a.out.
 
 297
 00:14:58,740 --> 00:15:02,190
-And this, weird as this
-may look at first glance,
+И вот это, как бы странно оно не выглядело
+на первый взгляд,
 
 298
 00:15:02,190 --> 00:15:07,890
-is how I tell the computer, run the
-program a.out in my current directory.
+является корректным способом указания компьютеру
+"выполни a.out в текущем каталоге".
 
 299
 00:15:07,890 --> 00:15:11,010
-So that period that I typed first
-just means it's literally right here,
+Точка в начале команды означает буквально
+"прямо здесь",
 
 300
 00:15:11,010 --> 00:15:13,260
-in my current folder, as
-though you're double-clicking
+"в текущей папке", как если бы вы дважды щёлкали
 
 301
 00:15:13,260 --> 00:15:14,730
-on it on your Mac or PC.
+по файлу на компьютере.
 
 302
 00:15:14,730 --> 00:15:19,650
