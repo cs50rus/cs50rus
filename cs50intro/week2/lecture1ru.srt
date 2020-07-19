@@ -503,31 +503,31 @@ say hello world.
 
 107
 00:06:10,440 --> 00:06:13,940
-So how do we go about, then,
-getting from this Scratch program
+Так что давайте обсудим, как
+мы перешли из этой программы на Scratch
 
 108
 00:06:13,940 --> 00:06:15,540
-to this Scratch program?
+к этой программе на Scratch?
 
 109
 00:06:15,540 --> 00:06:18,770
-Let's go ahead and point
-out one last thing.
+Так что давайте посмотрим на 
+последнее что хотелось сказать.
 
 110
 00:06:18,770 --> 00:06:20,840
-We need one last line
-of code, which I just
+Нам нужна последняя строчка кода,
+которую я только что
 
 111
 00:06:20,840 --> 00:06:24,090
-popped up on the screen,
-which is to include stdio.h.
+вывел на экране,
+которая include stdio.h
 
 112
 00:06:24,090 --> 00:06:25,320
-Well, what does that mean?
+Так вот, что это значит?
 
 113
 00:06:25,320 --> 00:06:28,010
