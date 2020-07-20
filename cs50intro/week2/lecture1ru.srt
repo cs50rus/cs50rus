@@ -2327,239 +2327,240 @@ Why?
 
 500
 00:23:48,540 --> 00:23:50,207
-Just because it looks a little prettier.
+Просто потому что это выглядит красивее.
 
 501
 00:23:50,207 --> 00:23:51,000
-I don't have to.
+Я не обязан этого делать.
 
 502
 00:23:51,000 --> 00:23:54,370
-And indeed, a moment ago, my own
-computer prompted me to say yes or no,
+И действительно, мгновение назад, мой
+компьютер ожидал от меня ответа: Да или Нет
 
 503
 00:23:54,370 --> 00:23:56,780
-and it did not move the
-cursor to the next line.
+и он не переместил курсор
+на новую строку.
 
 504
 00:23:56,780 --> 00:23:59,470
-That's because that programmer
-decided not to bother doing that.
+Это произошло потому что программист
+решил не делать этого.
 
 505
 00:23:59,470 --> 00:24:02,120
-But I'll go ahead and keep
-things clean by doing this.
+Но я продолжу с переносом строки.
 
 506
 00:24:02,120 --> 00:24:07,150
-Now, once I ask the user for their name
-by way of this get_string function,
+Когда я запросил имя пользователя
+с помощью функции get_string,
 
 507
 00:24:07,150 --> 00:24:08,680
-I need to do something with it.
+мне нужно что-то с этим сделать.
 
 508
 00:24:08,680 --> 00:24:12,220
-And in C, the way you
-do this is you literally
+И чтобы реализовать это в языке С вы 
+буквально заводите переменную
 
 509
 00:24:12,220 --> 00:24:15,837
-give yourself a variable, which
-is a piece of storage for a value.
+которая хранит
+значения.
 
 510
 00:24:15,837 --> 00:24:18,670
-And I'm going to go ahead and call
-it answer, just like Scratch did.
+Я назову переменную answer,
+точно так же как в Scratch.
 
 511
 00:24:18,670 --> 00:24:21,040
-But in C, I can call
-this anything I want.
+Но в языке С вы можете назвать 
+её как угодно.
 
 512
 00:24:21,040 --> 00:24:22,565
-I could call it xyz.
+Я могу назвать её xyz.
 
 513
 00:24:22,565 --> 00:24:25,690
-None of those are very descriptive, so
-I'm going to call it answer instead.
+Все эти имена не очень наглядны, 
+поэтому я назову её answer (ответ).
 
 514
 00:24:25,690 --> 00:24:27,100
-You can use any word.
+Вы можете использовать любое слово.
 
 515
 00:24:27,100 --> 00:24:28,990
-But C is a little different.
+Но в С все немного по другому.
 
 516
 00:24:28,990 --> 00:24:34,480
-C is old school, and you have to be
-super explicit as to what type of value
+С - олдскульный язык, поэтому вы должны
+явно указать тип значения,
 
 517
 00:24:34,480 --> 00:24:37,630
-you are getting and, therefore,
-storing in the variable.
+которое вы получаете, и, соответственно,
+храните в этой переменной.
 
 518
 00:24:37,630 --> 00:24:40,040
-So to the left of the
-name of the variable,
+Поэтому слева от 
+имени переменной
 
 519
 00:24:40,040 --> 00:24:43,810
-I have to tell the computer the
-type of value I need to store
+я должен сказать компьютеру, что
+тип значения, который мне нужно хранить
 
 520
 00:24:43,810 --> 00:24:45,010
-is going to be a string.
+будет строкой.
 
 521
 00:24:45,010 --> 00:24:49,180
-And we're going to see in a moment,
-there's other types of values.
+Скоро мы узнаем, что
+существуют и другие типы значений.
 
 522
 00:24:49,180 --> 00:24:53,860
-There's numbers and more, but for now,
-we're just going to store a string.
+Есть цифры и прочие, но сейчас
+мы просто будем хранить строку.
 
 523
 00:24:53,860 --> 00:24:56,760
-And there's one thing missing
-from this line of code.
+Но мы кое-что упустили в 
+этой строчке кода.
 
 524
 00:24:56,760 --> 00:24:57,700
-AUDIENCE: Semicolon.
+Зрители: точка с запятой.
 
 525
 00:24:57,700 --> 00:24:58,600
-DAVID MALAN: Semicolon, right?
+DAVID MALAN: точка с запятой, верно?
 
 526
 00:24:58,600 --> 00:25:00,392
-End of thought, and
-that was a big thought,
+Конец мысли,
+и это была не маленькая мысль,
 
 527
 00:25:00,392 --> 00:25:02,200
-but a semicolon finishes this thought.
+и точка с заятой завершает эту мысль.
 
 528
 00:25:02,200 --> 00:25:04,700
-Now, this equals sign is a
-little different from algebra,
+Знак "равно" в этом случае
+отличается от привычного нам в алгебре.
 
 529
 00:25:04,700 --> 00:25:07,750
-if you think back to your math days,
-where you might say x equals y.
+Если вы вспомните математику,
+вы скажите, что Х равен Y.
 
 530
 00:25:07,750 --> 00:25:11,440
-When x equals y, that means,
-literally, x is the same thing as y.
+Когда X равен Y, то это буквально означает,
+что X - это тоже самое, что и Y.
 
 531
 00:25:11,440 --> 00:25:14,740
-But here, the equals sign
-in programming languages
+Но в языках программирования,
+знак "равно"
 
 532
 00:25:14,740 --> 00:25:17,990
-typically is the kind of a
-motion from right to left.
+как правило означает 
+перемещение справа налево.
 
 533
 00:25:17,990 --> 00:25:20,560
-This equal sign doesn't
-technically mean equal.
+Этот знак "равно" 
+не подразумевает равенство.
+
 
 534
 00:25:20,560 --> 00:25:24,070
-It means assign, or the
-assignment operator.
+Он обозначает "присваивание", 
+или "оператор присваивания".
 
 535
 00:25:24,070 --> 00:25:27,200
-Move from the right
-something to the left.
+Перемести что-либо справа
+в левую часть.
 
 536
 00:25:27,200 --> 00:25:31,600
-So if this get_string function,
-just like the ask function,
+Таким образом, если функция get_string,
+точно так же как функция ask,
 
 537
 00:25:31,600 --> 00:25:35,140
-asks the user for their
-name and hands back a value,
+спрашивает у пользователя его имя
+и возвращает значение,
 
 538
 00:25:35,140 --> 00:25:37,930
-you want to put that
-name into a variable
+то вы помещаете это имя
+в переменную,
 
 539
 00:25:37,930 --> 00:25:40,192
-called answer, from right to left.
+которая называется answer.
+Справа налево.
 
 540
 00:25:40,192 --> 00:25:42,650
-So even though we-- just as we
-wrote it from right to left,
+И хоть мы написали это
+слева направо,
 
 541
 00:25:42,650 --> 00:25:45,710
-so do you think about it
-executing from right to left.
+вы должны думать о выполнении этой команды
+как справа налево.
 
 542
 00:25:45,710 --> 00:25:48,310
-So at this point in
-the story, we now have
+Итак, на текущий момент,
+у нас есть
 
 543
 00:25:48,310 --> 00:25:52,960
-somewhere in the computer's memory, in
-a so-called variable, the user's answer
+где-то в памяти компьютера так называемая
+переменная - ответ пользователя
 
 544
 00:25:52,960 --> 00:25:54,130
-to their name.
+на вопрос какое у него имя.
 
 545
 00:25:54,130 --> 00:25:55,540
-What do I want to do with it?
+Что мы хотим с этим сделать?
 
 546
 00:25:55,540 --> 00:25:58,093
-Well, in C, there isn't
-a join function, so we're
+В языке С нет функции join,
+поэтому нам
 
 547
 00:25:58,093 --> 00:26:00,010
-going to have to do this
-a little differently.
+придется сделать это
+немного иначе.
 
 548
 00:26:00,010 --> 00:26:03,613
-But there kind of is a say function,
-and what was that say function called?
+В С есть функция аналогичная функции say.
+Как эта функция называется?
 
 549
 00:26:03,613 --> 00:26:04,340
-AUDIENCE: Printf.
+Зрители: Printf.
 
 550
 00:26:04,340 --> 00:26:05,173
@@ -2567,238 +2568,238 @@ DAVID MALAN: Printf.
 
 551
 00:26:05,173 --> 00:26:08,440
-So printf is the go-to function any
-time you want to print or say something
+Printf - это функция, которую мы испольуем 
+когда хотим что-то сказать или вывести
 
 552
 00:26:08,440 --> 00:26:09,320
-on the screen.
+на экране.
 
 553
 00:26:09,320 --> 00:26:10,993
-So I'm going to go ahead and use printf.
+Поэтому я продолжу, используя printf.
 
 554
 00:26:10,993 --> 00:26:13,660
-And I'm going to use parentheses,
-because parentheses mean, here
+И я буду использовать скобки, 
+потому что скобки означают:
 
 555
 00:26:13,660 --> 00:26:18,670
-come my inputs, otherwise known as
-arguments or parameters in programming.
+здесь идут данные, называемые в программировании
+аргументами или параметрами.
 
 556
 00:26:18,670 --> 00:26:21,100
-But these are synonymous
-for our purposes.
+Для нас это  
+синонимы.
 
 557
 00:26:21,100 --> 00:26:23,350
-And now this is a little
-non-obvious, right?
+И сейчас это всё немного 
+неправильно, да?
 
 558
 00:26:23,350 --> 00:26:29,180
-Because I don't want to just put,
-quote unquote, hello, comma, answer.
+Потому что я не хочу просто вывести
+кавычки, привет, запятая, ответ, кавычки.
 
 559
 00:26:29,180 --> 00:26:29,680
-Why?
+Почему?
 
 560
 00:26:29,680 --> 00:26:34,480
-Why would it be incorrect to do
-quote unquote, hello, comma, answer?
+Почему будет неверно сделать
+кавычки, привет, запятая, ответ, кавычки?
 
 561
 00:26:34,480 --> 00:26:35,155
-What's that?
+Что вы сказали?
 
 562
 00:26:35,155 --> 00:26:36,400
-AUDIENCE: It will just print out answer.
+Зрители: Это только выведет на экран answer.
 
 563
 00:26:36,400 --> 00:26:39,323
-DAVID MALAN: Right, it will literally
-say hello, comma, answer, right?
+DAVID MALAN: Верно, этим мы буквально
+скажем привет, запятая, answer. Верно?
 
 564
 00:26:39,323 --> 00:26:40,490
-And that's not what we want.
+А это не то, что мы хотим.
 
 565
 00:26:40,490 --> 00:26:41,530
-We don't want to say "hello answer."
+Мы не хотим сказать "привет answer"
 
 566
 00:26:41,530 --> 00:26:43,450
-We want to say, hello,
-David or hello, Brian,
+Мы хотим сказать: Привет, Дэвид 
+или Привет, Брайан.
 
 567
 00:26:43,450 --> 00:26:45,280
-or whoever is playing this program.
+Или привет любой, кто играет в эту программу.
 
 568
 00:26:45,280 --> 00:26:49,900
-So I somehow do need to join the
-word hello with the user's input.
+То есть я должен как то присоединить слово 
+"привет" к тому, что введёт пользователь.
 
 569
 00:26:49,900 --> 00:26:53,335
-And the way to do this in printf
-is a little different from Scratch.
+То, как это делается с помощью printf,
+немного отличается от Scratch.
 
 570
 00:26:53,335 --> 00:26:55,550
-You use what's called a placeholder.
+Мы будем использовать так называемый плейсхолдер.
 
 571
 00:26:55,550 --> 00:26:57,550
-So you literally write
-the sentence or phrase
+Вы буквально пишете
+предложение или фразу,
 
 572
 00:26:57,550 --> 00:27:00,220
-that you want to say
-or print to the screen,
+которую хотите сказать 
+или вывести на экран,
 
 573
 00:27:00,220 --> 00:27:03,340
-but wherever you don't yet
-know the value in advance,
+но заранее не знаете
+значение этой фразы,
 
 574
 00:27:03,340 --> 00:27:08,570
-you put a placeholder using a percent
-sign and then an s denoting string.
+поэтому вы используете плейсхолдер с помощью
+знака процента и s, обозначающую string (строка).
 
 575
 00:27:08,570 --> 00:27:11,320
-And this is because, of course,
-if I'm writing this program today,
+И это потому, что я пишу
+программу сегодня.
 
 576
 00:27:11,320 --> 00:27:13,840
-I have no idea who's
-going to run it tomorrow.
+Я понятия не имею кто будет 
+пользоваться ей завтра.
 
 577
 00:27:13,840 --> 00:27:15,910
-So I want to dynamically
-put a placeholder
+Поэтому я хочу использовать
+плейсхолдер,
 
 578
 00:27:15,910 --> 00:27:19,400
-so that if someone plays this
-program tomorrow or the next day,
+чтобы если кто-то запустит эту программу
+завтра или в любой другой день,
 
 579
 00:27:19,400 --> 00:27:21,070
-their name gets dynamically inserted.
+его имя вставлялось динамически.
 
 580
 00:27:21,070 --> 00:27:23,410
-I, of course, don't
-know their name today.
+Сегодня я, конечно же, 
+не знаю их имён.
 
 581
 00:27:23,410 --> 00:27:26,350
-So quote unquote,
-hello, comma, percent s.
+Поэтому кавычки, привет, запятая,
+процент, s, кавычки.
 
 582
 00:27:26,350 --> 00:27:30,130
-And that percent s is just a placeholder
-for whatever I want to plug in there.
+%s - это всего лишь плейсхолдер
+для чего угодно, что я хочу вставить в это место.
 
 583
 00:27:30,130 --> 00:27:32,590
-Backslash n, of course,
-just means new line.
+Бэкслеш n, конечно же,
+означает переход на новую строку.
 
 584
 00:27:32,590 --> 00:27:35,590
-So the only new thing
-here is this percent s.
+Единственное, что в этой строке новое - 
+это %s.
 
 585
 00:27:35,590 --> 00:27:39,490
-Now, it turns out that functions
-in C, just like in Scratch,
+Далее, оказыватся, что функции в С,
+так же как в Scratch,
 
 586
 00:27:39,490 --> 00:27:40,990
-can take no arguments.
+могут не принимать аргументы.
 
 587
 00:27:40,990 --> 00:27:42,550
-Or they can take one arguments.
+Или они могут принять один аргумент.
 
 588
 00:27:42,550 --> 00:27:44,650
-Or they can take two or more arguments.
+Или они могут принять два или более аргументов.
 
 589
 00:27:44,650 --> 00:27:49,310
-And if they take two or more, you
-just separate them with commas.
+И если они могут принять два и более аргументов,
+вы просто перечисляете их через запятую.
 
 590
 00:27:49,310 --> 00:27:50,450
-So the way printf works--
+Так работает printf.
 
 591
 00:27:50,450 --> 00:27:53,200
-and you would only know this,
-again, by being taught it or reading
+Вы знали бы это только если 
+вас этому научили,
 
 592
 00:27:53,200 --> 00:27:55,720
-the documentation--
-is that you can, yes,
+или вы прочитали документацию.
+Таким образом, вы можете
 
 593
 00:27:55,720 --> 00:27:59,560
-provide just a single
-string as its input--
+передать одну строку
+в качестве ввода:
 
 594
 00:27:59,560 --> 00:28:00,910
-quote unquote, something.
+кавычки, что-либо, кавычки.
 
 595
 00:28:00,910 --> 00:28:03,010
-But if you have some
-placeholders in there,
+Но если вы используете здесь
+плейсхолдер,
 
 596
 00:28:03,010 --> 00:28:06,520
-you can tell the computer what
-to plug in by adding a comma
+вы говорите компьютеру, 
+что именно нужно подставить, добавляя запятую, 
 
 597
 00:28:06,520 --> 00:28:10,570
-and then the name of the value or
-variable that you want to plug in.
+затем имя переменной, которую хотите
+вставить.
 
 598
 00:28:10,570 --> 00:28:14,120
-So now, these two lines of code
-are equivalent to these here.
+Эти две строчки кода эквивалентны
+этим строчкам здесь.
 
 599
 00:28:14,120 --> 00:28:15,870
-But again, even though
-at first glance, it
+Но хотя на первый взгляд, 
+может показаться,
 
 600
 00:28:15,870 --> 00:28:17,620
-might look especially
-cryptic, if you just
+что это немного загадочно,
+вы просто 
 
 601
 00:28:17,620 --> 00:28:19,480
