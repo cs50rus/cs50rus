@@ -3693,131 +3693,130 @@ like get_string, in order
 
 800
 00:37:19,420 --> 00:37:22,390
-to give you variables like strings.
+у вас были переменные, такие как строки.
 
 801
 00:37:22,390 --> 00:37:27,070
-The zeros and ones from the CS50 library
-are stored elsewhere in the cloud.
+Нули и единицы из библиотеки CS50
+хранятся где-то в облаке,
 
 802
 00:37:27,070 --> 00:37:29,920
-They need to be linked
-in together with yours.
+и их нужно как-то связать
+вместе с вашими.
 
 803
 00:37:29,920 --> 00:37:34,000
-So just as your code is in this
-file, our code is in that file.
+Подобно тому, как ваш код находится
+в этом файле, наш код находится в другом.
 
 804
 00:37:34,000 --> 00:37:37,330
-And so by telling the computer
-to include it in your source code
+Указание компьютеру включить его
+в ваш исходный код
 
 805
 00:37:37,330 --> 00:37:40,980
-and to link it in this command
-is just the arcane way of saying,
+и связать его с помощью данной команды —
+всего лишь магический способ сказать:
 
 806
 00:37:40,980 --> 00:37:46,930
-combine my code with CS50's code into
-one program that I can actually run.
+"соедини мой код с кодом из CS50 в одну
+программу, которую я могу запустить".
 
 807
 00:37:46,930 --> 00:37:49,180
-Now, all of this,
-frankly is very quickly
+Так. Всё это, если честно,
+начинает становиться
 
 808
 00:37:49,180 --> 00:37:53,170
-becoming very overwhelming, I think,
-and very unnecessarily complicated.
+крайне сложным. Я бы даже сказал,
+неоправданно сложным.
 
 809
 00:37:53,170 --> 00:37:56,200
-So there is a better way than this.
+Поэтому есть способ получше.
 
 810
 00:37:56,200 --> 00:38:00,310
-It turns out, moving forward, if
-you would like to compile your code,
+Оказывается, что для компиляции кода
 
 811
 00:38:00,310 --> 00:38:01,720
-you don't have to remember -o.
+вам не нужно запоминать команду "-o".
 
 812
 00:38:01,720 --> 00:38:03,935
-You don't have to remember -l CS50.
+Как и команду "-l CS50".
 
 813
 00:38:03,935 --> 00:38:07,060
-You don't have to remember any of those
-commands, hopefully just the ideas.
+Вам не нужна ни одна из этих команд,
+разве что понимание основной идеи.
 
 814
 00:38:07,060 --> 00:38:12,130
-You can instead say, make me a program
-called string, and be done with it.
+Вместо этого вы можете сказать: "создай
+программу под названием "string" — и всё.
 
 815
 00:38:12,130 --> 00:38:15,970
-All this white output is just
-automatically generated for you
+Весь этот вывод будет
+сгенерирован автоматически,
 
 816
 00:38:15,970 --> 00:38:18,610
-when you tell the
-computer, make my program.
+когда вы дадите компьютеру
+команду на сборку программы.
 
 817
 00:38:18,610 --> 00:38:24,130
-And the program make will figure out
-what command-line arguments to use,
+И программа сборки (make) сама разберётся,
+какие аргументы командной строки нужно использовать,
 
 818
 00:38:24,130 --> 00:38:26,800
-what name to give the
-file, what libraries
+какое имя присвоить файлу,
+с какими библиотеками
 
 819
 00:38:26,800 --> 00:38:29,650
-or code that other people
-have written to link in.
+или чужими кусочками кода необходимо
+связать программу.
 
 820
 00:38:29,650 --> 00:38:32,500
-So henceforth, when you want
-to compile your program,
+Таким образом, чтобы скомпилировать
+программу,
 
 821
 00:38:32,500 --> 00:38:36,460
-literally just say make and
-the name of the program.
+вам достаточно буквально сказать "сделай" (make)
+и указать имя программы.
 
 822
 00:38:36,460 --> 00:38:38,680
-But it's not make string.c.
+Но выглядеть это должно не как "make string.c",
 
 823
 00:38:38,680 --> 00:38:41,260
-It's make and the name of the program.
+а как "make" и имя программы.
 
 824
 00:38:41,260 --> 00:38:43,180
-Make, this other
-program, will figure out
+Make, то есть внешняя программа,
+сама поймёт,
 
 825
 00:38:43,180 --> 00:38:46,630
-that you mean something called string.c.
+что вы имели в виду что-то с именем string.c.
 
 826
 00:38:46,630 --> 00:38:48,910
-And I can rewind and
-do this for hello, too.
+Можно вернуться назад и проделать это
+для программы hello.
 
 827
 00:38:48,910 --> 00:38:50,770
@@ -3825,125 +3824,121 @@ Make hello.
 
 828
 00:38:50,770 --> 00:38:53,150
-Oh, I never fixed the
-problem from before.
+Ой, я так и не исправил старую ошибку.
 
 829
 00:38:53,150 --> 00:38:56,660
-So let me go into hello.c
-by opening that file.
+Давайте-ка я открою файл hello.c
 
 830
 00:38:56,660 --> 00:38:59,740
-Let me fix this for posterity.
+и исправлю это для потомков.
 
 831
 00:38:59,740 --> 00:39:02,110
-Save this file, or let
-the file auto save.
+Сохраню файл или включу автосохранение.
 
 832
 00:39:02,110 --> 00:39:03,310
-Now do make hello.
+А теперь — make hello.
 
 833
 00:39:03,310 --> 00:39:06,100
-And viola, it's done the
-same thing for me now.
+И вуаля — всё то же самое.
 
 834
 00:39:06,100 --> 00:39:06,820
-Yeah?
+Да?
 
 835
 00:39:06,820 --> 00:39:09,543
-AUDIENCE: Is make like a
-standard thing [INAUDIBLE]..
+ЗАЛ: Является ли make стандартной
+программой?
 
 836
 00:39:09,543 --> 00:39:10,960
-DAVID MALAN: Really good question.
+DAVID MALAN: Очень хороший вопрос.
 
 837
 00:39:10,960 --> 00:39:13,300
-Is make a standard
-thing or CS50 specific?
+Является ли make стандартной
+или же она специфична для CS50?
 
 838
 00:39:13,300 --> 00:39:16,280
-It is not a CS50 specific thing.
+Нет, она не специфична для CS50.
 
 839
 00:39:16,280 --> 00:39:19,460
-It is a standard tool that exists
-on Macs and PCs and computers
+Это стандартное средство,
+которое есть на компьютерах,
 
 840
 00:39:19,460 --> 00:39:21,410
-generally running Unix or Linux.
+как правило под управлением ОС Unix или Linux.
 
 841
 00:39:21,410 --> 00:39:24,020
-And indeed, the sandbox
-tool that we're using
+И действительно, инструмент песочницы,
+который мы используем,
 
 842
 00:39:24,020 --> 00:39:26,480
-is itself a computer in the
-cloud, even though it just
+сам по себе является компьютером в облаке,
+хотя у него
 
 843
 00:39:26,480 --> 00:39:30,960
-has these two windows, tabs up top
-and the terminal window down below.
+есть только эти два окна, вкладки сверху
+и окно терминала снизу.
 
 844
 00:39:30,960 --> 00:39:32,960
-When you log in to CS50
-Sandbox, you have access
+Выполнив вход в песочницу "CS50 Sandbox",
+вы получаете доступ
 
 845
 00:39:32,960 --> 00:39:36,620
-to your own server in the cloud running
-an operating system called Linux.
+к собственному серверу в облаке
+под управлением операционной системы Linux.
 
 846
 00:39:36,620 --> 00:39:41,600
-And Clang and make and other
-tools we'll see, like ls and rm,
+А Clang, make и прочие инструменты, которые
+мы используем, такие как ls и rm,
 
 847
 00:39:41,600 --> 00:39:43,700
-all exist in that operating system.
+все существуют в операционной системе.
 
 848
 00:39:43,700 --> 00:39:46,580
-They're not at all CS50 specific.
+Они совсем не специфичны для CS50.
 
 849
 00:39:46,580 --> 00:39:47,768
-Yeah?
+Спрашивайте.
 
 850
 00:39:47,768 --> 00:39:51,235
-AUDIENCE: With that, so would hello
-be machine code, not [INAUDIBLE]??
+ЗАЛ: Получается, программа hello
+будет машинным кодом, а не [НЕРАЗБОРЧИВО]?
 
 851
 00:39:51,235 --> 00:39:52,110
-DAVID MALAN: Correct.
+DAVID MALAN: Правильно.
 
 852
 00:39:52,110 --> 00:39:53,520
-Hello is the machine code.
+Hello — это машинный код.
 
 853
 00:39:53,520 --> 00:39:55,756
-Hello.c is the source code.
+Hello.c — это исходный код.
 
 854
 00:39:55,756 --> 00:39:57,244
-AUDIENCE: So [INAUDIBLE]?
+ЗАЛ: То есть [НЕРАЗБОРЧИВО]?
 
 855
 00:39:57,244 --> 00:40:00,915
@@ -3951,35 +3946,34 @@ AUDIENCE: So [INAUDIBLE]?
 
 856
 00:40:00,915 --> 00:40:01,790
-DAVID MALAN: Correct.
+DAVID MALAN: Верно.
 
 857
 00:40:01,790 --> 00:40:06,110
-Make is a smart program designed to
-make our lives easier, no pun intended,
+Make — умная программа, предназначенная
+для облегчения нашей жизни.
 
 858
 00:40:06,110 --> 00:40:11,210
-whereby if you do make hello, it
-will look for a file called hello.c.
+Если выполнить команду "make hello",
+она будет искать файл с именем hello.c.
 
 859
 00:40:11,210 --> 00:40:14,450
-And if it finds it, it will
-create the program called hello
+И если найдёт — создаст программу
+с именем "hello",
 
 860
 00:40:14,450 --> 00:40:16,630
-from source code to
-machine code, respectively.
+превратив исходный код в, соответственно, машинный.
 
 861
 00:40:16,630 --> 00:40:17,267
-Yeah?
+У вас вопрос?
 
 862
 00:40:17,267 --> 00:40:18,698
-AUDIENCE: [INAUDIBLE].
+ЗАЛ: [НЕРАЗБОРЧИВО].
 
 863
 00:40:18,698 --> 00:40:22,498
@@ -3987,43 +3981,42 @@ AUDIENCE: [INAUDIBLE].
 
 864
 00:40:22,498 --> 00:40:23,540
-DAVID MALAN: Not exactly.
+DAVID MALAN: Не совсем.
 
 865
 00:40:23,540 --> 00:40:27,770
-So make is a program that comes with
-an operating system called Linux,
+Программа make ранее входила в состав
+операционных систем семейства Linux,
 
 866
 00:40:27,770 --> 00:40:29,150
-and it also comes with Mac OS.
+а также семейства Mac OS.
 
 867
 00:40:29,150 --> 00:40:31,160
-And these days, it also
-comes with Windows.
+В настоящее время она есть и в
+составе систем семейства Windows.
 
 868
 00:40:31,160 --> 00:40:34,040
-It is a program that you
-can run by typing its name,
+Программу make запускают
+путём ввода её имени,
 
 869
 00:40:34,040 --> 00:40:37,147
-not that you run by
-double-clicking an icon.
+а не двойным щелчком по значку.
 
 870
 00:40:37,147 --> 00:40:37,730
-Good question.
+Хороший вопрос.
 
 871
 00:40:37,730 --> 00:40:38,882
-Yeah?
+Да-да?
 
 872
 00:40:38,882 --> 00:40:39,854
-AUDIENCE: [INAUDIBLE]?
+ЗАЛ: [НЕРАЗБОРЧИВО]?
 
 873
 00:40:39,854 --> 00:40:43,755
@@ -4031,121 +4024,119 @@ AUDIENCE: [INAUDIBLE]?
 
 874
 00:40:43,755 --> 00:40:44,880
-DAVID MALAN: Good question.
+DAVID MALAN: Это тоже хороший вопрос.
 
 875
 00:40:44,880 --> 00:40:46,610
-So does that mean make is
-stored on your computer
+Хранится ли программа make
+на вашем компьютере
 
 876
 00:40:46,610 --> 00:40:47,930
-or in the cloud-based computer?
+или на облачной машине?
 
 877
 00:40:47,930 --> 00:40:49,350
-In the cloud-based computer.
+Второе. В облаке.
 
 878
 00:40:49,350 --> 00:40:52,100
-So at this point in the semester,
-and for the first several weeks,
+На данном этапе семестра и в течение
+первых нескольких недель
 
 879
 00:40:52,100 --> 00:40:55,310
-everything we do will be in the
-cloud in a standardized environment
+всё, что мы будем делать, будет находиться
+в облачной стандартизированной среде
 
 880
 00:40:55,310 --> 00:40:58,670
-called CS50 Sandbox and, soon,
-something called CS50 Lab.
+под названием "CS50 Sandbox",
+а чуть позже — в среде "CS50 Lab".
 
 881
 00:40:58,670 --> 00:41:02,780
-But it's designed to be representative
-of a standard Linux computer
+Но эта среда призвана представлять собой
+обычный компьютер на Linux,
 
 882
 00:41:02,780 --> 00:41:04,210
-and also a Mac or PC.
+Mac OS или другой системе.
 
 883
 00:41:04,210 --> 00:41:05,960
-But the software tends
-to differ somewhat,
+Однако программное обеспечение всё равно
+немного отличается,
 
 884
 00:41:05,960 --> 00:41:09,470
-so we standardize on Linux, which
-is a very popular operating system
+поэтому мы ориентируемся на Linux
+как на крайне популярную систему
 
 885
 00:41:09,470 --> 00:41:12,140
-in the software development world.
+среди разработчиков программного обеспечения.
 
 886
 00:41:12,140 --> 00:41:15,265
-All right, so let's take a look at a
-couple of other equivalencies and then
+Ладно, давайте теперь посмотрим на пару
+других равнозначностей, затем —
 
 887
 00:41:15,265 --> 00:41:18,015
-comparisons and start to write
-more interesting programs than ones
+сравнений, а после приступим к написанию
+более интересных программ,
 
 888
 00:41:18,015 --> 00:41:19,220
-that just say hello world.
+чем банальные "hello world".
 
 889
 00:41:19,220 --> 00:41:22,400
-So here, again, is a summary
-of how you technically
+Здесь ещё раз приведено
+краткое описание способа
 
 890
 00:41:22,400 --> 00:41:25,070
-should convert your source
-code to machine code
+преобразования исходного кода
+в машинный
 
 891
 00:41:25,070 --> 00:41:28,580
-by using a program called Clang
-with a command-line argument,
+с помощью программы Clang и
+аргумента командной строки,
 
 892
 00:41:28,580 --> 00:41:33,322
-a special parameter, -o hello,
-to name the file something else.
+специального параметра, -o hello,
+который позволяет задать имя для файла.
 
 893
 00:41:33,322 --> 00:41:35,780
-And honestly, no one's ever
-going to remember this command.
+Поверьте мне, никто и никогда
+не запомнит эту команду.
 
 894
 00:41:35,780 --> 00:41:37,905
-And even if you do, it's
-just very tedious to type.
+А даже если вы это сделаете, печатать её
+каждый раз очень утомительно.
 
 895
 00:41:37,905 --> 00:41:40,250
-That's why programs
-like make exist, which
+Именно поэтому существуют такие программы,
+как make, которые
 
 896
 00:41:40,250 --> 00:41:42,142
-just automate that exact same process.
+автоматизируют весь этот процесс.
 
 897
 00:41:42,142 --> 00:41:43,850
-But they are still
-doing the same thing--
+Но делают-то они всё то же самое--
 
 898
 00:41:43,850 --> 00:41:46,700
-compiling your source
-code into machine code.
+компилируют исходный код в машинный.
 
 899
 00:41:46,700 --> 00:41:48,500
