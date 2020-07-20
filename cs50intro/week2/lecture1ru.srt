@@ -1855,479 +1855,458 @@ So let me do that right now.
 
 400
 00:19:00,990 --> 00:19:04,350
-It turns out that when you run
-commands on a computer like Clang,
+Оказывается, что при запуске
+на компьютере таких команд, как Clang,
 
 401
 00:19:04,350 --> 00:19:08,100
-you don't have to only say the name of
-the program and the name of the file.
+можно указывать не только
+имя программы и имя файла.
 
 402
 00:19:08,100 --> 00:19:10,380
-You can add additional
-options, otherwise known
+Вы можете добавлять дополнительные
+параметры, иначе известные
 
 403
 00:19:10,380 --> 00:19:12,180
-as command-line arguments.
+как аргументы командной строки.
 
 404
 00:19:12,180 --> 00:19:14,280
-And here, too, it's a little arcane.
+И здесь тоже есть что-то загадочное.
 
 405
 00:19:14,280 --> 00:19:19,020
-You have to know what's possible
-in order to type these things out.
+Необходимо заранее знать эти аргументы,
+чтобы иметь возможность их указать.
 
 406
 00:19:19,020 --> 00:19:20,640
-But it turns out that with Clang--
+Но оказывается, что в случае с Clang--
 
 407
 00:19:20,640 --> 00:19:22,740
-and if you read the
-documentation, you would see--
+если почитаете документацию,
+то увидите сами--
 
 408
 00:19:22,740 --> 00:19:25,920
-you can actually say -o for output.
+можно использовать аргумент "-o" для вывода.
 
 409
 00:19:25,920 --> 00:19:28,140
-And then you can specify
-any name that you
+А далее можно задать любое имя
 
 410
 00:19:28,140 --> 00:19:31,860
-want for the file in which your
-machine code is going to be saved.
+для файла, в котором будет сохранён
+машинный код.
 
 411
 00:19:31,860 --> 00:19:33,000
-So notice what happens now.
+Обратите внимание на то, что сейчас произойдёт.
 
 412
 00:19:33,000 --> 00:19:35,550
-When I hit Enter now, watch
-the top left-hand corner,
+Когда я нажму Enter, посмотрите
+в левый верхний угол,
 
 413
 00:19:35,550 --> 00:19:37,710
-where I have a.out and hello.c.
+где сейчас есть файлы "a.out" и "hello.c".
 
 414
 00:19:37,710 --> 00:19:40,930
-I now have hello, as well.
+Там также есть "hello".
 
 415
 00:19:40,930 --> 00:19:45,210
-And so now I can go ahead and
-say ./hello instead of a.out,
+А сейчас я введу ./hello вместо a.out
 
 416
 00:19:45,210 --> 00:19:48,137
-and the result will now be the same.
+и получу тот же самый результат.
 
 417
 00:19:48,137 --> 00:19:50,970
-And let me take this as an opportunity
-to point out one other thing.
+Здесь я хотел бы отметить ещё кое-что.
 
 418
 00:19:50,970 --> 00:19:53,570
-Even though we see this
-graphical interface over here,
+Хотя мы и видим графический интерфейс
+вот тут,
 
 419
 00:19:53,570 --> 00:19:55,320
-this is just convenient,
-because you and I
+он тут лишь ради удобства,
+потому как мы с вами
 
 420
 00:19:55,320 --> 00:19:59,310
-are generally familiar with that
-interface from our own Macs and PCs.
+уже привыкли к подобным интерфейсам
+на компьютерах.
 
 421
 00:19:59,310 --> 00:20:04,590
-But I can do everything via this command
-prompt that I can do via my mouse.
+Но через командную строку я могу делать
+всё то же самое, что и с помощью мыши.
 
 422
 00:20:04,590 --> 00:20:07,350
-In fact, in this
-programming environment,
+Например, в этой среде программирования
 
 423
 00:20:07,350 --> 00:20:10,200
-I can type a command called ls for list.
+я могу ввести команду "ls" для вывода списка.
 
 424
 00:20:10,200 --> 00:20:13,800
-It's shorthand notation, because
-years ago, humans decided, well,
+Это краткое обозначение, потому что
+несколько лет назад люди решили, что, ну,
 
 425
 00:20:13,800 --> 00:20:17,830
-why type L-I-S-T if we can just type
-ls, which sounds kind of the same.
+зачем писать "L-I-S-T", если можно просто
+ввести "ls", что почти то же самое.
 
 426
 00:20:17,830 --> 00:20:22,320
-And thus was born the ls command,
-which quite simply displays
+Так и появилась команда "ls",
+которая отображает
 
 427
 00:20:22,320 --> 00:20:26,340
-a list of all the files in that
-current folder or directory.
+список всех файлов в текущем каталоге.
 
 428
 00:20:26,340 --> 00:20:30,570
-And we see the same thing--
-a.out, hello, and hello.c.
+И мы видим всё то же самое--
+файлы a.out, hello и hello.c.
 
 429
 00:20:30,570 --> 00:20:33,720
-And you can perhaps infer or
-guess, what does the asterisk
+Возможно, вы догадываетесь,
+что означает символ звёздочки
 
 430
 00:20:33,720 --> 00:20:36,060
-mean after a.out and hello, perhaps?
+после имён файлов a.out и hello?
 
 431
 00:20:36,060 --> 00:20:37,033
-AUDIENCE: Executable.
+ЗАЛ: Они исполняемые.
 
 432
 00:20:37,033 --> 00:20:38,950
-DAVID MALAN: It's
-executable, which just means
+DAVID MALAN: Исполняемые, верно,
+что означает,
 
 433
 00:20:38,950 --> 00:20:42,660
-there's machine code in there
-that can be run by the computer,
+что внутри них находится машинный код,
+который может быть выполнен компьютером,
 
 434
 00:20:42,660 --> 00:20:45,773
-whereas hello.c does not have
-that asterisk or star after it,
+тогда как после hello.c нет звёздочки,
 
 435
 00:20:45,773 --> 00:20:47,190
-which just means it's source code.
+потому что это исходный код.
 
 436
 00:20:47,190 --> 00:20:50,340
-So you can even visually distinguish
-source code from machine code
+Так что даже визуально можно отличить
+исходный код
 
 437
 00:20:50,340 --> 00:20:51,600
-from machine code.
+от машинного кода.
 
 438
 00:20:51,600 --> 00:20:54,630
-Now, suppose that I don't
-want a.out to exist anymore,
+А теперь предположим, что я не хочу
+больше иметь файл a.out,
 
 439
 00:20:54,630 --> 00:20:56,130
-because it looks like a stupid name.
+потому что он называется как-то глупо.
 
 440
 00:20:56,130 --> 00:20:58,230
-I'm never going to remember
-what the program is.
+Так я никогда не запомню,
+что это там программа.
 
 441
 00:20:58,230 --> 00:21:02,520
-Well, you can type other commands,
-like rm, for remove, a.out.
+Ну, тогда я могу ввести другую команду,
+например, "rm", и удалить a.out.
 
 442
 00:21:02,520 --> 00:21:03,660
-And then hit Enter.
+И затем нажать Enter.
 
 443
 00:21:03,660 --> 00:21:04,980
-And it's a little arcane.
+Снова небольшая магия.
 
 444
 00:21:04,980 --> 00:21:07,540
-It says remove regular file a.out.
+Тут написано про удаление обычного файла a.out.
 
 445
 00:21:07,540 --> 00:21:10,890
-Notice the prompt is now blinking
-after that question mark.
+Обратите внимание, что курсор
+после вопросительного знака мигает.
 
 446
 00:21:10,890 --> 00:21:15,060
-I can go ahead and type
-Y for yes or yes for yes.
+Я могу ввести "Y" или "yes",
+чтобы подтвердить команду.
 
 447
 00:21:15,060 --> 00:21:17,010
-Notice that nothing
-seems to have happened.
+Кажется, как будто ничего не произошло.
 
 448
 00:21:17,010 --> 00:21:20,730
-But how can I check what files
-now exist in this folder?
+Но как мне проверить, какие файлы теперь
+существуют в этом каталоге?
 
 449
 00:21:20,730 --> 00:21:24,790
-Yeah, so just ls again, and now
-I'm down to those two files.
+Я просто снова введу "ls", и теперь
+у меня тут только эти два файла.
 
 450
 00:21:24,790 --> 00:21:27,450
-So it turns out there's other
-commands, too, that we can type.
+Так что мы видим, что нам доступно
+множество разных команд.
 
 451
 00:21:27,450 --> 00:21:34,140
-And there's commands like ls and rm.
+Например, такие, как "ls" и "rm".
 
 452
 00:21:34,140 --> 00:21:36,690
-There's mkdir for make directory.
+Есть команда "mkdir" для создания каталога,
 
 453
 00:21:36,690 --> 00:21:38,683
-There's rmdir for remove directory.
+есть "rmdir" для его удаления.
 
 454
 00:21:38,683 --> 00:21:41,100
-And anytime you have to know
-or use one of these commands,
+Когда вам нужно будет узнать или
+использовать какую-то из команд,
 
 455
 00:21:41,100 --> 00:21:43,080
-we'll make sure to tell
-you in the problem set.
+мы обязательно сообщим об этом
+в условии задания.
 
 456
 00:21:43,080 --> 00:21:46,320
-But realize anything you
-can do with your mouse
+А пока запомните: всё, что вы можете
+делать с помощью мыши
 
 457
 00:21:46,320 --> 00:21:50,610
-and that graphical user interface,
-can you also do at this command line.
+и графического пользовательского интерфейса,
+вы можете делать и через командную строку.
 
 458
 00:21:50,610 --> 00:21:53,640
-All right, so let's take
-things up a slight notch
+Ладно, давайте пойдём дальше
 
 459
 00:21:53,640 --> 00:21:55,950
-and do something that's a
-little more interesting,
+и сделаем кое-что более интересное.
 
 460
 00:21:55,950 --> 00:21:58,350
-going back to the side by side here.
+Вернёмся к исходному виду.
 
 461
 00:21:58,350 --> 00:22:02,000
-So thus far, all we've done
-is print out hello world.
+Итак, пока что всё, что мы сделали —
+это вывели на экран фразу "Hello, world".
 
 462
 00:22:02,000 --> 00:22:04,620
-But recall, last week, the
-second program we wrote
+Но как вы помните, вторая программа,
+которую мы писали на прошлой неделе,
 
 463
 00:22:04,620 --> 00:22:06,450
-was a little more
-dynamic and interactive.
+была чуть более динамичной и интерактивной.
 
 464
 00:22:06,450 --> 00:22:10,200
-What did we do last week as our second
-program in Scratch, if you recall?
+Помните, что делала наша вторая программа
+в Scratch на прошлой неделе?
 
 465
 00:22:10,200 --> 00:22:12,400
-AUDIENCE: It prompted
-the user for their name.
+ЗАЛ: Запрашивала у пользователя имя.
 
 466
 00:22:12,400 --> 00:22:14,692
-DAVID MALAN: Yeah, it prompted
-the user for their name.
+DAVID MALAN: Точно, спрашивала имя.
 
 467
 00:22:14,692 --> 00:22:17,550
-And then we said hello, David,
-or hello, Brian, or whoever
+И мы отвечали "hello, David",
+или "hello, Brian", в зависимости
 
 468
 00:22:17,550 --> 00:22:19,133
-was actually running the program.
+от того, кто запустил программу.
 
 469
 00:22:19,133 --> 00:22:21,300
-So that program looked a
-little something like this.
+Та программа выглядела примерно так.
 
 470
 00:22:21,300 --> 00:22:25,590
-These two lines of code were attached
-to a when green flag clicked last week.
+Эти две строчки кода соединялись с блоком
+"когда нажат зелёный флажок".
 
 471
 00:22:25,590 --> 00:22:28,170
-This blue block here
-at top was a function,
+Вот этот синий блок сверху был функцией,
 
 472
 00:22:28,170 --> 00:22:32,940
-and that function returned an
-argument, returned a response.
+которая возвращала значение, ответ.
 
 473
 00:22:32,940 --> 00:22:35,170
-It returned the answer
-that the user had typed in.
+Она возвращала то, что вводил пользователь.
 
 474
 00:22:35,170 --> 00:22:38,130
-And that was useful, because
-we then used the user's answer
+И это было полезно, потому что затем
+мы использовали ответ пользователя
 
 475
 00:22:38,130 --> 00:22:42,600
-to join it together, or concatenate
-left and right, with the word hello.
+для объединения (или конкатенации)
+со словом "hello".
 
 476
 00:22:42,600 --> 00:22:45,160
-And then we said the result of that.
+И далее мы выводили полученный результат.
 
 477
 00:22:45,160 --> 00:22:46,255
-So how do we do this in C?
+А как сделать то же самое в языке C?
 
 478
 00:22:46,255 --> 00:22:48,630
-Well, this is where things
-are going to escalate quickly.
+Что ж, именно с этого момента
+всё будет резко усложняться.
 
 479
 00:22:48,630 --> 00:22:51,570
-But again, it's all going to follow
-certain rules and patterns that
+Но опять же, процесс будет подчинён
+определённым правилам и шаблонам,
 
 480
 00:22:51,570 --> 00:22:54,190
-are going to get more and
-more familiar over time.
+которые постепенно будут становиться
+всё понятнее.
 
 481
 00:22:54,190 --> 00:22:57,990
-In C, at least in the CS50
-Sandbox, the closest equivalent
+В языке C (по крайней мере, в песочнице
+курса CS50) ближайшим аналогом
 
 482
 00:22:57,990 --> 00:23:03,810
-to the ask function in Scratch is going
-to be a C function called get_string.
+функции запроса из Scratch является функция
+под названием get_string (получить строку).
 
 483
 00:23:03,810 --> 00:23:06,180
-A string is just a
-programmer's expression
+Строка в программировании —
+это просто обозначение
 
 484
 00:23:06,180 --> 00:23:09,750
-for a word or phrase or a sentence.
+слова, фразы или предложения.
 
 485
 00:23:09,750 --> 00:23:14,470
-So text as opposed to numbers
-or some other piece of data.
+То есть это текст, а не число
+или данные другого типа.
 
 486
 00:23:14,470 --> 00:23:19,680
-So get_string is the closest
-analog to the ask function there.
+Итак, get_string — ближайший аналог
+функции запроса.
 
 487
 00:23:19,680 --> 00:23:22,830
-In between the parentheses,
-which imply here's
+В скобках, которые соответствуют полю вот тут,
 
 488
 00:23:22,830 --> 00:23:24,840
-where you can provide
-some input, I can go ahead
+можно задать какую-то фразу,
 
 489
 00:23:24,840 --> 00:23:27,673
-and provide the prompt that the
-user is going to see on the screen--
+скажем, вопрос, который пользователь
+увидит на экране--
 
 490
 00:23:27,673 --> 00:23:30,217
-for instance, what's
-your name, quote unquote.
+например, "как вас зовут",
+обязательно в кавычках.
 
 491
 00:23:30,217 --> 00:23:31,050
-Now, why the quotes?
+А зачем, собственно, нужны кавычки?
 
 492
 00:23:31,050 --> 00:23:34,050
-I just claimed earlier that
-anytime you pass a string--
+Чуть ранее я сказал, что каждый раз,
+когда вы передаёте строку--
 
 493
 00:23:34,050 --> 00:23:36,450
-a word, a phrase,
-alphabetical characters--
+слово, фразу, буквы алфавита--
 
 494
 00:23:36,450 --> 00:23:38,460
-you have to surround
-them with double quotes
+вы должны заключать её в двойные кавычки
 
 495
 00:23:38,460 --> 00:23:40,380
-on the left and double
-quotes on the right.
+с обеих сторон.
 
 496
 00:23:40,380 --> 00:23:44,994
-And to be clear, why did I have this
-weird incantation here, backslash n?
+А это что за странное заклинание,
+обратная косая черта и "n" ("\n")?
 
 497
 00:23:44,994 --> 00:23:45,786
-AUDIENCE: New line.
+ЗАЛ: Переход на новую строку.
 
 498
 00:23:45,786 --> 00:23:47,970
-DAVID MALAN: Yeah, it just moves
-the cursor to the new line.
+DAVID MALAN: Верно, оно просто
+переводит курсор на новую строку.
 
 499
 00:23:47,970 --> 00:23:48,540
-Why?
+Зачем?
 
 500
 00:23:48,540 --> 00:23:50,207
-Just because it looks a little prettier.
+Просто потому, что так немного красивее.
 
 501
 00:23:50,207 --> 00:23:51,000
