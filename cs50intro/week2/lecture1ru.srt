@@ -2765,18 +2765,18 @@ are equivalent to these here.
 
 599
 00:28:14,120 --> 00:28:15,870
-But again, even though
-at first glance, it
+Но опять же, даже несмотря на то, что
+на первый взгляд, это
 
 600
 00:28:15,870 --> 00:28:17,620
-might look especially
-cryptic, if you just
+может выглядеть особенно
+загадочно, если вы просто
 
 601
 00:28:17,620 --> 00:28:19,480
-break it down to the
-individual components
+разберете это до конца 
+на отдельные компоненты
 
 602
 00:28:19,480 --> 00:28:23,020
