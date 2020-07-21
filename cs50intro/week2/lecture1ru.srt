@@ -3064,7 +3064,7 @@ DAVID MALAN: Действительно хороший вопрос.
 
 665
 00:30:43,420 --> 00:30:48,210
-И это тоже маленькая загадка, 
+И это тоже немного загадочно, 
 но hello.c, столбец 5, столбец 26.
 
 666
@@ -3087,72 +3087,72 @@ Clang попытается помочь вам выяснить
 
 670
 00:30:57,870 --> 00:31:02,760
-So hello.c colon five means
-look on line 5 for your mistake.
+Надпись "colon 5" в hello.c означает
+что вашу ошибку стоит искать в строке 5
 
 671
 00:31:02,760 --> 00:31:07,930
-Then, see, it says error-- expected
-close parentheses right around here.
+Далее, видите, там написана ошибка - ожидается
+круглые скобки будут закрыты прямо здесь.
 
 672
 00:31:07,930 --> 00:31:11,500
-So it's a little weird, because no,
-I don't want a close parentheses,
+Так что это немного странно, потому что нет,
+я не хочу закрывать скобки,
 
 673
 00:31:11,500 --> 00:31:12,000
-I think.
+Я думаю.
 
 674
 00:31:12,000 --> 00:31:13,170
-I want the new line.
+Я хочу начать с новой строчки.
 
 675
 00:31:13,170 --> 00:31:16,080
-So it's not perfectly
-able to tell you, hey,
+Так что система не в состоянии
+сказать вам, эй
 
 676
 00:31:16,080 --> 00:31:18,450
-that backslash n should
-be inside of the quotes.
+этот /n должен быть 
+внутри кавычек
 
 677
 00:31:18,450 --> 00:31:21,780
-But it can at least help you
-hone in on where the mistake is.
+Но это может в конечном счете помочь вам
+выяснить где находится ошибка.
 
 678
 00:31:21,780 --> 00:31:24,000
-So it's somewhere around
-there, at which point
+И так, она где-то тут 
+рядом, и в какой-то момент
 
 679
 00:31:24,000 --> 00:31:26,850
-your own memory or your own googling
-should kick in to figure out,
+ваша собственная память или гугление
+помогут вам понять,
 
 680
 00:31:26,850 --> 00:31:29,717
-oh, that's got to be
-inside of the quotes.
+что да, это должно быть
+снаружи кавычек.
 
 681
 00:31:29,717 --> 00:31:30,300
-Good question.
+Хороший вопрос.
 
 682
 00:31:30,300 --> 00:31:31,883
-Was there a third question back there?
+Был ли там еще третий вопрос?
 
 683
 00:31:31,883 --> 00:31:32,430
-Yeah?
+Да?
 
 684
 00:31:32,430 --> 00:31:32,930
-No?
+Нет?
 
 685
 00:31:32,930 --> 00:31:33,480
@@ -3160,70 +3160,69 @@ OK.
 
 686
 00:31:33,480 --> 00:31:37,860
-All right, so let's go ahead now and
-transition to a few other features
+Итак, давайте перейдем к нескольким
+другим функциям
 
 687
 00:31:37,860 --> 00:31:39,360
-that we can do, as well--
+которые мы также можем сделать - 
 
 688
 00:31:39,360 --> 00:31:42,630
-namely, implementing the
-same program that I just had.
+а именно, реализуем ту же самую программу,
+которая у меня только что была.
 
 689
 00:31:42,630 --> 00:31:45,600
-Let me go ahead and close this
-file and create a new one called,
+Позвольте мне продолжить и закрыть этот
+файл, а затем создать новый,
 
 690
 00:31:45,600 --> 00:31:49,173
-say, string.c, because I'm now
-experimenting with strings.
+скажем, string.c, потому что я сейчас
+эксперементирую со строками.
 
 691
 00:31:49,173 --> 00:31:50,590
-And I'm going to start as before--
+И я собираюсь начать как и раньше - 
 
 692
 00:31:50,590 --> 00:31:55,260
-include stdio.h int main void.
+с добавления stdio.h int main void
 
 693
 00:31:55,260 --> 00:32:01,470
-And then I'm going to go ahead here
-and say string answer get get_string,
+А потом я собираюсь пойти дальше и 
+сказать string answer get get_string,
 
 694
 00:32:01,470 --> 00:32:07,020
-quote unquote, what's your name,
-question mark, backslash n, semicolon.
+цитата без кавычек, как тебя зовут,
+вопросительный знак, /n, точка с запятой.
 
 695
 00:32:07,020 --> 00:32:09,448
-And as an aside, everything
-I type on the keyboard
+И в качестве отступления, все, 
+что я печатал на клавиатуре сегодня,
 
 696
 00:32:09,448 --> 00:32:11,490
-today we will post on the
-course's website after.
+позже мы разместим на сайте курса.
 
 697
 00:32:11,490 --> 00:32:15,010
-So no need to type down every little
-character if you'd prefer not.
+Так что нет необходимости набирать 
+каждый маленький символ, если вы не хотите.
 
 698
 00:32:15,010 --> 00:32:18,448
-And then I'm going to go ahead and say
-printf, quote unquote, hello answer.
+И затем я продолжаю и пишу printf,
+открывю ковычки, hello answer. 
 
 699
 00:32:18,448 --> 00:32:20,490
-Not answer, because we
-claimed that that was bad.
+Не answer, потому что мы 
+утверждали, что это плохо.
 
 700
 00:32:20,490 --> 00:32:22,440
