@@ -4134,476 +4134,467 @@ Mac OS или другой системе.
 
 899
 00:41:46,700 --> 00:41:48,500
-And to run the program
-thereafter, you say
+Для последующего запуска программы
+мы вводим
 
 900
 00:41:48,500 --> 00:41:50,920
-dot, which just refers
-to your current folder,
+точку, которая соответствует
+текущему каталогу,
 
 901
 00:41:50,920 --> 00:41:54,140
-because we'll see that you can have
-multiple folders on a server, and hello
+потому что, как мы увидим далее, на сервере
+может быть множество каталогов, а затем hello,
 
 902
 00:41:54,140 --> 00:41:55,510
-is the name of the program.
+то есть имя программы.
 
 903
 00:41:55,510 --> 00:41:58,760
-All right, let's take a look at a couple
-of other types of features of Scratch
+Хорошо, давайте разберём пару
+других особенностей Scratch
 
 904
 00:41:58,760 --> 00:42:00,510
-and see what it's going
-to look like in C,
+и то, как они будут выглядеть в Си,
 
 905
 00:42:00,510 --> 00:42:04,560
-and then we'll start to implement
-some programs in C more manually.
+а затем начнём реализовывать на Си
+более сложные программы.
 
 906
 00:42:04,560 --> 00:42:07,130
-So consider this example
-here, which was an example
+Рассмотрим вот такой пример.
+Какой тип функционала
 
 907
 00:42:07,130 --> 00:42:11,450
-of what type of feature in Scratch?
+он демонстрировал в Scratch?
 
 908
 00:42:11,450 --> 00:42:13,300
-This did what for us?
+Что он позволял делать?
 
 909
 00:42:13,300 --> 00:42:14,260
-AUDIENCE: Variable.
+ЗАЛ: Это переменная.
 
 910
 00:42:14,260 --> 00:42:16,000
-DAVID MALAN: So this was
-an example of a variable.
+DAVID MALAN: Это был
+пример переменной.
 
 911
 00:42:16,000 --> 00:42:18,167
-And that variable, in this
-case, was called counter.
+И эта переменная, в данном случае,
+называлась counter (счётчик).
 
 912
 00:42:18,167 --> 00:42:21,130
-And we initialized it to-- that
-is, we set it equal to-- zero.
+Мы инициализировали её-- то есть,
+установили её равной-- нулём.
 
 913
 00:42:21,130 --> 00:42:24,220
-In C, on the right-hand side, if
-we want to achieve this same result
+В Си (справа на экране), чтобы
+добиться того же результата,
 
 914
 00:42:24,220 --> 00:42:27,190
-today onward, you're literally going
-to say the name of the variable,
+нужно написать буквально следующее:
+переменная (например,
 
 915
 00:42:27,190 --> 00:42:30,490
-like counter, but you can call it
-anything you want, equals zero.
+counter, но в целом это может быть
+любое имя) равна нулю.
 
 916
 00:42:30,490 --> 00:42:33,198
-Because recall that the equal
-sign is the assignment operator.
+Как мы помним, знак равенства —
+это оператор присваивания.
 
 917
 00:42:33,198 --> 00:42:34,990
-So whatever is on the
-right is going to get
+Поэтому то, что находится справа
+от него, будет
 
 918
 00:42:34,990 --> 00:42:37,210
-copied into whatever is on the left.
+скопировано в то, что находится слева.
 
 919
 00:42:37,210 --> 00:42:41,200
-However, that's not quite sufficient,
-because when you declare a variable
+Однако этого недостаточно, потому что
+когда вы объявляете переменную
 
 920
 00:42:41,200 --> 00:42:44,230
-and you say, hey, computer, I
-need some storage for some value,
+и говорите: "Эй, компьютер, мне нужно
+немного места для кое-какого значения",
 
 921
 00:42:44,230 --> 00:42:47,950
-you have to tell the computer
-what the type of that variable is.
+вы должны явно указать компьютеру
+тип этой переменной.
 
 922
 00:42:47,950 --> 00:42:52,000
-We've seen strings are variables
-that store multiple words.
+Мы знаем, что строки — это переменные,
+хранящие набор слов.
 
 923
 00:42:52,000 --> 00:42:55,000
-But in this case, we
-want to store a number.
+Но в данном случае мы хотим
+хранить число.
 
 924
 00:42:55,000 --> 00:42:58,390
-And in C, that type of number
-is called an int or an integer,
+Поэтому в Си такой тип чисел называется
+int или integer.
 
 925
 00:42:58,390 --> 00:43:00,070
-but I-N-T for short.
+I-N-T — для краткости.
 
 926
 00:43:00,070 --> 00:43:02,147
-There's one thing missing
-from this line of code.
+Кстати, в этой строке кода
+кое-чего не хватает.
 
 927
 00:43:02,147 --> 00:43:02,980
-AUDIENCE: Semicolon.
+ЗАЛ: Точки с запятой.
 
 928
 00:43:02,980 --> 00:43:03,610
-DAVID MALAN: Semicolon.
+DAVID MALAN: Да, точки с запятой.
 
 929
 00:43:03,610 --> 00:43:04,840
-Just finishes the thought.
+Иначе мысль не завершена.
 
 930
 00:43:04,840 --> 00:43:05,830
-So what does this do?
+Что это всё значит?
 
 931
 00:43:05,830 --> 00:43:10,270
-Hey, computer, give me a variable
-whose type is integer, or int.
+Эй, компьютер, дай мне переменную
+с целочисленным типом (типом int).
 
 932
 00:43:10,270 --> 00:43:15,280
-Call that variable counter, and
-store the value zero in that variable
+Назови её counter и помести в неё
+нулевое значение
 
 933
 00:43:15,280 --> 00:43:19,970
-by default. So it turns out that we can
-do other such operations on variables.
+по умолчанию. Оказывается, мы можем
+делать и другие вещи с переменными.
 
 934
 00:43:19,970 --> 00:43:23,460
-For instance, here we have the
-incrementation feature of Scratch.
+Например, вот так в Scratch
+у нас реализовано приращение.
 
 935
 00:43:23,460 --> 00:43:27,080
-Change the counter by one
-by adding 1 to the variable.
+Мы изменяем значение счётчика на единицу,
+прибавляя 1 к переменной.
 
 936
 00:43:27,080 --> 00:43:28,510
-So how do we do this in C?
+А как сделать это в Си?
 
 937
 00:43:28,510 --> 00:43:30,800
-In C, you would do something like this.
+В Си это выглядело бы примерно так.
 
 938
 00:43:30,800 --> 00:43:35,110
-And this is a little paradoxical if
-you're coming at this from algebra,
+С точки зрения алгебры выглядит
+немного парадоксально,
 
 939
 00:43:35,110 --> 00:43:38,110
-because how could counter possibly
-be equal to counter plus 1?
+потому что как может значение counter
+быть равным counter + 1?
 
 940
 00:43:38,110 --> 00:43:39,560
-But it's not equality.
+Только вот это не равенство.
 
 941
 00:43:39,560 --> 00:43:41,780
-This is assignment from right to left.
+Это присваивание справа налево.
 
 942
 00:43:41,780 --> 00:43:43,780
-So on the left-hand side,
-you're saying counter.
+То есть, с левой стороны у нас counter.
 
 943
 00:43:43,780 --> 00:43:45,190
-That's the name of your variable.
+Имя переменной.
 
 944
 00:43:45,190 --> 00:43:47,500
-On the right-hand side,
-you're saying counter plus 1,
+С правой стороны — counter + 1,
 
 945
 00:43:47,500 --> 00:43:49,390
-whatever that arithmetic answer is.
+чему бы это выражение ни было равно.
 
 946
 00:43:49,390 --> 00:43:53,260
-And you're copying counter
-plus 1 into counter.
+И мы копируем значение counter + 1
+в переменную counter.
 
 947
 00:43:53,260 --> 00:43:56,420
-I'm still missing something
-here, which is that semicolon.
+У меня тут опять чего-то не хватает.
+Точки с запятой.
 
 948
 00:43:56,420 --> 00:44:00,580
-But I do not need to
-say int in this example.
+Но в этом примере мне уже
+не нужно писать int.
 
 949
 00:44:00,580 --> 00:44:05,200
-At this point in the story, it
-is assumed that counter exists
+На этом этапе предполагается,
+что counter существует
 
 950
 00:44:05,200 --> 00:44:08,020
-and that I've used a line of
-code like the previous one
+и что я использовал подобную
+предудыщей строку кода
 
 951
 00:44:08,020 --> 00:44:10,270
-somewhere else in my program.
+в каком-то другом месте программы.
 
 952
 00:44:10,270 --> 00:44:13,330
-Because that tells the computer once,
-give me a variable called counter,
+Ведь это разовое указание для компьютера:
+"дай мне переменную с именем counter
 
 953
 00:44:13,330 --> 00:44:14,950
-and let me store ints in it.
+и позволь мне хранить в ней значения int".
 
 954
 00:44:14,950 --> 00:44:17,110
-This line of code assumes
-that counter exists,
+Данная строка кода предполагает,
+что counter уже существует
 
 955
 00:44:17,110 --> 00:44:20,410
-and so we do not specify
-the word int again.
+и что нам больше не нужно
+ничего говорить про int.
 
 956
 00:44:20,410 --> 00:44:22,060
-You specify it just once.
+Мы это указываем всего один раз.
 
 957
 00:44:22,060 --> 00:44:24,040
-Now, we need the
-semicolon, as I proposed.
+Так, нам всё ещё нужна точка с запятой.
 
 958
 00:44:24,040 --> 00:44:26,680
-But frankly, this is such a
-common operation in programming,
+Но если честно, это крайне типичная
+операция в программировании.
 
 959
 00:44:26,680 --> 00:44:28,930
-as we'll see, to just
-increment a variable.
+В смысле, приращение значения переменной.
 
 960
 00:44:28,930 --> 00:44:31,280
-Turns out there's other ways to do this.
+И оказывается, что сделать это можно
+разными способами.
 
 961
 00:44:31,280 --> 00:44:33,520
-You can, instead,
-equivalently say this--
+Можно вместо этого сделать вот так--
 
 962
 00:44:33,520 --> 00:44:36,250
-counter plus equals 1 semicolon.
+counter плюс-равно 1, точка с запятой.
 
 963
 00:44:36,250 --> 00:44:37,800
-It is literally the same thing.
+Это буквально то же самое.
 
 964
 00:44:37,800 --> 00:44:39,550
-And if that's too many
-keystrokes for you,
+А если и это для вас слишком длинно,
 
 965
 00:44:39,550 --> 00:44:42,910
-you can literally just say
-counter plus plus semicolon,
+вы можете написать так:
+counter плюс-плюс, точка с запятой,
 
 966
 00:44:42,910 --> 00:44:44,500
-and that, too, does the same thing.
+и это по-прежнему всё та же операция.
 
 967
 00:44:44,500 --> 00:44:47,650
-This is what's known in
-programming as syntactic sugar.
+В программировании такие вещи
+называются синтаксическим сахаром.
 
 968
 00:44:47,650 --> 00:44:51,110
-It doesn't add any functionality
-that you couldn't do some other way.
+Они не добавляют уникального функционала,
+который нельзя было бы реализовать иначе.
 
 969
 00:44:51,110 --> 00:44:53,800
-But it does it in a prettier,
-often more succinct way.
+Но они зачастую делают код более
+красивым и лаконичным.
 
 970
 00:44:53,800 --> 00:44:56,680
-And it's just more common to
-write lines of code like this.
+Поэтому чаще пишут именно так.
 
 971
 00:44:56,680 --> 00:44:58,430
-All right, let's
-consider another example.
+Хорошо, давайте рассмотрим
+другой пример.
 
 972
 00:44:58,430 --> 00:45:01,750
-This was called what in Scratch?
+Как это называлось в Scratch?
 
 973
 00:45:01,750 --> 00:45:03,980
-Yeah, a condition, a decision
-that you have to make.
+Точно, условие. Решение,
+которое нужно принять.
 
 974
 00:45:03,980 --> 00:45:06,310
-So if something is true, then do this.
+Если что-то истинно — сделай это.
 
 975
 00:45:06,310 --> 00:45:08,720
-In C, we might convert it as follows.
+В Си это выглядит следующим образом.
 
 976
 00:45:08,720 --> 00:45:11,260
-If x less than y in parentheses--
+Если x меньше y (в скобках)--
 
 977
 00:45:11,260 --> 00:45:15,300
-which isn't quite the angled shape
-that we have here in green, but in C,
+да, они не очень похожи на вот эту
+зелёную угловатую фигуру, но в Си
 
 978
 00:45:15,300 --> 00:45:16,780
-you use parentheses here.
+мы используем скобки.
 
 979
 00:45:16,780 --> 00:45:20,380
-So if x is less than y,
-open paren, close paren,
+Итак, если x меньше y (скобка
+открывается, скобка закрывается),
 
 980
 00:45:20,380 --> 00:45:21,970
-then go ahead and do the following.
+то — выполнить следующее.
 
 981
 00:45:21,970 --> 00:45:25,720
-And just as this yellow or orange
-puzzle piece kind of looks like it's
+И так же, как этот жёлто-оранжевый
+кусочек паззла как будто
 
 982
 00:45:25,720 --> 00:45:29,920
-hugging the purple puzzle piece,
-so does this open curly brace
+обнимает фиолетовый кусочек,
+эта открывающая фигурная скобка
 
 983
 00:45:29,920 --> 00:45:32,830
-and this close curly brace,
-so to speak, is kind of there
+и эта закрывающая фигурная скобка,
+так сказать,
 
 984
 00:45:32,830 --> 00:45:36,050
-ready to hug or encapsulate
-one or more lines of code.
+готовы "обнять" или инкапсулировать
+одну или несколько строк кода.
 
 985
 00:45:36,050 --> 00:45:37,090
-What's the line of code?
+Что это может быть за строка?
 
 986
 00:45:37,090 --> 00:45:42,640
-It might be something like this--
-printf x is less than y backslash n.
+Например, что-то такое--
+printf, x меньше y, обратная косая черта, n.
 
 987
 00:45:42,640 --> 00:45:47,080
-So, again, new syntax, but we've
-seen the curly braces before
+И снова новый синтаксис, но
+фигурные скобки мы уже видели
 
 988
 00:45:47,080 --> 00:45:48,490
-in the context of main.
+в контексте функции main.
 
 989
 00:45:48,490 --> 00:45:52,280
-And we've seen parentheses
-before in the context of inputs.
+А круглые скобки мы видели,
+когда говорили про входные значения.
 
 990
 00:45:52,280 --> 00:45:54,520
-So this is just kind
-of a pattern that we'll
+Так что это просто своего рода
+шаблон языка Си, который
 
 991
 00:45:54,520 --> 00:45:58,530
-start to follow in C whenever we
-want to do something conditionally.
+мы будем использовать при каждой
+операции с условием.
 
 992
 00:45:58,530 --> 00:46:01,000
-OK, in Scratch, we saw
-something like this--
+Ладно, в Scratch мы видели вот такое--
 
 993
 00:46:01,000 --> 00:46:04,300
-if x is less than y, then
-say x is less than y.
+если x меньше y, то
+вывести на экран "x меньше, чем y".
 
 994
 00:46:04,300 --> 00:46:06,730
-Else, conclude that
-x is not less than y.
+Иначе вывести "x не меньше, чем y".
 
 995
 00:46:06,730 --> 00:46:11,380
-In C, it almost looks the same, but
-you set yourself up with an else block
+В Си такая конструкция выглядит почти
+так же, разве что добавляется блок else,
 
 996
 00:46:11,380 --> 00:46:15,010
-with two sets of curly braces,
-sort of two characters ready to hug
+и в итоге у нас два набора фигурных скобок,
+готовых "обнять"
 
 997
 00:46:15,010 --> 00:46:16,600
-the lines of code in between them.
+код между ними.
 
 998
 00:46:16,600 --> 00:46:19,660
-And we can just plug in now,
-literally, the translations to printf
+А затем нам остаётся буквально
+"вставить" наши переводы в printf,
 
 999
 00:46:19,660 --> 00:46:25,060
-by saying printf x is less than
-y or printf x is not less than y.
+написав printf, "x меньше, чем y", или же
+printf, "x не меньше, чем y".
 
 1000
 00:46:25,060 --> 00:46:28,450
