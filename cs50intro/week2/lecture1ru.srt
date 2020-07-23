@@ -3228,44 +3228,44 @@ claimed that that was bad.
 
 700
 00:32:20,490 --> 00:32:22,440
-That would literally say answer.
+Он буквально скажет "answer".
 
 701
 00:32:22,440 --> 00:32:24,750
-I want to do a placeholder, percent s.
+Я хочу сделать плейсхолед, процент и s.
 
 702
 00:32:24,750 --> 00:32:29,920
-And now backslash n,
-comma, answer, semicolon.
+И теперь обратный слеш n,
+запятая, answer, точка с запятой.
 
 703
 00:32:29,920 --> 00:32:32,910
-So I think I have transcribed
-the code from the slide
+Так что я думаю я перевел
+код со слайда
 
 704
 00:32:32,910 --> 00:32:37,920
-into my programming environment
-now in a file called string.c.
+в мое программное окружение, он теперь
+в файле, по имени string.c.
 
 705
 00:32:37,920 --> 00:32:39,300
-So let me go ahead and zoom out.
+Так что давайте я уменьшу.
 
 706
 00:32:39,300 --> 00:32:41,790
-And if I want to compile
-this program, convert it
+И если я хочу скомпилировать
+программу, превратить ее
 
 707
 00:32:41,790 --> 00:32:46,795
-from source code to machine code,
-what command can I type down here?
+из исходного кода в машинный код,
+что мне нужно тут написать?
 
 708
 00:32:46,795 --> 00:32:47,295
-So Clang.
+Clang.
 
 709
 00:32:47,295 --> 00:32:50,150
@@ -3273,269 +3273,268 @@ So Clang.
 
 710
 00:32:50,150 --> 00:32:51,210
-So string.c.
+string.c.
 
 711
 00:32:51,210 --> 00:32:53,590
-But that's going to give me
-a program, by default, called
+Но он даст мне программу,
+которая по умолчанию зовется
 
 712
 00:32:53,590 --> 00:32:56,030
-a.out, which is just very non-helpful.
+a.out, что не очень то понятно.
 
 713
 00:32:56,030 --> 00:32:58,670
-So let me go ahead and
-say -o string, just so
+Так что давайте я сделаю
+-o string, чтобы моя программа
 
 714
 00:32:58,670 --> 00:33:00,230
-that my program is called string.
+называлась string.
 
 715
 00:33:00,230 --> 00:33:02,090
-But I could call it anything I want.
+Но я могу ее назвать как хочу.
 
 716
 00:33:02,090 --> 00:33:04,975
-I could call it program
-two, if I prefer.
+Я могу назвать ее
+"программа два", если мне угодно.
 
 717
 00:33:04,975 --> 00:33:06,350
-So let me go ahead and hit Enter.
+Так что давайте нажмем Enter.
 
 718
 00:33:06,350 --> 00:33:10,220
-And oh my god, there are more
-errors than there are lines
+И боже мой, ошибок больше
+чем строчек кода,
 
 719
 00:33:10,220 --> 00:33:12,320
-of code, which is a little worrisome.
+что немного тревожно.
 
 720
 00:33:12,320 --> 00:33:15,530
-And this tier two is where you should
-take some comfort that that just means
+И это второй уровень, где вам должно
+быть комфортно, так что это значит
 
 721
 00:33:15,530 --> 00:33:17,113
-the computer's gotten confused, right?
+что компьютер чего то не понял, верно?
 
 722
 00:33:17,113 --> 00:33:20,480
-You're not that bad at programming that
-you generate more errors than lines
+Вы не можете быть так плохи в программировании,
+чтобы сделать больше ошибок чем строчек кода
 
 723
 00:33:20,480 --> 00:33:21,860
-of code you've written yourself.
+который вы написали.
 
 724
 00:33:21,860 --> 00:33:25,370
-It's just that the computer got
-really confused at some point,
+Так что реально компьютер просто
+запутался где то,
 
 725
 00:33:25,370 --> 00:33:28,670
-and it kind of starts tripping over
-itself, so to speak, conceptually.
+и начинает спотыкаться о собственные
+ноги, говоря образно.
 
 726
 00:33:28,670 --> 00:33:31,910
-It doesn't know where the error is, so
-it starts misinterpreting correct code
+Он не знает где ошибка, и начинает
+неправильно интерпретировать правильный код
 
 727
 00:33:31,910 --> 00:33:33,020
-as incorrect code.
+как неправильный.
 
 728
 00:33:33,020 --> 00:33:38,100
-So the place to start is always
-with the very first error message.
+Так что нужно начинать всегда с первой
+ошибки.
 
 729
 00:33:38,100 --> 00:33:41,450
-So you'll notice that I already
-scrolled all the way up to the command
+Вы могли заметить, что я уже проскроллил
+на самый верх вывода команды
 
 730
 00:33:41,450 --> 00:33:44,570
-that I typed, which was right
-here, as I've highlighted.
+которую я напечатал, вот тут, где
+подсвечено.
 
 731
 00:33:44,570 --> 00:33:47,270
-Focus on the first error you
-see, and maybe the others
+Сфокусируйтесь на первой ошибке,
+может остальные
 
 732
 00:33:47,270 --> 00:33:50,985
-are just phantom errors,
-confusion that arose instead.
+просто "фантомные" ошибки.
 
 733
 00:33:50,985 --> 00:33:53,360
-So let me go ahead and zoom
-in on this part of the screen
+Так что давайте призумим
+эту часть экрана
 
 734
 00:33:53,360 --> 00:33:55,700
-and see if we can't diagnose this issue.
+и посмотрим что мы можем с ней сделать.
 
 735
 00:33:55,700 --> 00:33:59,420
-The command I ran was
+Команда которую я запустил:
 Clang -o string string.c.
 
 736
 00:33:59,420 --> 00:34:02,480
-That just means my input is
-my source code in string.c.
+И это значит что мой входной параметр
+это исходный код в string.c.
 
 737
 00:34:02,480 --> 00:34:06,500
-I want my output to be machine
-code in a file called string.
+Я хочу чтобы вывод был машинным кодом
+в файл по имени string.
 
 738
 00:34:06,500 --> 00:34:09,409
-All right, string.c line 5
-is where the error begins,
+Итак, ошибка начинается в
+string.c на пятой строчке,
 
 739
 00:34:09,409 --> 00:34:11,540
-so that seems to be a familiar location.
+и это очень знакомое нам место.
 
 740
 00:34:11,540 --> 00:34:13,820
-Use of undeclared identifier string.
+Использование неопределенного идентификатора string.
 
 741
 00:34:13,820 --> 00:34:19,960
-Did you mean-- anticipation-- stdin?
+Вы имели в виду-- ожидается-- stdin?
 
 742
 00:34:19,960 --> 00:34:21,280
-No, I didn't.
+Не, я не это имел в виду.
 
 743
 00:34:21,280 --> 00:34:22,600
-I meant string in this case.
+Я имел в виду string в этом случае.
 
 744
 00:34:22,600 --> 00:34:25,159
-So here, too, the
-computer's gotten confused,
+И вот здесь, тоже,
+компьютер запутался,
 
 745
 00:34:25,159 --> 00:34:28,179
-and even it's green helpful
-message is actually not helpful.
+и даже зеленое сообщение с помощью,
+не очень то помогает.
 
 746
 00:34:28,179 --> 00:34:29,679
-No, I want a string.
+Нет, я хочу string.
 
 747
 00:34:29,679 --> 00:34:31,270
-I don't want standard n.
+Я не хочу стандартный n.
 
 748
 00:34:31,270 --> 00:34:34,060
-But the reason for this
-is that technically,
+Но причина для ошибки
+в том, что технически
 
 749
 00:34:34,060 --> 00:34:37,420
-at least this point in the story,
-there is no such thing as a string,
+во всяком случае, сейчас,
+нет такой вещи как string,
 
 750
 00:34:37,420 --> 00:34:41,699
-S-T-R-I-N-G in C. That's actually
-a training wheel of sorts that
+S-T-R-I-N-G в Си. Это реально
+иллюстративный пример, который
 
 751
 00:34:41,699 --> 00:34:44,949
-we're going to use for just a couple of
-weeks until, to your question earlier,
+мы будет использовать пару недель, пока, отвечая
+на ваш вопрос,
 
 752
 00:34:44,949 --> 00:34:48,340
-we're going to show what's really going
-on underneath the hood of the computer,
+мы не покажем, что реально происходит
+"под капотом" у компьютера,
 
 753
 00:34:48,340 --> 00:34:51,130
-so to speak, when it comes
-to implementing a string.
+и то что происходит, чтобы
+имплементировать string.
 
 754
 00:34:51,130 --> 00:34:56,620
-So string is something that
-the CS50 course provides to you
+Так вот, string это штука,
+которую курс CS50 вам дает
 
 755
 00:34:56,620 --> 00:35:01,570
-in a file called CS50.h.
+в файле под названием CS50.h
 
 756
 00:35:01,570 --> 00:35:06,355
-So just as there's a file
-called standard I/O--
+Там просто файл, под названием
+стандартный I/O--
 
 757
 00:35:06,355 --> 00:35:10,330
-where I/O just means input/output,
-like printing and getting input.
+где I/O значит ввод(input)/вывод(output),
+типа печатать строчку, получить строчку из ввода.
 
 758
 00:35:10,330 --> 00:35:16,060
-Just as there's a file called
-stdio.h, in which printf was invented,
+Как здесь, в файле stdio.h,
+где обьявлен printf,
 
 759
 00:35:16,060 --> 00:35:19,420
-all of these other functions
-that I might use in this program,
+все функции, которые я буду
+использовать в этой программе,
 
 760
 00:35:19,420 --> 00:35:25,000
-like get_string, happen to be
-stored in a file called CS50.h.
+типа get_string, они хранятся
+в файле CS50.h
 
 761
 00:35:25,000 --> 00:35:28,150
-So my problem arose a moment
-ago when compiling this code,
+Так что моя ошибка просто подняла
+проблему, когда я компилировал этот код,
 
 762
 00:35:28,150 --> 00:35:30,640
-because the computer had
-no idea what a string is.
+компьютер не имел
+никакого понятия что такое string.
 
 763
 00:35:30,640 --> 00:35:34,870
-And it has no idea-- we'll see
-what the function get_string is.
+И не понимает-- мы увидим это
+что такое get_string.
 
 764
 00:35:34,870 --> 00:35:37,570
-So let me go ahead and
-recompile this now.
+Так что давайте я перекомпилирую
+это сейчас.
 
 765
 00:35:37,570 --> 00:35:46,130
-I'm going to go ahead and do Clang
--o string string.c and zoom in.
+Я печатаю Clang -o string string.c
+и приближаю.
 
 766
 00:35:46,130 --> 00:35:46,630
-Here we go.
+Отлично.
 
 767
 00:35:46,630 --> 00:35:47,820
@@ -3543,148 +3542,148 @@ Enter.
 
 768
 00:35:47,820 --> 00:35:49,930
-OK, progress.
+OK, выполняется.
 
 769
 00:35:49,930 --> 00:35:51,100
-Still a bug.
+Все еще баг.
 
 770
 00:35:51,100 --> 00:35:53,230
-There's still a mistake,
-because red can't possibly
+Тут ошибка, потому что красный
+цвет не может
 
 771
 00:35:53,230 --> 00:35:54,850
-mean anything good in this context.
+значить ничего хорошего, в этом контексте.
 
 772
 00:35:54,850 --> 00:35:56,590
-And indeed, it's an error.
+Ну да, точно, это ошибка.
 
 773
 00:35:56,590 --> 00:35:58,940
-But it's many fewer errors.
+Но их число намного меньше.
 
 774
 00:35:58,940 --> 00:36:02,080
-So there's the last piece of commands
-that we need to introduce now.
+Так что время последнего набора команд,
+про который мы поговорим сейчас.
 
 775
 00:36:02,080 --> 00:36:04,240
-Notice what the error message is saying.
+Обратите внимание, что нам говорит сообщение об ошибке.
 
 776
 00:36:04,240 --> 00:36:07,450
-So after I run Clang -o
-string string.c, there's
+После того как я запустил Clang -o
+string string.c, тут
 
 777
 00:36:07,450 --> 00:36:09,490
-still a problem in my function main.
+все еще проблема в моей функции main.
 
 778
 00:36:09,490 --> 00:36:11,170
-What is the problem?
+Какая проблема?
 
 779
 00:36:11,170 --> 00:36:13,480
-Undefined reference to get_string.
+Неопределенная ссылка на get_string.
 
 780
 00:36:13,480 --> 00:36:18,490
-So it turns out that when using the
-CS50 library, you have to do two things.
+Так что получается, когда вы используете
+библиотеку CS50, вам нужно сделать две вещи.
 
 781
 00:36:18,490 --> 00:36:21,100
-In your source code, you
-have to tell the computer
+В исходниках, вы должны сказать
+компьютеру
 
 782
 00:36:21,100 --> 00:36:23,800
-to include this file
-CS50.h, where, again,
+включить этот файл
+CS50.h, где, снова,
 
 783
 00:36:23,800 --> 00:36:26,860
-functions like get_string
-and the word string
+функции подобные get_string
+и слово string
 
 784
 00:36:26,860 --> 00:36:28,870
-are actually implemented for you.
+уже созданы для вас.
 
 785
 00:36:28,870 --> 00:36:32,170
-But when compiling your code,
-you need to, somewhat redundantly
+Но когда вы компилируете код,
+вам нужно, наверное немного избыточно,
 
 786
 00:36:32,170 --> 00:36:37,060
-but for different reasons, tell
-the computer to add all of the code
+но по другим причинам, сказать компьютеру
+чтобы он добавил весь этот код
 
 787
 00:36:37,060 --> 00:36:40,600
-that the CS50 staff wrote to
-implement get_string and string
+который сотрудники CS50 написали, чтобы
+создать get_string и string
 
 788
 00:36:40,600 --> 00:36:44,110
-and other functions like this.
+и другие функции, подобные им.
 
 789
 00:36:44,110 --> 00:36:50,530
-I'm going to go ahead and write Clang
--o string string.c, just like before,
+Поэтому я напишу Clang
+-o string string.c, точно как только что,
 
 790
 00:36:50,530 --> 00:36:54,400
-but I need to tell the computer
-this special instruction
+но надо дать компьютеру эту
+специальную инструкцию
 
 791
 00:36:54,400 --> 00:36:56,410
-to link it with CS50.
+чтобы слинковать с CS50.
 
 792
 00:36:56,410 --> 00:36:59,320
-And this will make more sense
-in just a couple of weeks' time.
+И вы поймете зачем, в течение
+следующих двух недель
 
 793
 00:36:59,320 --> 00:37:02,620
-But this is just a -l for link and CS50.
+Но пока это просто -l для линкования и CS50.
 
 794
 00:37:02,620 --> 00:37:04,720
-And all this tells
-the computer is this--
+И все вот это говорит
+компьютеру, что
 
 795
 00:37:04,720 --> 00:37:10,550
-the zeros and ones for my actual program
-are going to come from string.c right
+единицы и нули моей программы, должны
+придти из string.c прямо
 
 796
 00:37:10,550 --> 00:37:11,050
-here.
+сюда.
 
 797
 00:37:11,050 --> 00:37:12,400
-This is my source code.
+Это мой исходный код.
 
 798
 00:37:12,400 --> 00:37:16,780
-But CS50 staff, years ago,
-also wrote code in C in order
+Но сотрудники CS50, годы назад,
+также написали код для Си, чтобы
 
 799
 00:37:16,780 --> 00:37:19,420
-to give you functions
-like get_string, in order
+дать вам функции get_string
+и другие, чтобы
 
 800
 00:37:19,420 --> 00:37:22,390
