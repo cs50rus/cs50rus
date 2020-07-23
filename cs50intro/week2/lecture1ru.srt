@@ -6006,94 +6006,94 @@ and print this if I want.
 
 1300
 01:00:04,800 --> 01:00:09,090
-So printf something like,
-you are at least percent--
+Выведем что-нибудь такое: printf,
+"ваш возраст — не менее", символ %--
 
 1301
 01:00:09,090 --> 01:00:13,620
-not s, because it's not a string, but
-percent i because it's an integer now--
+тут не s, потому что это не строка,
+а i — для целого числа--
 
 1302
 01:00:13,620 --> 01:00:15,900
-days old, backslash n.
+дней, обратная косая черта, n.
 
 1303
 01:00:15,900 --> 01:00:18,190
-But again, this is a
-placeholder, so I'm not done yet.
+Это ещё не всё, потому что
+у нас тут заменитель.
 
 1304
 01:00:18,190 --> 01:00:23,580
-What do I need to put inside of
-these parentheses also on line 8?
+Что ещё мне нужно поместить в скобки
+на восьмой строке?
 
 1305
 01:00:23,580 --> 01:00:27,990
-Yeah, so comma, days, if that's
-the value that I want to plug in.
+Именно. Поэтому: запятая, days, если мне
+нужно использовать именно это значение.
 
 1306
 01:00:27,990 --> 01:00:29,377
-And I'm missing one more thing.
+И я ещё кое-что пропустил.
 
 1307
 01:00:29,377 --> 01:00:30,210
-AUDIENCE: Semicolon.
+ЗАЛ: Точку с запятой.
 
 1308
 01:00:30,210 --> 01:00:32,127
-DAVID MALAN: Semicolon
-at the end of the line.
+DAVID MALAN: Точку с запятой
+в конце строки.
 
 1309
 01:00:32,127 --> 01:00:33,503
-Now, hopefully, I got this right.
+Надеюсь, теперь всё верно.
 
 1310
 01:00:33,503 --> 01:00:35,670
-But odds are the first time
-you write your programs,
+Но скорее всего, поначалу
+в своих программах
 
 1311
 01:00:35,670 --> 01:00:37,150
-you're going to see error messages.
+вы будете видеть море ошибок.
 
 1312
 01:00:37,150 --> 01:00:41,040
-But let's see, make int is the
-quickest way now to compile this code.
+Но давайте посмотрим, make int — самый
+быстрый способ компиляции этого кода.
 
 1313
 01:00:41,040 --> 01:00:41,850
-Enter.
+Жмём Enter.
 
 1314
 01:00:41,850 --> 01:00:43,860
-All right, the big, long
-white command is OK.
+Отлично, длинная белая надпись —
+это хорошо.
 
 1315
 01:00:43,860 --> 01:00:47,490
-So long as you don't see red or yellow
-or colored output that indicates
+Пока в выводе отсутствуют красный,
+жёлтый или другие цвета, означающие
 
 1316
 01:00:47,490 --> 01:00:49,590
-warnings or errors, you should be OK.
+предупреждения или ошибки, всё в порядке.
 
 1317
 01:00:49,590 --> 01:00:53,910
-I'm going to clear my screen now so I
-can just now run this program, ./int.
+Я очищу экран и просто запущу
+эту программу: ./int.
 
 1318
 01:00:53,910 --> 01:00:56,150
-And suppose your age is, say, 50.
+Предположим, ваш возраст — 50.
 
 1319
 01:00:56,150 --> 01:01:00,422
-Well, you are at least 18,250 days old.
+Ну, в днях это будет как минимум 18,250.
 
 1320
 01:01:00,422 --> 01:01:03,630
