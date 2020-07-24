@@ -6021,7 +6021,7 @@ and print this if I want.
 1303
 01:00:15,900 --> 01:00:18,190
 Это ещё не всё, потому что
-у нас тут заменитель.
+у нас тут заполнитель.
 
 1304
 01:00:18,190 --> 01:00:23,580
@@ -6061,8 +6061,8 @@ DAVID MALAN: Точку с запятой
 
 1312
 01:00:37,150 --> 01:00:41,040
-Но давайте посмотрим, make int — самый
-быстрый способ компиляции этого кода.
+Так, make int — самый быстрый
+способ компиляции этого кода.
 
 1313
 01:00:41,040 --> 01:00:41,850
@@ -6097,186 +6097,183 @@ DAVID MALAN: Точку с запятой
 
 1320
 01:01:00,422 --> 01:01:03,630
-But let me use this as an opportunity
-to not just do something correct, which
+Но позвольте мне использовать эту возможность
+для создания не только правильного, каким,
 
 1321
 01:01:03,630 --> 01:01:06,690
-I claim this code is, but to
-just make it better designed.
+я полагаю, этот код и является,
+но ещё и хорошего кода.
 
 1322
 01:01:06,690 --> 01:01:11,580
-It's fine to be storing this value,
-age, in a variable called age.
+Вполне нормально хранить значение
+возраста в переменной age.
 
 1323
 01:01:11,580 --> 01:01:13,950
-And it's fine to be creating
-a second variable called
+И так же нормально иметь
+вторую переменную с именем
 
 1324
 01:01:13,950 --> 01:01:19,300
-days, in which my mathematical
-answer is age times 365.
+days, где хранится значение,
+равное age, умноженному на 365.
 
 1325
 01:01:19,300 --> 01:01:22,530
-But strictly speaking, I don't
-need that additional line of code.
+Но строго говоря, мне не нужна
+эта дополнительная строка кода.
 
 1326
 01:01:22,530 --> 01:01:26,520
-I could also just do age times 365 here.
+Я мог бы написать age * 365 прямо здесь.
 
 1327
 01:01:26,520 --> 01:01:27,660
-So C is nice like that.
+Этим Си и хорош.
 
 1328
 01:01:27,660 --> 01:01:32,370
-You can compose, just like in Scratch,
-bigger ideas from multiple smaller
+Как и в Scratch, здесь можно составлять
+большие идеи из нескольких маленьких
 
 1329
 01:01:32,370 --> 01:01:33,090
-pieces.
+кусочков.
 
 1330
 01:01:33,090 --> 01:01:35,550
-And frankly, if I really
-want to get crazy,
+А если уж совсем сходить с ума,
 
 1331
 01:01:35,550 --> 01:01:38,040
-notice I can actually
-highlight that whole function
+заметьте, что я могу выделить
+весь этот вызов
 
 1332
 01:01:38,040 --> 01:01:42,000
-call, so to speak, get rid
-of the age all together,
+функции, так сказать, полностью
+избавиться от переменной age,
 
 1333
 01:01:42,000 --> 01:01:49,330
-and just plug this in here times 365.
+и просто вставить его сюда,
+умножив на 365.
 
 1334
 01:01:49,330 --> 01:01:53,190
-But at this point, we're starting
-to cross an inflection point.
+Но таким образом мы начинаем
+перегибать палку.
 
 1335
 01:01:53,190 --> 01:01:55,342
-Yes, this is correct,
-because I, strictly speaking,
+Да, всё написанное верно, потому что мне,
+строго говоря,
 
 1336
 01:01:55,342 --> 01:01:56,550
-don't need a variable, right?
+не нужна переменная, так?
 
 1337
 01:01:56,550 --> 01:01:58,020
-I can pass-- we saw last week--
+Я могу передавать-- как мы видели
+на прошлой неделе--
 
 1338
 01:01:58,020 --> 01:02:00,870
-one function's output as
-another function's input
+выход одной функции на вход другой,
 
 1339
 01:02:00,870 --> 01:02:02,540
-by just nesting them in this way.
+просто вкладывая их друг в друга.
 
 1340
 01:02:02,540 --> 01:02:05,040
-But honestly, now we're at the
-point where this line of code
+Но если подумать, в данный момент
+эта строка кода
 
 1341
 01:02:05,040 --> 01:02:08,080
-is so relatively long,
-it's just too hard to read.
+стала настолько длинной, что
+её очень трудно читать.
 
 1342
 01:02:08,080 --> 01:02:10,830
-And so this is an example where,
-for design's sake, you know what?
+И вот это как раз пример того,
+когда из соображений читаемости
 
 1343
 01:02:10,830 --> 01:02:13,210
-The previous version was
-probably a bit better,
+лучше вернуть предыдущий вариант,
 
 1344
 01:02:13,210 --> 01:02:16,950
-because I can read the code more
-top to bottom than left to right.
+потому что он позволяет читать код
+сверху вниз и слева направо.
 
 1345
 01:02:16,950 --> 01:02:18,900
-But this is a design decision.
+Это архитекрутное решение.
 
 1346
 01:02:18,900 --> 01:02:21,000
-And indeed, you might agree or disagree.
+Вы можете быть согласны или несогласны,
 
 1347
 01:02:21,000 --> 01:02:24,420
-You might agree or disagree with your
-teaching fellow, or TF, ultimately.
+в том числе и с вашим наставником.
 
 1348
 01:02:24,420 --> 01:02:28,770
-These are the kinds of decisions
-that go into writing good or bad code
+Выбор здесь стоит между написанем
+хорошего и плохого кода,
 
 1349
 01:02:28,770 --> 01:02:30,300
-or good or better code.
+ну или хорошего и более хорошего кода.
 
 1350
 01:02:30,300 --> 01:02:33,000
-Much like in an English essay
-or in any written language,
+Почти как в сочинении по английскому
+или любому другому языку:
 
 1351
 01:02:33,000 --> 01:02:36,030
-you could argue that one person
-has written their document better
+работа одного человека может
+понравиться вам больше,
 
 1352
 01:02:36,030 --> 01:02:36,730
-than another.
+чем работа другого.
 
 1353
 01:02:36,730 --> 01:02:40,140
-So we'll begin to appreciate
-these nuances over time.
+Так что со временем мы начнём
+ценить эти нюансы.
 
 1354
 01:02:40,140 --> 01:02:41,310
-What about float?
+А что насчёт действительных чисел?
 
 1355
 01:02:41,310 --> 01:02:45,758
-Well, let me go ahead and write another
-program real quick called float.c.
+Давайте я быстренько напишу другую
+программу под названием float.c.
 
 1356
 01:02:45,758 --> 01:02:47,550
-And this one is going
-to use floating point
+И в ней мы будем использовать значения
 
 1357
 01:02:47,550 --> 01:02:50,800
-values, which again, is just synonymous
-with real numbers with decimal points.
+с плавающей точкой, то есть
+действительные числа.
 
 1358
 01:02:50,800 --> 01:02:54,150
-Let me go ahead and include
-CS50.h, include stdio.h.
+Так, теперь заголовочные файлы:
+include CS50.h, include stdio.h.
 
 1359
 01:02:54,150 --> 01:02:57,840
@@ -6284,124 +6281,121 @@ CS50.h, include stdio.h.
 
 1360
 01:02:57,840 --> 01:03:02,003
-And then int main void and
-then my open curly braces.
+Затем int main void и фигурные скобки.
 
 1361
 01:03:02,003 --> 01:03:02,920
-And now let's do this.
+А теперь сделаем вот что.
 
 1362
 01:03:02,920 --> 01:03:04,680
-Let me get the price of something.
+Давайте посчитаем стоимость чего-нибудь.
 
 1363
 01:03:04,680 --> 01:03:10,290
-So int price equals get float,
-what's the price, for instance.
+Пишем: int price, равно, get float,
+какова цена, например.
 
 1364
 01:03:10,290 --> 01:03:11,450
-Semicolon.
+Точка с запятой.
 
 1365
 01:03:11,450 --> 01:03:13,660
-And now let me do something
-mathematical with this.
+А теперь применим кое-какие вычисления.
 
 1366
 01:03:13,660 --> 01:03:18,120
-Let me go ahead and say, your total is.
+Напишем, например: "общая сумма составляет".
 
 1367
 01:03:18,120 --> 01:03:21,330
-And now let me just do the total
-price with tax, for instance.
+И далее посчитаем, например, общую
+стоимость с учётом налогов.
 
 1368
 01:03:21,330 --> 01:03:24,353
-In Massachusetts, sales tax is 6.25%.
+В штате Массачусетс налог с продаж
+составляет 6.25%.
 
 1369
 01:03:24,353 --> 01:03:26,520
-So let's just write a little
-program that does that.
+Напишем небольшую программу,
+учитывающую его.
 
 1370
 01:03:26,520 --> 01:03:30,540
-Your total is-- not percent
-s, because it's not a string.
+Общая сумма составляет-- не %s,
+потому что это не строка.
 
 1371
 01:03:30,540 --> 01:03:33,190
-Not percent i, because
-it's not an integer.
+И не %i, потому что это не целое число.
 
 1372
 01:03:33,190 --> 01:03:37,990
-It should be percent f for float.
+Для действительного числа это будет %f.
 
 1373
 01:03:37,990 --> 01:03:39,350
-And in fact, I goofed.
+Кстати, я тут облажался.
 
 1374
 01:03:39,350 --> 01:03:41,860
-I actually made a mistake
-here accidentally.
+Случайно сделал эту ошибку.
 
 1375
 01:03:41,860 --> 01:03:44,997
-I don't want to store the price in
-an int if I'm getting it as a float.
+Я не хочу хранить цену в переменной
+типа int, если вычисляю её как float.
 
 1376
 01:03:44,997 --> 01:03:47,080
-If I'm getting a real
-number with a decimal point,
+Если я получаю действительное число
+с десятичной точкой,
 
 1377
 01:03:47,080 --> 01:03:49,310
-I probably want to store
-it as a float, as well.
+то мне и хранить его следует
+как действительное число.
 
 1378
 01:03:49,310 --> 01:03:52,480
-So again, different format
-codes, different placeholders
+Опять же, каждому формату соответствует
+свой заполнитель
 
 1379
 01:03:52,480 --> 01:03:53,787
-for different contexts.
+в зависимости от контекста.
 
 1380
 01:03:53,787 --> 01:03:55,120
-Now let me go ahead and do this.
+Теперь я сделаю следующее.
 
 1381
 01:03:55,120 --> 01:03:56,995
-And if I want to plug
-in the price, I'm going
+Если я хочу подставить переменную
+price, мне нужно
 
 1382
 01:03:56,995 --> 01:04:05,230
-to do price times 1.0625, which just
-mathematically means add 106.25%--
+написать price * 1.0625, что соответствует
+добавлению 106.25%--
 
 1383
 01:04:05,230 --> 01:04:08,770
-or multiply, rather,
-the price by 106.25%
+или, иначе говоря, умножению цены
+на 106.25%,
 
 1384
 01:04:08,770 --> 01:04:11,203
-so that you actually
-see the total with tax.
+и теперь мы видим общую сумму
+с налогом.
 
 1385
 01:04:11,203 --> 01:04:13,120
-All right, so let's go
-ahead and compile this.
+Хорошо, давайте скомпилируем
+этот код.
 
 1386
 01:04:13,120 --> 01:04:14,980
@@ -6409,8 +6403,8 @@ Make float, Enter.
 
 1387
 01:04:14,980 --> 01:04:17,320
-No error messages, so
-that's already promising.
+Сообщений об ошибках нет,
+уже неплохо.
 
 1388
 01:04:17,320 --> 01:04:18,730
@@ -6418,47 +6412,47 @@ that's already promising.
 
 1389
 01:04:18,730 --> 01:04:19,990
-And what's the price?
+"Какова цена"?
 
 1390
 01:04:19,990 --> 01:04:23,170
-How about $100.
+Ну, как насчёт $100?
 
 1391
 01:04:23,170 --> 01:04:25,180
-OK, that's a little excessively precise.
+Кажется, результат чересчур точный.
 
 1392
 01:04:25,180 --> 01:04:29,932
-The total price is $106.250000.
+Общая сумма составляет $106.250000.
 
 1393
 01:04:29,932 --> 01:04:33,130
-But that's just because the
-computer, per last week,
+Это всё потому, что компьютер,
+как мы помним,
 
 1394
 01:04:33,130 --> 01:04:35,440
-is using some number of
-bits to store values.
+использует определённое количество бит
+для хранения значений.
 
 1395
 01:04:35,440 --> 01:04:40,120
-And the computer happens to be
-capable of showing this many digits
+И он, оказывается, способен
+показывать вот столько знаков
 
 1396
 01:04:40,120 --> 01:04:41,140
-after the decimal point.
+после десятичной точки.
 
 1397
 01:04:41,140 --> 01:04:42,830
-But what if you don't want to do that?
+Но что если нам столько не нужно?
 
 1398
 01:04:42,830 --> 01:04:46,660
-Well, it turns out there's some
-pretty arcane tricks you can do.
+Оказывается, для этого существуют
+кое-какие хитрости.
 
 1399
 01:04:46,660 --> 01:04:48,910
