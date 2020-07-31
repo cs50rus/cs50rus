@@ -6461,28 +6461,28 @@ f, I can actually
 
 1400
 01:04:48,910 --> 01:04:52,360
-do percent dot 2f, which
-again, you would only
+сделать процент точка 2f, которую,
+опять же, вы могли знать только
 
 1401
 01:04:52,360 --> 01:04:55,570
-know from having heard it before
-looking it up in a book or reference.
+если встречали раньше,
+или видели ее в книжке или справке.
 
 1402
 01:04:55,570 --> 01:04:59,150
-That's going to show me only two
-digits after the decimal point.
+Это покажет мне две цифры после
+точки.
 
 1403
 01:04:59,150 --> 01:05:02,560
-So if I recompile this code
-and make float and do ./float,
+Так что, если я рекомпилирую код
+и сделаю ./float,
 
 1404
 01:05:02,560 --> 01:05:07,720
-now notice if the price is $100, now my
-total is a little more user friendly--
+заметьте, если цена 100 долларов, теперь
+моя сумма немного более читаема--
 
 1405
 01:05:07,720 --> 01:05:09,790
@@ -6490,245 +6490,247 @@ total is a little more user friendly--
 
 1406
 01:05:09,790 --> 01:05:11,953
+Если кратко, это f в printf
 So in short, this is the f in printf.
 
 1407
 01:05:11,953 --> 01:05:13,870
-Just as you can print
-something to the screen,
+Так же как вы можете
+что то напечатать на экране,
 
 1408
 01:05:13,870 --> 01:05:19,380
-you can format it as by telling
-printf to only show so many digits.
+вы можете форматировать это,
+сказав printf сколько символов после точки
+показать.
 
 1409
 01:05:19,380 --> 01:05:20,810
-Well, let me try something else.
+Давайте я попробую кое что еще.
 
 1410
 01:05:20,810 --> 01:05:23,470
-Let me go ahead and copy/paste
-the beginnings of this code,
+Давайте я скопирую начало
+этого кода,
 
 1411
 01:05:23,470 --> 01:05:24,940
-just to speed things up.
+просто чтобы ускориться.
 
 1412
 01:05:24,940 --> 01:05:27,190
-So I can implement a
-program called parity.c.
+Чтобы я смог сделать программу
+которая называется parity.c.
 
 1413
 01:05:27,190 --> 01:05:30,343
-So parity is a fancy way of
-saying is a value even or odd.
+"Parity" это прикольный способ
+сказать четное ли число.
 
 1414
 01:05:30,343 --> 01:05:32,260
-And I've gone ahead and
-just copied and pasted
+И я просто скопировал и
+вставил
 
 1415
 01:05:32,260 --> 01:05:35,708
-the setup of the code, not the
-essence of my main function.
+подготовительный код, но не
+главную функцию.
 
 1416
 01:05:35,708 --> 01:05:38,500
-But let's go ahead, in this program,
-and ask the user for a number.
+Но давайте спросим число у пользователя.
 
 1417
 01:05:38,500 --> 01:05:39,540
-We'll call it n.
+И назовем его n.
 
 1418
 01:05:39,540 --> 01:05:41,620
-And we'll use get_int to get that value.
+И мы используем get_int чтобы получить значение.
 
 1419
 01:05:41,620 --> 01:05:44,620
-And we're just going to say to
-the human, what's the value of n?
+И мы просто спросим человека,
+каково значение n?
 
 1420
 01:05:44,620 --> 01:05:49,540
-And I'm just going to say n colon space
-to just prompt them for some integer.
+И я просто скажу n двоеточие пробел
+чтобы запросить какое нибудь число.
 
 1421
 01:05:49,540 --> 01:05:51,460
-Then I'm going to go
-ahead and ask a question.
+Потом я задам вопрос.
 
 1422
 01:05:51,460 --> 01:05:55,570
+И я хочу написать "even" если
+число четное или "odd"
 I want to ultimately print out
 even if the number is even or odd
 
 1423
 01:05:55,570 --> 01:05:56,830
-if the number is odd.
+если нечетное.
 
 1424
 01:05:56,830 --> 01:06:02,650
-So you could imagine doing this the very
-tedious way, like if n equals equals 1,
+Вы можете представить как это сделать
+очень утомительным образом, например
+если n = 1,
 
 1425
 01:06:02,650 --> 01:06:06,130
-I could go ahead and print out odd.
+я напишу "odd".
 
 1426
 01:06:06,130 --> 01:06:12,340
-And then else if n equals equals
-2, I could print out even.
+И если n = 2, я могу написать "even".
 
 1427
 01:06:12,340 --> 01:06:16,190
-And then after that, I could support
-the number three, else if n--
+И потом если я хочу поддерживать
+номер три, тогде если n--
 
 1428
 01:06:16,190 --> 01:06:17,440
-I mean, this is stupid, right?
+это довольно глупо, не так ли?
 
 1429
 01:06:17,440 --> 01:06:18,880
-I could do this forever.
+Я могу делать это вечно.
 
 1430
 01:06:18,880 --> 01:06:21,632
-But it's at least
-showing a pattern, right?
+Но по крайней мере
+мы видим паттерн, верно?
 
 1431
 01:06:21,632 --> 01:06:24,340
-One and then three and then five,
-of course, are going to be odd,
+Один, потом три, потом пять,
+конечно, будут нечетными,
 
 1432
 01:06:24,340 --> 01:06:26,990
-and two and four and six are
-going to be even, and so forth.
+а два, четыре и шесть будут
+четными, и так далее.
 
 1433
 01:06:26,990 --> 01:06:29,240
-Well, it turns out we can
-compute this mathematically.
+Выглядит так, как будто можно
+это вычислить математически.
 
 1434
 01:06:29,240 --> 01:06:30,970
-And a very common trick might be this--
+И есть очень распространенный
+способ это сделать--
 
 1435
 01:06:30,970 --> 01:06:32,500
-we can actually do this.
+мы можем щас его воспроизвести.
 
 1436
 01:06:32,500 --> 01:06:39,070
-If n divided by 2 has a
-remainder of, for instance, 0,
+Если n делится на 2, и остаток,
+например, 0,
 
 1437
 01:06:39,070 --> 01:06:42,850
-then I'm going to go ahead and
-conclude that the number is even.
+мы сделаем вывод что номер
+четный.
 
 1438
 01:06:42,850 --> 01:06:45,430
-So this percent sign
-is a new construction.
+Вот этот значок процента -
+это новая конструкция.
 
 1439
 01:06:45,430 --> 01:06:46,090
-It's not plus.
+Это не плюс.
 
 1440
 01:06:46,090 --> 01:06:47,440
-It's not minus.
+Это не минус.
 
 1441
 01:06:47,440 --> 01:06:49,240
-It's not multiplication or division.
+Не умножение и не деление.
 
 1442
 01:06:49,240 --> 01:06:53,150
-This is the remainder operation, or
-the modulo operation, so to speak.
+Это операция остатка от деления.
 
 1443
 01:06:53,150 --> 01:06:59,470
-And this just means divide n by 2, and
-if the answer has a remainder of 0,
+И это значит поделить на 2, и
+если у ответа остаток 0,
 
 1444
 01:06:59,470 --> 01:07:02,670
-you can conclude, by definition
-of even, that the number is even.
+вы можете заключить, по определению
+четности, что номер четный.
 
 1445
 01:07:02,670 --> 01:07:04,100
-So I'm going to print that.
+И я выведу это на экран.
 
 1446
 01:07:04,100 --> 01:07:08,320
-Else-- I could do else if
-n percent 2 equals equals 1
+В противном случае-- Я могу сделать else if
+n процент 2 равно равно 1
 
 1447
 01:07:08,320 --> 01:07:11,380
-and has a remainder of 1,
-you could imagine saying odd.
+а значит имеет остаток 1,
+и сказать нечетное.
 
 1448
 01:07:11,380 --> 01:07:15,405
-But as you noted earlier,
-this is not necessary.
+Но как вы заметили раньше,
+это не нужно.
 
 1449
 01:07:15,405 --> 01:07:18,280
-What could I instead do to make the
-program a little better designed,
+Что я могу сделать вмето этого -
+структурировать программу чуть лучше,
 
 1450
 01:07:18,280 --> 01:07:19,600
-a little more efficient?
+более эффективной?
 
 1451
 01:07:19,600 --> 01:07:20,248
-Yeah?
+Да?
 
 1452
 01:07:20,248 --> 01:07:22,440
-AUDIENCE: You could just use
-else and that would be fine.
+АУДИТОРИЯ: Ты можешь просто
+использовать else и все будет отлично.
 
 1453
 01:07:22,440 --> 01:07:22,770
-DAVID MALAN: Yeah.
+DAVID MALAN: Да.
 
 1454
 01:07:22,770 --> 01:07:24,687
-So if we're talking about
-integers, I can just
+Поэтому если мы говорим о
+целых числах, я могу
 
 1455
 01:07:24,687 --> 01:07:28,360
-conclude, well, if it's not even,
-it must be odd, by definition.
+заключить, что, если это не четное,
+это нечетное, по определению.
 
 1456
 01:07:28,360 --> 01:07:30,510
-And so here, we can
-just do even and odd.
+И здесь, мы можем
+просто сделать четные и нечетные.
 
 1457
 01:07:30,510 --> 01:07:33,510
-So this program, once run,
-is going to look like this.
+Так что эта программа, будет
+выглядеть вот так при запуске.
 
 1458
 01:07:33,510 --> 01:07:35,400
@@ -6736,189 +6738,189 @@ Make parity.
 
 1459
 01:07:35,400 --> 01:07:36,630
-Looks like it compiled OK.
+Скомпилировалось нормально.
 
 1460
 01:07:36,630 --> 01:07:38,880
-So ./parity is how I run it.
+И я запускаю ее с помощью ./parity.
 
 1461
 01:07:38,880 --> 01:07:40,290
-Let's type the number 50.
+Вводим 50.
 
 1462
 01:07:40,290 --> 01:07:40,950
-That's even.
+Четное.
 
 1463
 01:07:40,950 --> 01:07:42,510
-Let's type the number 49.
+Вводим 49.
 
 1464
 01:07:42,510 --> 01:07:43,380
-That's odd.
+Нечетное.
 
 1465
 01:07:43,380 --> 01:07:44,850
-Proof by example.
+Доказательство на примере.
 
 1466
 01:07:44,850 --> 01:07:48,060
-This is not very compelling, but I
-bet this is going to be correct, just
+Не то чтобы железно доказано, но я могу
+предположить что будет работать верно,
 
 1467
 01:07:48,060 --> 01:07:49,480
-based on those two examples alone.
+основываясь на этих двух примерах.
 
 1468
 01:07:49,480 --> 01:07:49,980
-Yeah?
+Верно?
 
 1469
 01:07:49,980 --> 01:07:52,938
-AUDIENCE: [INAUDIBLE] user did not
-understand our comment that answer's
+АУДИТОРИЯ: [НЕРАЗБОРЧИВО] пользователь
+не понял наш комментарий что ответ
 
 1470
 01:07:52,938 --> 01:07:54,332
-a float or not an integer?
+float а не целое число?
 
 1471
 01:07:54,332 --> 01:07:55,790
-DAVID MALAN: Sorry, say that again?
+DAVID MALAN: Извините, еще раз?
 
 1472
 01:07:55,790 --> 01:07:58,207
-AUDIENCE: What if the user
-doesn't understand, I'm saying?
+АУДИТОРИЯ: Что если пользователь
+не понимает, что ему надо сделать?
 
 1473
 01:07:58,207 --> 01:08:02,783
-Like I just do something
-like 1 and 1/2 [INAUDIBLE]..
+Например просто введу что
+нибудь, 1 и 1/2 [НЕРАЗБОРЧИВО].
 
 1474
 01:08:02,783 --> 01:08:04,200
-DAVID MALAN: Really good question.
+DAVID MALAN: Очень хороший вопрос.
 
 1475
 01:08:04,200 --> 01:08:06,950
-One of the reasons we provide for
-the first few weeks of the class
+Одна из причин почему мы показываем
+в первые недели курса
 
 1476
 01:08:06,950 --> 01:08:10,700
-a few functions in the CS50 library like
-get_string and get_int and get_float
+функции в библиотеке CS50 типа
+get_string и get_int и get_float
 
 1477
 01:08:10,700 --> 01:08:14,960
-is that it forces the user to behave as
-you expect so that your program doesn't
+потому что они заставляют пользователя
+действовать как вы этого ожиадете и ваше приложение
 
 1478
 01:08:14,960 --> 01:08:17,149
-crash because of unexpected user input.
+не падает от неправильно введенных данных.
 
 1479
 01:08:17,149 --> 01:08:20,180
-So to your point, suppose the user
-is being a little difficult and says,
+Так что, предположим пользователь
+немного тормозит и вводит,
 
 1480
 01:08:20,180 --> 01:08:22,939
-my number is going to be 1.5.
+мой номер это 1.5.
 
 1481
 01:08:22,939 --> 01:08:27,854
-Get_int is going to prompt them for the
-same question again and again and again
+Get_int задаст им тот же вопрос
+еще раз и еще раз и еще раз
 
 1482
 01:08:27,854 --> 01:08:28,729
-until they cooperate.
+пока до них не дойдет.
 
 1483
 01:08:28,729 --> 01:08:31,819
-If you type in apple, it's
-going to prompt you again.
+Если вы введете "apple", он
+спросит вас снова.
 
 1484
 01:08:31,819 --> 01:08:34,880
-Only once you provide an actual
-integer will it cooperate.
+И когда вы введете целое число,
+только тогда оно заработает.
 
 1485
 01:08:34,880 --> 01:08:37,540
-So those are among the features
-you get from the CS50 library,
+Это одна из вещей которые идут
+с бибилотекой CS50,
 
 1486
 01:08:37,540 --> 01:08:39,410
-just so that we can
-focus on ideas and not
+чтобы мы могли сосредоточиться
+на идеях, а не
 
 1487
 01:08:39,410 --> 01:08:44,270
-on what we would call error checking,
-or malicious users, in this case.
+на проверках на ошибки, или подозрительных
+действиях пользователя.
 
 1488
 01:08:44,270 --> 01:08:46,670
-All right, so what
-else can we do once we
+Окей, что еще
+мы можем сделать, с
 
 1489
 01:08:46,670 --> 01:08:49,279
-have the ability to express conditions?
+возможностью выражать условия?
 
 1490
 01:08:49,279 --> 01:08:52,010
-Well, let me go ahead and open
-one that I brought with me.
+Так, давайте я открою исходники,
+которые принес с собой.
 
 1491
 01:08:52,010 --> 01:08:54,109
-So rather than type all
-of these from Scratch,
+Вместо того чтобы печатать
+все с нуля,
 
 1492
 01:08:54,109 --> 01:08:56,618
-let me go ahead and open conditions1.c.
+я просто открою conditions1.c.
 
 1493
 01:08:56,618 --> 01:08:58,660
-So this is a program that's
-already been written.
+Это приложение которое
+уже было написано.
 
 1494
 01:08:58,660 --> 01:09:00,920
-And it turns out, it's got
-some other lines in it,
+И видите, у нас есть
+какие другие строчки там,
 
 1495
 01:09:00,920 --> 01:09:03,643
-these grayed-out outlines
-that begin with slash slash.
+эти серые линии,
+которые начинаются со слеш слеш.
 
 1496
 01:09:03,643 --> 01:09:05,810
-You might not have noticed
-this, but in Scratch, you
+Вы могли не заметить, но в Scratch,
+у вас была штука,
 
 1497
 01:09:05,810 --> 01:09:06,979
-can have what are called comments.
+которая называлась "комментарии".
 
 1498
 01:09:06,979 --> 01:09:09,050
-They're like little sticky
-notes that you can add
+Они как будто маленькие липкие
+бумажки которые вы можете добавить
 
 1499
 01:09:09,050 --> 01:09:10,550
-that don't do anything functionally.
+и не делают ничего функционально.
 
 1500
 01:09:10,550 --> 01:09:13,825
