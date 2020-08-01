@@ -6867,1596 +6867,1491 @@ Get_int задаст им тот же вопрос
 
 1500
 01:09:10,550 --> 01:09:13,825
-It's just like notes to self or notes
-to your friend or notes to your TF.
+Это просто заметки для себя самого,
+коллеги или преподавателя
 
 1501
 01:09:13,825 --> 01:09:15,950
-That's what a comment is
-in a programming language.
+Вот что такое комментарий
+в языках программирования
 
 1502
 01:09:15,950 --> 01:09:19,310
-So anything starting with a
-slash slash is a note to self.
+Так то все, что начинается с
+двойного слэша, это просто примечание
 
 1503
 01:09:19,310 --> 01:09:21,873
-And it's a reminder to me
-what this line of code does.
+И это напоминание о том,
+что делает эта строка кода
 
 1504
 01:09:21,873 --> 01:09:24,040
-It's a reminder to your
-colleagues in the real world
+Это напоминание вашим коллегам,
 
 1505
 01:09:24,040 --> 01:09:27,380
-or your TF in a class to explain
-to them what this line of code
+или вашему преподавателю,
 
 1506
 01:09:27,380 --> 01:09:30,520
-is supposed to be doing,
-even if maybe you have a bug
+что именно оно должно делать, 
+даже если оно это не делает
 
 1507
 01:09:30,520 --> 01:09:32,090
-and it's not actually doing that.
+и тут ошибка, баг.
 
 1508
 01:09:32,090 --> 01:09:35,840
-So I've begun, in these pre-created
-examples, to comment my code,
+Так что в этих примерах 
+я начал комментировать свой код
 
 1509
 01:09:35,840 --> 01:09:37,580
-but the lines are essentially the same.
+Но эти строчки фактически равны
 
 1510
 01:09:37,580 --> 01:09:40,250
-Go ahead and give me
-access to the CS50 library.
+Я получу доступ к библиотеке CS50
 
 1511
 01:09:40,250 --> 01:09:43,010
-And a library, again,
-is just a file of code
+И эта библиотека - это 
+просто файл с кодом
 
 1512
 01:09:43,010 --> 01:09:45,080
-that someone else
-wrote that we're using.
+который кто-то написал для нас
 
 1513
 01:09:45,080 --> 01:09:47,960
-And give me access to the standard
-I/O library, which contains
+И еще мне нужен доступ к standard I/O,
+библиотеке, которая содержит
 
 1514
 01:09:47,960 --> 01:09:50,430
-printf and some other things, as well.
+printf и многие другие вещи
 
 1515
 01:09:50,430 --> 01:09:54,170
-Notice here, I have x
-equals get_int in order
+Заметьте, здесь x = get_int для того, 
 
 1516
 01:09:54,170 --> 01:09:56,390
-to get one integer
-from the user called x.
+чтобы получить число от пользователя
+и сохранить в переменной х
 
 1517
 01:09:56,390 --> 01:09:59,840
-Now I'm going to ask them for a
-second integer by just calling it y
+Теперь я попрошу ввести второе число,
+и назову его просто игрек
 
 1518
 01:09:59,840 --> 01:10:01,400
-and calling get_int again.
+снова с помощью get_int
 
 1519
 01:10:01,400 --> 01:10:03,840
-And now I can do things
-like compare these values.
+И теперь я могу сравнить эти числа
 
 1520
 01:10:03,840 --> 01:10:07,790
-So this is now a complete version
-of the Scratch-like program
+Вот полная версия программы, подобной той,
+что мы делали в Scracth
 
 1521
 01:10:07,790 --> 01:10:11,450
-I pulled up before that allows
-us to conclude is x less than y,
+Мы уже знаем, что икс может быть
+меньше игрека, больше игрека 
 
 1522
 01:10:11,450 --> 01:10:15,290
-greater than y, or, by
-default, equal to y.
+или равен игреку
 
 1523
 01:10:15,290 --> 01:10:19,080
-So the only difference is we saw these
-lines of code on the screen before.
+так что мы уже видели подобный код раньше
 
 1524
 01:10:19,080 --> 01:10:22,340
-Now we see, in context, that,
-oh, for those lines to work,
+Теперь мы видим, что,
+чтобы этот код заработал,
 
 1525
 01:10:22,340 --> 01:10:25,640
-we need to get the
-integers from the user.
+нам нужно получить числа от пользователя
 
 1526
 01:10:25,640 --> 01:10:28,520
-And we need to have the equivalent
-of when green flag clicked,
+еще нужно подобие того зеленого
+флага из Scratсh
 
 1527
 01:10:28,520 --> 01:10:31,115
-and we need the equivalent of
-these includes so that it's
+А также эквивалент этих инструкций
 
 1528
 01:10:31,115 --> 01:10:33,575
-a complete self-contained program.
+так что получится полная правильно 
+собранная программа.
 
 1529
 01:10:33,575 --> 01:10:35,450
-And just to be clear,
-even though I made this
+И еще, для ясности, хотя я уже сделал это,
 
 1530
 01:10:35,450 --> 01:10:38,710
-in advance, if I wanted to run
-this program, how could I run it?
+если я хочу запустить эту программу,
+что я должен сделать?
 
 1531
 01:10:38,710 --> 01:10:41,770
-Call conditions.c.
+Вызвать conditions.c.
 
 1532
 01:10:41,770 --> 01:10:45,030
-Yeah, so make conditions first.
+Итак, сначала make conditions
 
 1533
 01:10:45,030 --> 01:10:45,530
-Sorry.
+Извините
 
 1534
 01:10:45,530 --> 01:10:48,140
-Oh, this is actually a teachable moment.
+О, это довольно поучительный момент
 
 1535
 01:10:48,140 --> 01:10:49,670
-Why did this not work?
+Почему не сработало?
 
 1536
 01:10:49,670 --> 01:10:54,020
-So no rule to make target conditions
-stop, which is a little emphatic.
+Невозможно выполнить,
+"no rule to make target conditions"
 
 1537
 01:10:54,020 --> 01:10:55,130
-But what does that mean?
+Что это вообще значит?
 
 1538
 01:10:55,130 --> 01:10:58,700
-Well, in advance today, what I did
-was I downloaded into my sandbox
+Сегодня я скачал кое-что сюда
 
 1539
 01:10:58,700 --> 01:11:02,630
-a folder called src1, S-R-C meaning
-"source" in programmer speak.
+Папку, названную src1, S-R-C означает
+"source", исходники, так говорят программисты
 
 1540
 01:11:02,630 --> 01:11:06,140
-And I just downloaded this
-into the sandbox for me.
+И я скачал эту папку сюда.
 
 1541
 01:11:06,140 --> 01:11:08,540
-Because in that folder
-are all of the examples
+Потому что в этой папке 
+все необходимые примеры
 
 1542
 01:11:08,540 --> 01:11:12,050
-not only that I wrote in live, but also
-some others that I brought with me.
+Не только то, что я сам написал,
+но и код других людей
 
 1543
 01:11:12,050 --> 01:11:15,920
-Unfortunately, all of those files
-are in a folder called src1.
+К сожалению, весь этот код
+находится в папке src1.
 
 1544
 01:11:15,920 --> 01:11:18,920
-Now, on your Mac or PC, if you want
-to open a folder, you do what I did.
+На вашем компьютере, если вы хотите
+открыть папку, вы сделаете то же, что и я
 
 1545
 01:11:18,920 --> 01:11:22,100
-You double-double the icon,
-and boom, the folder is open.
+Кликните дважды на иконку и - 
+вуаля, папка открыта
 
 1546
 01:11:22,100 --> 01:11:25,880
-But in a terminal window, a text-based
-environment, you can't do that.
+Но в терминале, текстовом окружении,
+так сделать нельзя
 
 1547
 01:11:25,880 --> 01:11:29,840
-If I type ls, we'll see all of the
-files that I've created today--
+Если я наберу ls, мы увидим все файлы, 
+которые я создал сегодня
 
 1548
 01:11:29,840 --> 01:11:32,120
-float and hello and int.
+float, hello и int.
 
 1549
 01:11:32,120 --> 01:11:34,520
-But notice over here, there's a folder.
+Обратите внимание, вот это папка
 
 1550
 01:11:34,520 --> 01:11:36,145
-And that's what the trailing slash is.
+Об этом говорит этот знак в конце, слэш
 
 1551
 01:11:36,145 --> 01:11:38,270
-That's a forward slash that
-just means, hey, human,
+Он просто говроит: эй, человек, 
 
 1552
 01:11:38,270 --> 01:11:40,250
-this is a folder, just so it's obvious.
+это папка, это же так очевидно!
 
 1553
 01:11:40,250 --> 01:11:44,150
-Just like the asterisk means here's
-a machine code that you can run.
+Так же как звездочка здесь означает
+машинный код, который можно запустить
 
 1554
 01:11:44,150 --> 01:11:47,270
-I need to change into that
-directory, but I can't double-click.
+Мне нужно перейти в эту папку,
+но кликнуть дважды я не могу
 
 1555
 01:11:47,270 --> 01:11:49,700
-Nothing's going to happen if
-I double-click on this text.
+Если я кликну дважды,
+ничего не произойдет
 
 1556
 01:11:49,700 --> 01:11:53,650
-But I can type cd space src1.
+Однако, я могу набрать cd пробел src1.
 
 1557
 01:11:53,650 --> 01:11:55,760
-cd means change directory.
+cd означает change directory, 
+сменить папку
 
 1558
 01:11:55,760 --> 01:11:57,200
-And now I hit Enter.
+Нажму энтер
 
 1559
 01:11:57,200 --> 01:11:59,990
-And now if I hit ls, notice
-I see even more files,
+И если я теперь наберу ls,
+я увижу гораздо больше файлов,
 
 1560
 01:11:59,990 --> 01:12:03,110
-because these are all of the
-files from the course's website
+это файлы с сайта курса,
 
 1561
 01:12:03,110 --> 01:12:05,180
-that I brought with me today.
+которые я загрузил сегодня
 
 1562
 01:12:05,180 --> 01:12:08,037
-And if you type a
-command like this, pwd,
+И если набрать команду pwd
 
 1563
 01:12:08,037 --> 01:12:10,370
-this will reveal even more
-information about the system,
+Это предоставит и другую информацию
 
 1564
 01:12:10,370 --> 01:12:12,050
-but more on this in the weeks to come.
+Но мы расскажем об этом в следующих уроках
 
 1565
 01:12:12,050 --> 01:12:16,160
-You're actually inside a src1 folder
-that's inside of a sandbox folder
+Итак, мы находимся в папке src1
 
 1566
 01:12:16,160 --> 01:12:17,840
-that's inside of a root folder.
+которая находится в корневой папке
 
 1567
 01:12:17,840 --> 01:12:21,140
-Now, odds are, at some point, you'll
-get confused as to where you are.
+Теперь, с некоторыми шансами,
+вы запутались, где мы находимся
 
 1568
 01:12:21,140 --> 01:12:23,150
-When in doubt, just type cd.
+Не уверен? Просто набери cd.
 
 1569
 01:12:23,150 --> 01:12:25,950
-That will whisk you away to the
-default folder where you began,
+Это переместит нас обратно 
+в основную папку,
 
 1570
 01:12:25,950 --> 01:12:28,430
-no matter where you found yourself to.
+неважно, где мы находились до этого
 
 1571
 01:12:28,430 --> 01:12:30,470
-Type ls, and you're
-back at the beginning.
+Наберите ls и увидите, что 
+мы снова в начале
 
 1572
 01:12:30,470 --> 01:12:32,570
-So when in doubt, just
-type cd and Enter,
+Не знаете, где вы - 
+наберите cd и Enter,
 
 1573
 01:12:32,570 --> 01:12:34,430
-and you'll be back at the beginning.
+И вы снова в начале
 
 1574
 01:12:34,430 --> 01:12:37,610
-Well, let me go ahead and open up
-this program, but run this one first.
+Итак, давайте откроем эту программу,
+но перед этим запустим ее
 
 1575
 01:12:37,610 --> 01:12:40,190
-I'm going to go into a
-program called agree.c.
+Я открою программу agree.c
 
 1576
 01:12:40,190 --> 01:12:44,520
-I'm going to hide the code
-for a moment and make agree.
+Спрячу код на мгновение 
+и соберу ее
 
 1577
 01:12:44,520 --> 01:12:47,360
-I did it again, cd src1, Enter.
+Итак, снова: cd src1, Enter.
 
 1578
 01:12:47,360 --> 01:12:49,800
-Now I can do make agree.
+И теперь make agree.
 
 1579
 01:12:49,800 --> 01:12:51,500
-It seems to have compiled the program.
+Кажется, получилось
 
 1580
 01:12:51,500 --> 01:12:55,700
-And if I do ./agree, this program
-seems to be asking me a question--
+И если я наберу ./agree, эта 
+программа задаст мне вопрос
 
 1581
 01:12:55,700 --> 01:12:56,523
-do you agree?
+Вы согласны?
 
 1582
 01:12:56,523 --> 01:12:58,940
-Now, it's not obvious from the
-program what I should type,
+Не очень понятно, что именно
+я должен набрать,
 
 1583
 01:12:58,940 --> 01:13:01,220
-but my gut tells me, sure, yes.
+Но, догадываюсь, yes
 
 1584
 01:13:01,220 --> 01:13:04,370
-So I'm going to go ahead and
-type y for yes and Enter.
+Так что я нажму y как yes and Enter.
 
 1585
 01:13:04,370 --> 01:13:06,050
-And it seems to know that I've agreed.
+Кажется, я согласился.
 
 1586
 01:13:06,050 --> 01:13:07,490
-If I rerun it again--
+Если я перезапущу программу,
 
 1587
 01:13:07,490 --> 01:13:11,900
-./agree-- and type n
-this time, not agreed.
+./agree and нажму n
+В этот раз - Не согласен
 
 1588
 01:13:11,900 --> 01:13:12,650
-But you know what?
+Но знаете что?
 
 1589
 01:13:12,650 --> 01:13:13,942
-It's actually better than that.
+Все даже лучше!
 
 1590
 01:13:13,942 --> 01:13:18,650
-If I do ./agree and maybe do a capital
-Y, Enter, that also seems to work.
+Если я снова запущу ./agree и введу
+заглавную Y, Enter, это тоже сработает
 
 1591
 01:13:18,650 --> 01:13:20,130
-So how is this happening?
+Как это происходит?
 
 1592
 01:13:20,130 --> 01:13:21,770
-Well, let me look at the code here.
+Давайте посмотрим на код
 
 1593
 01:13:21,770 --> 01:13:25,190
-The top of the file is almost
-identical to everything thus far.
+Начало файла вполне обычное
 
 1594
 01:13:25,190 --> 01:13:27,650
-Include those two files, int main void.
+Подключим эти два файла, int main void.
 
 1595
 01:13:27,650 --> 01:13:30,320
-But now I'm using get_char,
-and I'm storing my answer
+Но теперь я использую get_char,
+и сохраняю мой ответ 
 
 1596
 01:13:30,320 --> 01:13:33,710
-in a variable called c, but I
-could store it in anything I want.
+в переменной c, хотя можно было 
+назвать и по другому
 
 1597
 01:13:33,710 --> 01:13:36,350
-And now notice the slightly new syntax.
+Обратите внимание на новый синтаксис
 
 1598
 01:13:36,350 --> 01:13:41,300
-What's clearly new about
-what I'm doing here?
+Что здесь выглядит незнакомым?
 
 1599
 01:13:41,300 --> 01:13:43,910
-What symbols jump out?
+Какие символы притягивают взгляд?
 
 1600
 01:13:43,910 --> 01:13:45,200
-Yeah, the vertical bar.
+Да, вертикальная полоса
 
 1601
 01:13:45,200 --> 01:13:48,020
-So this is a way of saying a logical or.
+Она означает логическое ИЛИ
 
 1602
 01:13:48,020 --> 01:13:50,630
-So in Python and a few other
-languages these days, you
+В Python и других современных языках вы можете 
 
 1603
 01:13:50,630 --> 01:13:52,280
-might literally write the word "or."
+буквально написать or, "или"
 
 1604
 01:13:52,280 --> 01:13:57,500
-That doesn't work in C. If you want
-to ask this question or this question
+Но это не сработает в Си. Если вы 
+хотите задать два вопроса,
 
 1605
 01:13:57,500 --> 01:14:00,740
-and just take either
-answer as a valid answer,
+И принять любой из ответов
 
 1606
 01:14:00,740 --> 01:14:03,020
-you just use two vertical
-bars, which are typically
+Вы просто используете две 
+вертикальные полосы, они обычно
 
 1607
 01:14:03,020 --> 01:14:05,720
-above your Enter key on an
-American keyboard, at least.
+Над клавишей энтер, на американской 
+клавиатуре, по крайней мере.
 
 1608
 01:14:05,720 --> 01:14:07,760
-So two vertical bars means or.
+Итак, две вертикальные полосы означают "или".
 
 1609
 01:14:07,760 --> 01:14:10,640
-Two ampersands, it turns out, means and.
+А два амперсанда означают логическое "И"
 
 1610
 01:14:10,640 --> 01:14:13,940
-But this is just a way of asking
-two questions in the same breath
+Это просто способ задать два вопроса за раз
 
 1611
 01:14:13,940 --> 01:14:16,800
-and accepting either
-answer as potentially true.
+И принять любой из ответов 
 
 1612
 01:14:16,800 --> 01:14:21,650
-So if c is capital Y or c is lowercase
-y, assume that the human has agreed.
+Итак, если c - заглавное Y или c - прописное y,
+значит пользователь согласен
 
 1613
 01:14:21,650 --> 01:14:26,090
-Else, if c equals capital N or lowercase
-n, assume that they've not agreed.
+Иначе, если c равно заглавному N или прописному n,
+значит пользователь не согласен
 
 1614
 01:14:26,090 --> 01:14:28,970
-And suppose I type in some
-other letter all together,
+А если я введу какие-нибудь другие буквы,
 
 1615
 01:14:28,970 --> 01:14:32,220
-what's the program going to do?
+что программа сделает?
 
 1616
 01:14:32,220 --> 01:14:32,720
-Say again?
+Еще раз?
 
 1617
 01:14:32,720 --> 01:14:33,740
-AUDIENCE: Ask you again.
+ЗАЛ: Спросит снова
 
 1618
 01:14:33,740 --> 01:14:35,000
-DAVID MALAN: It's not
-going to ask me again,
+DAVID MALAN: Она не спросит снова,
 
 1619
 01:14:35,000 --> 01:14:36,950
-because there's no loop here, right?
+потому что здесь нет цикла.
 
 1620
 01:14:36,950 --> 01:14:41,360
-There's no evidence
-of while or for loop.
+Нет ни while, ни for
 
 1621
 01:14:41,360 --> 01:14:46,190
-And get_char is literally going to get a
-char, but it doesn't specify what char.
+get_char получит символ,
+неизвестно какой 
 
 1622
 01:14:46,190 --> 01:14:50,900
-What happens if I don't type
-y or n, capital or lowercase?
+Что произойдет, если я не введу
+ни заглавную или прописную Y или N?
 
 1623
 01:14:50,900 --> 01:14:52,103
-It seems nothing.
+Ничего!
 
 1624
 01:14:52,103 --> 01:14:54,020
-Just nothing's going to
-happen, and that's OK.
+Просто ничего не произойдет, и 
+это совершенно нормально
 
 1625
 01:14:54,020 --> 01:14:56,210
-Your program doesn't
-have to print something.
+Программа не обязана что-то печатать
 
 1626
 01:14:56,210 --> 01:15:01,060
-And indeed, if I run
-this again and ./agree x.
+И в самом деле, если я запущу это снова
 
 1627
 01:15:01,060 --> 01:15:02,130
-It doesn't do anything.
+Ничего не произойдет
 
 1628
 01:15:02,130 --> 01:15:03,860
-So I've neither agreed nor disagreed.
+Поскольку мы ни согласились, ни отказались
 
 1629
 01:15:03,860 --> 01:15:07,910
-However, you could imagine writing
-a loop that somehow forces the human
+Однако, мы могли бы добавить цикл, 
+чтобы заставить пользователя ответить
 
 1630
 01:15:07,910 --> 01:15:10,117
-to cooperate in some way or another.
+так или иначе
 
 1631
 01:15:10,117 --> 01:15:12,200
-All right, let's do a
-different example, this time
+Хорошо, давайте откроем другой пример
 
 1632
 01:15:12,200 --> 01:15:15,800
-based on an idea from last
-time-- that of abstraction.
+основанный на идее абстрации
 
 1633
 01:15:15,800 --> 01:15:18,980
-Recall that in Scratch, there
-was no puzzle piece for coughing,
+Помните, в Scratch не было кусочка пазла
 
 1634
 01:15:18,980 --> 01:15:21,620
-to make the cat [COUGHS] on the screen.
+чтобы кот "кашлял"?
 
 1635
 01:15:21,620 --> 01:15:25,070
-And so we implemented this, really,
-with our own custom puzzle piece,
+И мы реализовали это с нашим
+собственным кусочком
 
 1636
 01:15:25,070 --> 01:15:25,850
-ultimately.
 
 1637
 01:15:25,850 --> 01:15:30,080
-So let me create a program
-that's called cough0.c.
+Итак, я создам программу cough0.c.
 
 1638
 01:15:30,080 --> 01:15:33,140
-That's a generous definition
-of inactivity, but OK.
+Своеобразное определение бездействия,
+но ладно
 
 1639
 01:15:33,140 --> 01:15:35,960
-Let me reload the screen.
+Я должен обновить страницу
 
 1640
 01:15:35,960 --> 01:15:38,420
-When in doubt in CS50,
-as in life, reload.
+Если в CS50 что-то не так,
+перезагрузитесь
 
 1641
 01:15:38,420 --> 01:15:39,920
-That will probably fix.
+Может помочь
 
 1642
 01:15:39,920 --> 01:15:43,248
-Unfortunately, with programming and
-the internet, that sometimes happens.
+К сожалению, и в программировании
+такое бывает
 
 1643
 01:15:43,248 --> 01:15:45,290
-So in a moment, what I'm
-going to go ahead and do
+Итак, через мгонвение,
 
 1644
 01:15:45,290 --> 01:15:49,730
-is translate that idea from Scratch of
-implementing the notion of coughing.
+Я перенесу эту идею из Scratch
+в программу на Си
 
 1645
 01:15:49,730 --> 01:15:54,060
-But instead of the say block, I'm going
-to use the printf block, or the printf
+Но вместо блока say использую блок printf,
+или, точнее, функцию printf
 
 1646
 01:15:54,060 --> 01:15:54,990
-function.
+
 
 1647
 01:15:54,990 --> 01:15:58,700
-And then I'm going to go ahead and
-design this version of code slightly
+А затем улучшу эту программу
 
 1648
 01:15:58,700 --> 01:16:01,920
-better and slightly better each time.
+с каждым следующим шагом.
 
 1649
 01:16:01,920 --> 01:16:07,010
-So I'm going to go ahead
-and open up a file cough0.c.
+Итак, я открою файл cough0.c
 
 1650
 01:16:07,010 --> 01:16:11,900
-And I'm going to go ahead and
-include, let's say, stdio.h.
+И, для начала, подключу stdio.h.
 
 1651
 01:16:11,900 --> 01:16:16,180
-I'm going to go ahead and do int main
-void, which again, is just our boiler
+Затем добавлю int main void, пока что
+просто не обращайте внимание на это
 
 1652
 01:16:16,180 --> 01:16:18,080
-plate or copy/paste for today.
+
 
 1653
 01:16:18,080 --> 01:16:21,080
-I'm going to go ahead, then,
-and say printf, quote unquote,
+Затем printf, кавычки,
 
 1654
 01:16:21,080 --> 01:16:22,580
-cough with a new line.
+"кашель", новая строка.
 
 1655
 01:16:22,580 --> 01:16:25,050
-And recall, in Scratch I wanted
-this to happen three times,
+Помните, сначала в Scratch я 
+просто сделал это три раза
 
 1656
 01:16:25,050 --> 01:16:27,300
-so I'm going to do it like
-this-- cough, cough, cough.
+Сделаю так же и сейчас
 
 1657
 01:16:27,300 --> 01:16:31,520
-All right, I'm going to give myself
-a terminal window here at the bottom
+Отлично, перейдем в окно терминала
 
 1658
 01:16:31,520 --> 01:16:35,330
-so that I can now go ahead
-and say make cough0, Enter.
+и скажем make cough0, Enter.
 
 1659
 01:16:35,330 --> 01:16:39,470
-Nothing bad seems to happen.
-./cough0 and cough, cough, cough.
+Вроде сработало
+./cough0 и "cough, cough, cough".
 
 1660
 01:16:39,470 --> 01:16:42,950
-So last week, I claimed that, eh,
-you can design this better, right?
+На прошлой неделе мы говорили,
+что это можно сделать лучше
 
 1661
 01:16:42,950 --> 01:16:44,960
-Anytime you're copying
-and pasting, odds are
+Когда вы начинаете дублировать код,
 
 1662
 01:16:44,960 --> 01:16:46,850
-you should start to
-resist that temptation,
+надо бороться с искушением,
 
 1663
 01:16:46,850 --> 01:16:49,933
-because it's going to lead to messy
-code, longer code than it needs to be.
+потому что это может привести 
+к грязному коду
 
 1664
 01:16:49,933 --> 01:16:52,133
-What's the solution to this
-problem from last week?
+Как мы решили проблему на той неделе? 
 
 1665
 01:16:52,133 --> 01:16:52,920
-AUDIENCE: A loop.
+ЗАЛ: Циклом
 
 1666
 01:16:52,920 --> 01:16:54,390
-DAVID MALAN: Yeah, a loop, a for loop.
+DAVID MALAN: Да, циклом
 
 1667
 01:16:54,390 --> 01:16:55,682
-So let me go ahead and do that.
+Давайте сделаем это снова
 
 1668
 01:16:55,682 --> 01:16:57,693
-Let me create another version, cough1.c.
+Создам новую версию, cough1.c.
 
 1669
 01:16:57,693 --> 01:17:00,360
-And I'm going to copy/paste this
-code, just as a starting point.
+И скопирую код, чтобы было с чего начать
 
 1670
 01:17:00,360 --> 01:17:02,400
-But now I'm going to go
-ahead and clean it up.
+Но теперь сделаю это чище
 
 1671
 01:17:02,400 --> 01:17:04,960
-So I'm going to go ahead
-and instead do a for loop.
+Вместо дублирования кода,
+использую цикл for
 
 1672
 01:17:04,960 --> 01:17:07,460
-And I don't quite remember what
-goes in the parentheses yet,
+Оставим пока скобки в стороне
 
 1673
 01:17:07,460 --> 01:17:08,690
-but we'll come back to that.
+Вернемся к этому позже
 
 1674
 01:17:08,690 --> 01:17:12,530
-I do know that what I want to do
-some number of times is just cough.
+Я хочу, чтобы программа 
+кашлянула несколько раз
 
 1675
 01:17:12,530 --> 01:17:15,333
-So the only question at hand
-is, what was the syntax here?
+Итак, что здесь за синтаксис?
 
 1676
 01:17:15,333 --> 01:17:17,250
-Well, we can write this
-in any number of ways,
+Это можно сделать по разному
 
 1677
 01:17:17,250 --> 01:17:18,890
-and we could even use a while loop.
+Например, даже циклом while 
 
 1678
 01:17:18,890 --> 01:17:22,520
-But I do recall saying int and
-then the name of a variable.
+Но я скажу int и, затем, имя переменной
 
 1679
 01:17:22,520 --> 01:17:24,960
-I could say counter,
-or I could just say i
+Я могу сказать counter,
+или, может быть, просто i
 
 1680
 01:17:24,960 --> 01:17:28,970
-to keep it succinct,
-equals 0 by default.
+чтобы сделать короче,
+присвоим 0 для начала.
 
 1681
 01:17:28,970 --> 01:17:32,540
-I could do this so long as i
-is less than 3, for instance.
+повторять пока i меньше трех,
 
 1682
 01:17:32,540 --> 01:17:38,070
-And then on each iteration, I can say
-i equals i plus 1 or, more succinctly,
+И, для каждого повтора, i = i + 1
+или, для краткости, i++.
 
 1683
 01:17:38,070 --> 01:17:39,710
-i plus plus.
 
 1684
 01:17:39,710 --> 01:17:41,223
-So, again, it's a lot of new syntax.
+Много нового!
 
 1685
 01:17:41,223 --> 01:17:43,140
-And there's semicolons
-all over the place now.
+И точки с запятыми повсюду!
 
 1686
 01:17:43,140 --> 01:17:46,700
-But if I go ahead now
-and do make cough1,
+Но если я скомпилирую cough1,
 
 1687
 01:17:46,700 --> 01:17:48,410
-nothing bad seems to have happened.
+Ничего плохого не случилось
 
 1688
 01:17:48,410 --> 01:17:51,020
-./cough1, cough, cough, cough.
+запускаю ./cough1:
+cough, cough, cough.
 
 1689
 01:17:51,020 --> 01:17:53,180
-It seems to be slightly better designed.
+Выглядит уже лучше, правда?
 
 1690
 01:17:53,180 --> 01:17:55,460
-Unfortunately, there is
-this paradigm in programming
+К несчастью, есть такое правило 
+в программировании
 
 1691
 01:17:55,460 --> 01:18:00,110
-where humans, programmers, tend to think
-or tend to count starting from zero.
+что программисты начинают считать с нуля
 
 1692
 01:18:00,110 --> 01:18:02,240
-However, if you don't like
-that, at least early on,
+Однако, если вам это не нравится,
 
 1693
 01:18:02,240 --> 01:18:05,210
-there's nothing stopping
-me from initializing i to 1
+Вполне можно присвоить i единицу
 
 1694
 01:18:05,210 --> 01:18:08,420
-and then doing i is less than
-4 or, even more explicitly,
+И тогда можно повторять, пока 
+i меньше четырех или, точнее,
 
 1695
 01:18:08,420 --> 01:18:10,655
-i is less than or equal to 3.
+i меньше или равно трем.
 
 1696
 01:18:10,655 --> 01:18:13,280
-There's no less than or equal
-sign on your keyboard, typically,
+Знака меньше или равно на вашей 
+клавиатуре нет
 
 1697
 01:18:13,280 --> 01:18:17,390
-so you can mimic it by doing a less than
-and then an equal sign, two characters.
+поэтому его можно сделать из знака меньше
+и знака равно, два символа.
 
 1698
 01:18:17,390 --> 01:18:18,800
-This is logically the same.
+Это тоже самое.
 
 1699
 01:18:18,800 --> 01:18:20,240
-Set i equal to 1.
+Присвоить i единицу
 
 1700
 01:18:20,240 --> 01:18:23,450
-Then go ahead and print cough, and
-then make sure to increment it.
+Напечатать "cough", и прирастить i
 
 1701
 01:18:23,450 --> 01:18:26,150
-And then make sure it's
-still less than 3, and 2 is.
+Проверить, меньше ли i трех,
 
 1702
 01:18:26,150 --> 01:18:28,850
-Make sure it's still less than
-or equal to 3, and it still is.
+Два меньше трех, продолжить
 
 1703
 01:18:28,850 --> 01:18:31,620
-So that 2 is, logically,
-going to have the same effect.
+Так что два даст тот же эффект
 
 1704
 01:18:31,620 --> 01:18:36,590
-However, in the interests of convention,
-this would be the more common approach.
+Однако, по общему соглашению, 
+счет с нуля используется чаще
 
 1705
 01:18:36,590 --> 01:18:42,768
-Do this while i equals 0 and then 1
-and then 2, for a total of 3 times.
+Повторяй пока i равно 0 и тогда 1
+и затем 2, всего три раза
 
 1706
 01:18:42,768 --> 01:18:44,810
-All right, but recall what
-we did last time, too,
+Хорошо, однако, вспомните, 
+что мы сделали в прошлый раз
 
 1707
 01:18:44,810 --> 01:18:47,540
-is that if I'm writing a lot
-of code, for some reason, that
+если я пишу код, благодаря 
+которому программа кашляет
 
 1708
 01:18:47,540 --> 01:18:51,800
-involves programs coughing, it would
-be nice to give myself my own custom
+было бы неплохо создать отдельную функцию, 
 
 1709
 01:18:51,800 --> 01:18:52,920
-function.
 
 1710
 01:18:52,920 --> 01:18:54,450
-So let me go ahead and do that.
+Это мы и сделаем.
 
 1711
 01:18:54,450 --> 01:18:58,430
-Let me go ahead and write my
-own first brand-new function.
+Я создам новую функцию.
 
 1712
 01:18:58,430 --> 01:19:00,570
-And I'm going to do this as follows.
+Сделаю это следующим образом
 
 1713
 01:19:00,570 --> 01:19:04,220
-I'm going to go ahead and type void,
-then the name of the function I want.
+Я наберу void, затем имя функции
 
 1714
 01:19:04,220 --> 01:19:07,160
-Then I'm going to say void here,
-for reasons we'll come back to.
+здесь я тоже напишу void,
+к этому мы еще вернемся
 
 1715
 01:19:07,160 --> 01:19:10,160
-And then I'm going to literally
-just go ahead and say cough.
+И затем я скажу кашлять
 
 1716
 01:19:10,160 --> 01:19:14,120
-So there are functions we've used
-today-- printf, get_int, get_string,
+Функции, которые мы использовали:
+printf, get_int, get_string, get_float - 
 
 1717
 01:19:14,120 --> 01:19:18,650
-get_float-- none of which we showed you
-the implementation of, because people,
+вы не видели реализацию ни одной из них,
 
 1718
 01:19:18,650 --> 01:19:21,270
-years ago, both in the
-staff and in the real world,
+потому что люди, давным давно,
+сотрудники университета и другие люди
 
 1719
 01:19:21,270 --> 01:19:23,000
-implemented those functions for us.
+реализовали эти функции для нас
 
 1720
 01:19:23,000 --> 01:19:26,270
-You, too, can implement your own
-custom functions or, in Scratch,
+Вы тоже можете реализовать свои 
+собственные функции или,
 
 1721
 01:19:26,270 --> 01:19:29,690
-those puzzle pieces that we
-made in those pink blocks.
+как в Scratch, эти кусочки паззла
+создавая блоки функций
 
 1722
 01:19:29,690 --> 01:19:31,940
-So if you want to make your
-own function whose name is
+Так что если вы хотите создать
+свою собственную функцию cough,
 
 1723
 01:19:31,940 --> 01:19:35,960
-cough, whose purpose in life
-is to say cough on the screen,
+для того, чтобы писать "cough" на экране,
 
 1724
 01:19:35,960 --> 01:19:37,010
-this is the syntax.
+синтаксис таков:
 
 1725
 01:19:37,010 --> 01:19:40,880
-For today's purposes, you say void and
-void here, but the name of the function
+Сегодня вы просто пишете void здесь
+и здесь, но имя функции важно
 
 1726
 01:19:40,880 --> 01:19:41,690
-is important.
+
 
 1727
 01:19:41,690 --> 01:19:43,040
-I'll call it cough.
+Я назову ее cough.
 
 1728
 01:19:43,040 --> 01:19:45,000
-And then I can use it as follows.
+Я могу использовать ее вот так:
 
 1729
 01:19:45,000 --> 01:19:50,750
-I can say cough, cough, cough now
-in order to cough three times.
+Я могу написать cough, cough, cough
+чтобы кашлянуть три раза
 
 1730
 01:19:50,750 --> 01:19:53,150
-Or again, we already
-decided that was bad design.
+Но мы уже знаем, что это плохой подход
 
 1731
 01:19:53,150 --> 01:19:57,770
-For int i get 0, i less
-than 3, i plus plus.
+For int i = 0, i меньше 3, i++
 
 1732
 01:19:57,770 --> 01:20:00,230
-I can now do something like cough.
+Вот теперь лучше
 
 1733
 01:20:00,230 --> 01:20:03,290
-And so now, again, out
-of sight, out of mind.
+Как и в прошлый раз, 
+с глаз долой - из сердца вон
 
 1734
 01:20:03,290 --> 01:20:07,460
-I don't need to know or care how
-the cough function is implemented.
+Мне не нужно беспокоится о том,
+как именно кашляет программа
 
 1735
 01:20:07,460 --> 01:20:10,850
-I can care that my code just
-tells the computer what to do.
+Я забочусь о моем коде здесь,
+говоря компьютеру, что делать
 
 1736
 01:20:10,850 --> 01:20:15,260
-For i from 0 on up to
-3, cough, cough, cough.
+For i от 0 до 3, 
+cough, cough, cough.
 
 1737
 01:20:15,260 --> 01:20:16,480
-And this is an abstraction.
+Это называется абстракция
 
 1738
 01:20:16,480 --> 01:20:18,950
-I don't care that cough is
-implemented with printf.
+Мне не важно, как именно кашляет функция
 
 1739
 01:20:18,950 --> 01:20:22,070
-I just care that there's
-a function called cough.
+Мне важно, что такая функция есть
 
 1740
 01:20:22,070 --> 01:20:25,490
-So let me go ahead and run
-this and see what happens.
+Давайте запустим это и посмотрим, 
+что произойдет
 
 1741
 01:20:25,490 --> 01:20:28,710
-Let me scroll down to the
-bottom, do make cough1.
+Переключусь в терминал, make cough1.
 
 1742
 01:20:28,710 --> 01:20:29,750
-OK, amazing.
+Отлично
 
 1743
 01:20:29,750 --> 01:20:30,830
-No red errors now.
+Нет ошибок
 
 1744
 01:20:30,830 --> 01:20:34,550
-So ./cough1, cough, cough, cough.
+./cough1
+cough, cough, cough.
 
 1745
 01:20:34,550 --> 01:20:38,553
-But notice that this is a little
-bad design, I would claim,
+Однако здесь есть одна небольшая ошибка
 
 1746
 01:20:38,553 --> 01:20:39,470
-because you know what?
+Знаете что?
 
 1747
 01:20:39,470 --> 01:20:42,890
-If you keep writing custom
-functions up here, up here, up here,
+Если я продолжк писать свои функции здесь,
 
 1748
 01:20:42,890 --> 01:20:46,145
-the main part of your program is
-going to get pushed pretty far down.
+основную часть программы сдвинет вниз
 
 1749
 01:20:46,145 --> 01:20:48,770
-And it's a human convention to
-generally have the main function
+И есть соглашение, что основную функцию
+лучше держать здесь,
 
 1750
 01:20:48,770 --> 01:20:49,790
-at the top of your file.
+в начале файла
 
 1751
 01:20:49,790 --> 01:20:50,790
-Seems pretty reasonable.
+Довольно логично
 
 1752
 01:20:50,790 --> 01:20:53,420
-So you open the file, boom, the
-main function's right there.
+Вы открываете файл - 
+и главная функция прямо здесь
 
 1753
 01:20:53,420 --> 01:20:54,620
-So let's keep it there.
+Давайте тут ее и оставим
 
 1754
 01:20:54,620 --> 01:20:58,448
-So let me actually move the
-cough function down below just so
+Так что я подвину функцию cough вниз
 
 1755
 01:20:58,448 --> 01:21:01,490
-that, again, the first thing I see is
-indeed the main part of my program.
+так что первое, что я увижу,
+будет main, главная часть программы
 
 1756
 01:21:01,490 --> 01:21:03,020
-And wherever cough is, I don't care.
+А где там cough мне безразлично
 
 1757
 01:21:03,020 --> 01:21:05,090
-That was the whole point
-of implementing it.
+Для этого мы и создали функцию
 
 1758
 01:21:05,090 --> 01:21:08,990
-Let me go now to my terminal
-window and do make cough1.
+Итак, я переключусь в терминал 
+и выполню make cough1.
 
 1759
 01:21:08,990 --> 01:21:12,500
-Oh my god, some red errors flew by.
+Ага, какие-то ошибки!
 
 1760
 01:21:12,500 --> 01:21:14,030
-What's wrong here?
+Что же не так?
 
 1761
 01:21:14,030 --> 01:21:19,130
-So error, implicit declaration of
-function cough is invalid in C '99.
+Ошибка, неявное объявление функции
+cough недопустимо в С '99.
 
 1762
 01:21:19,130 --> 01:21:22,610
-C '99 means the version
-of C invented in 1999.
+C '99 означает версию
+языка Си, созданную в  1999.
 
 1763
 01:21:22,610 --> 01:21:23,690
-What's going on?
+Что же случилось?
 
 1764
 01:21:23,690 --> 01:21:25,100
-Implicit declaration?
+Неявное объявление?
 
 1765
 01:21:25,100 --> 01:21:27,500
-So this is where C differs
-from Scratch again.
+Этим Си тоже отличается от Scratch
 
 1766
 01:21:27,500 --> 01:21:29,840
-C is old, and it's kind of dumb.
+Си уже старый язык, и 
+довольно прямолинейный
 
 1767
 01:21:29,840 --> 01:21:32,840
-It only knows what you
-tell it, and it only
+Он знает только то, что вы ему говорите,
 
 1768
 01:21:32,840 --> 01:21:36,290
-knows what you tell it in order
-top to bottom, left to right.
+и знает только в порядке сверху вниз,
+слева направо
 
 1769
 01:21:36,290 --> 01:21:41,480
-So in this program right now, I
-have included stdio.h, as before.
+В этой программе я подключил stdio.h,
+как и раньше
 
 1770
 01:21:41,480 --> 01:21:43,700
-I've included the beginning of main.
+Я подключил в самом начале, до main.
 
 1771
 01:21:43,700 --> 01:21:45,480
-I've started a for loop.
+Начал цикл for
 
 1772
 01:21:45,480 --> 01:21:48,320
-And then I'm using a function
-that's apparently called cough.
+И затем использовал функцию cough.
 
 1773
 01:21:48,320 --> 01:21:52,640
-However, where is cough
-now actually implemented?
+Однако, где cough реализован?
 
 1774
 01:21:52,640 --> 01:21:54,880
-Way down here on line 11 onwards.
+Гораздо ниже, на 11 строчке
 
 1775
 01:21:54,880 --> 01:21:56,600
-C is not that smart.
+Си не настолько умен
 
 1776
 01:21:56,600 --> 01:21:59,510
-It's not going to presume to
-look later in your file to see,
+Он не станет проверять, 
+есть ли эта функция дальше,
 
 1777
 01:21:59,510 --> 01:22:02,150
-maybe they put the
-function cough down below.
-
+может быть и есть,
 1778
 01:22:02,150 --> 01:22:04,070
-It's only going to do what you tell it.
+он делает только то, что сказано
 
 1779
 01:22:04,070 --> 01:22:05,503
-So there's a fix for this.
+И вот как это исправить
 
 1780
 01:22:05,503 --> 01:22:07,670
-You can either do what I
-did initially, which is put
+Можно либо сделать то, что я
+сделал в начале, разместить 
 
 1781
 01:22:07,670 --> 01:22:09,268
-all of your custom functions up top.
+ваши функции наверху
 
 1782
 01:22:09,268 --> 01:22:11,810
-But that's kind of a vicious
-cycle, because you can't forever
+но это не лучший способ,
 
 1783
 01:22:11,810 --> 01:22:13,107
-put the new functions up top.
+Все время добавлять функции наверх
 
 1784
 01:22:13,107 --> 01:22:15,690
-Eventually, you're going to run
-into some kind of constraints.
+Однажды вы натолкнетесь 
+на некоторые ограничения
 
 1785
 01:22:15,690 --> 01:22:19,070
-And my god, you want the main
-function, by convention, to be up top.
+Да и по соглашению, функцию main 
+надо держать наверху
 
 1786
 01:22:19,070 --> 01:22:20,880
-So there's another solution here.
+Но есть и другое решение
 
 1787
 01:22:20,880 --> 01:22:23,900
-And this is the only time
-where copy/paste is compelling.
+И это единственный случай, когда
+копирование оправданнл
 
 1788
 01:22:23,900 --> 01:22:29,210
-You literally copy the first line of
-your function's code on line 11 there.
+Вы буквально копируете первую строку функции
 
 1789
 01:22:29,210 --> 01:22:33,660
-And you go ahead and paste it at the
-top of your file with a semicolon.
+И вставляете ее тут, в начале файла,
+с точкой с запятой
+
 
 1790
 01:22:33,660 --> 01:22:38,113
-So this is a way of sort of tricking C
-into, oh, you have seen cough before.
+Это такой способ обмануть Си,
+показать, что он уже видел эту функцию
 
 1791
 01:22:38,113 --> 01:22:40,530
-You haven't seen all of it,
-but you've seen enough of it--
+Не всю видел, но достаточно
 
 1792
 01:22:40,530 --> 01:22:41,720
-you've seen its name--
+видел ее объявление,
 
 1793
 01:22:41,720 --> 01:22:45,870
-to now tolerate its appearance
-in my main function.
+и теперь может пережить ее вызов в main
 
 1794
 01:22:45,870 --> 01:22:49,130
-So let me go ahead and
-recompile this code.
+Итак, я перекомпилирую этот код
 
 1795
 01:22:49,130 --> 01:22:51,770
-I'm going to go ahead and
-run make cough1 enter.
+make cough1 enter.
 
 1796
 01:22:51,770 --> 01:22:53,510
-OK, now it compiled.
+Хорошо, скомпилировалось.
 
 1797
 01:22:53,510 --> 01:22:59,370
-./cough1, and viola, we're
-back in business there.
+./cough1, voila, все в порядке
 
 1798
 01:22:59,370 --> 01:23:00,740
-But let me make one refinement.
+Но я хочу кое-что улучшить
 
 1799
 01:23:00,740 --> 01:23:05,810
-And I'm going to jump ahead to what I
-called in the online examples cough3.c.
+Так что откроем файл из онлайн-примеров cough3.c
 
 1800
 01:23:05,810 --> 01:23:08,600
-It turns out your own custom
-functions can take input.
+Ваши собственные функции могут принимать аргументы
 
 1801
 01:23:08,600 --> 01:23:11,610
-This word void means
-that it takes no input.
+Слово void означает, что 
+функция не принимает аргументы
 
 1802
 01:23:11,610 --> 01:23:15,938
-And this word void means it returns no
-value, like get_int and get_string hand
+А это слово void означает, что она 
+не возвращает значения, в отличии от
 
 1803
 01:23:15,938 --> 01:23:16,730
-you back something.
+get_int и get_string, которые 
+возвращают значение
 
 1804
 01:23:16,730 --> 01:23:18,647
-That's not applicable
-now, but we'll come back
+Сейчас это не так важно, но мы вернемся
 
 1805
 01:23:18,647 --> 01:23:20,450
-to that in a week or two's time.
+к этому через неделю или две
 
 1806
 01:23:20,450 --> 01:23:24,770
-Suppose that you wanted to make
-the cough function more versatile
+Итак, предположим, что вы хотите 
+сделать эту функцию более универсальной
 
 1807
 01:23:24,770 --> 01:23:28,190
-such that it will cough any
-number of times for you.
+Например, чтобы она сама кашляла 
+необходимое количество раз
 
 1808
 01:23:28,190 --> 01:23:29,660
-You know what you can do, is this.
+Можно сделать вот так:
 
 1809
 01:23:29,660 --> 01:23:34,670
-You can change the input to cough
-function to be some value like n,
+Можно изменить входные аргументы так,
+чтобы она принимала значение
 
 1810
 01:23:34,670 --> 01:23:38,840
-and you can then do something
-like this-- for int i get 0.
+И тогда можно сделать так
+for int i = 0, i меньше n, i++
 
 1811
 01:23:38,840 --> 01:23:43,730
-i is less than n, so not
-hardcoded anymore. i plus plus.
+Вот так, больше никакого хардкода
 
 1812
 01:23:43,730 --> 01:23:48,650
-And then inside of your curly braces,
-you can print this cough line.
+А внутри фигурных скобок можно 
+напечатать эту строку
 
 1813
 01:23:48,650 --> 01:23:52,520
-So now, notice, cough
-has been parameterized.
+Теперь функция принимает значения
 
 1814
 01:23:52,520 --> 01:23:55,430
-It now takes input of
-integer called n, and it
+Принимает целое число, названное n
 
 1815
 01:23:55,430 --> 01:23:58,220
-uses that input, n, just
-like you could have done
+И использует это число, как раньше 
 
 1816
 01:23:58,220 --> 01:24:00,740
-in Scratch, to do something n times--
+в Scratch, чтобы сделать что-то n раз
 
 1817
 01:24:00,740 --> 01:24:04,010
-not once, not three times, but
-a variable number of times.
+Не один, не три, а каждый раз
+заданное значение
 
 1818
 01:24:04,010 --> 01:24:06,360
-I have to change my first line here.
+Мне нужно поменять объявление функции здесь
 
 1819
 01:24:06,360 --> 01:24:07,520
-This is called a prototype.
+Это называется прототип
 
 1820
 01:24:07,520 --> 01:24:09,860
-This one-liner is what's
-called a prototype,
+Эта строчка, которую я скопировал, 
+это прототип 
 
 1821
 01:24:09,860 --> 01:24:12,140
-and it's just copy/paste
-from your actual function.
 
 1822
 01:24:12,140 --> 01:24:13,700
-But now notice what I can do.
+И вот что я теперь могу сделать
 
 1823
 01:24:13,700 --> 01:24:16,550
-My main function, again, is
-the essence of my program.
+Моя главная функция, суть моей программы,
 
 1824
 01:24:16,550 --> 01:24:19,190
-It's a little convoluted right now.
+Немного запутанно
 
 1825
 01:24:19,190 --> 01:24:23,150
-Wouldn't it be nicer if I could
-just say cough three times?
+Не будет ли лучше, если я скажу cough 3
 
 1826
 01:24:23,150 --> 01:24:28,040
-And indeed, now I don't need to know
-or care how coughing is implemented.
+И в самом деле, мне уже неважно, как
+именно реализован кашель
 
 1827
 01:24:28,040 --> 01:24:30,950
-That's a well-designed
-program, arguably.
+Это -  неплохо реализованная программа
 
 1828
 01:24:30,950 --> 01:24:32,300
-It's one line of code.
+Лишь одна строчка кода
 
 1829
 01:24:32,300 --> 01:24:33,137
-It's descriptive.
+Понятно, что делает
 
 1830
 01:24:33,137 --> 01:24:33,720
-It says cough.
+Кашляет
 
 1831
 01:24:33,720 --> 01:24:35,990
-It takes an input, which
-means it costs three times.
+Функция принимает аргумент, 
+определяющий количество
 
 1832
 01:24:35,990 --> 01:24:38,823
-And what's down below in the file,
-though I could certainly bring it
+И то, что убрано вниз, я могу вернуть
 
 1833
 01:24:38,823 --> 01:24:40,770
-back up, is just what
-a computer scientist
+обратно наверх, программисты
 
 1834
 01:24:40,770 --> 01:24:43,250
-would call an implementation detail.
+назвали бы это подробностями реализации
 
 1835
 01:24:43,250 --> 01:24:45,620
-Someone cares how you
-implement coughing,
+Кто-то должен позаботится о реализации кашля
 
 1836
 01:24:45,620 --> 01:24:48,200
-but you don't have to care
-how you implement coughing.
+но вам это не важно
 
 1837
 01:24:48,200 --> 01:24:50,530
-You don't have to how we get integers.
+Вам не важно, как работает get_integer
 
 1838
 01:24:50,530 --> 01:24:52,930
-You don't have to care
-about how you printf.
+Вам не нужно заботится о том, 
+как работает printf
 
 1839
 01:24:52,930 --> 01:24:56,140
-You just care that someone else
-has implemented that functionality
+Кто-то уже реализовал эти детали
 
 1840
 01:24:56,140 --> 01:25:00,280
-so you can stand on their shoulders and
-build more interesting programs that
+Так что вы можете сделать что-то большее,
+используя их труд
 
 1841
 01:25:00,280 --> 01:25:03,310
-are actually interesting to you.
+что-то, что вам важно
 
 1842
 01:25:03,310 --> 01:25:06,235
-Let me go ahead and open up an
-example that builds on this same idea.
+Я покажу пример, котрый строится на той же идее.
 
 1843
 01:25:06,235 --> 01:25:08,740
@@ -8464,269 +8359,249 @@ example that builds on this same idea.
 
 1844
 01:25:08,740 --> 01:25:14,030
-In, let's see, positive.c,
-we have this example here,
+В файле positive.c есть пример,
 
 1845
 01:25:14,030 --> 01:25:16,040
-which makes this all the more clear.
+Который делает это более понятным
 
 1846
 01:25:16,040 --> 01:25:20,100
-So here's a program that uses our
-two libraries, CS50 in standard I/O.
+Это программа, которая использует две
+библиотеки, CS50 и стандартный I/O.
 
 1847
 01:25:20,100 --> 01:25:22,330
-It turns out that the
-CS50 library does not
+Оказывается, в CS50 нет функции 
+get_positive_int.
 
 1848
 01:25:22,330 --> 01:25:24,730
-come with a function
-called get_positive_int.
 
 1849
 01:25:24,730 --> 01:25:25,772
-It comes with get_int.
+А только get_int.
 
 1850
 01:25:25,772 --> 01:25:27,730
-And you could imagine
-programs where you really
+Представьте себе программу, которой 
+подойдут только положительные числа
 
 1851
 01:25:27,730 --> 01:25:31,450
-want a positive integer from the human,
-because negative numbers for a game
+введенные человеком, 
 
 1852
 01:25:31,450 --> 01:25:33,820
-or for some program just
-would make no sense.
+а отрицательные не имеют смысла.
 
 1853
 01:25:33,820 --> 01:25:35,380
-So how can we implement that?
+Как мы можем это реализовать?
 
 1854
 01:25:35,380 --> 01:25:38,350
-Well, it would be nice to
-create it so that you can simply
+Было бы здорово создать что-то
 
 1855
 01:25:38,350 --> 01:25:40,930
-write a two-line program
-like this where you call
+написать программу из пары строк,
+чтобы мы могли просто вызвать
 
 1856
 01:25:40,930 --> 01:25:42,820
-a function called get_positive_int.
+функцию get_positive_int.
 
 1857
 01:25:42,820 --> 01:25:46,720
-And if I scroll down, notice
-there's actually a new feature
+И если я пролистаю вниз,
+заметьте новую особенность Си
 
 1858
 01:25:46,720 --> 01:25:49,810
-here that we've not seen yet,
-but it's an interesting example
+чего мы еще не видели,
+интересный пример
 
 1859
 01:25:49,810 --> 01:25:52,600
-of another feature of C.
-What I've highlighted here
+одной возможности в Си
+которую я подстветил здесь
 
 1860
 01:25:52,600 --> 01:25:56,350
-between lines 15 and 24 is this logic.
+между строками 15 и 24
 
 1861
 01:25:56,350 --> 01:25:58,510
-Here's a function
-called get_positive_int.
+Функция get_positive_int.
 
 1862
 01:25:58,510 --> 01:26:01,690
-It takes no inputs, so I don't have
-to pass anything in parentheses.
+Она не принимает аргументов, мне
+нечего указывать в скобках
 
 1863
 01:26:01,690 --> 01:26:03,850
-I just want to get any old positive int.
+Мне просто нужно положительное целое число
 
 1864
 01:26:03,850 --> 01:26:06,670
-But I do want this function
-to hand me back something,
+Так что мне нужен ответ от этой функции
 
 1865
 01:26:06,670 --> 01:26:09,850
-just like get_int handed me back a
-value that I could put in a variable,
+В точности как get_int вернул мне значение,
+которое я сохранил в переменную
 
 1866
 01:26:09,850 --> 01:26:11,170
-just like get_string does.
+Так же как и get_string.
 
 1867
 01:26:11,170 --> 01:26:13,030
-So this is not void.
+Так что это не пустота, не void.
 
 1868
 01:26:13,030 --> 01:26:13,990
-This is int.
+Это integer
 
 1869
 01:26:13,990 --> 01:26:17,290
-So this word to the left of a
-function is the type of its output.
+Это слово слева от функции обозночает 
+тип данных, которые она возвращает
 
 1870
 01:26:17,290 --> 01:26:20,920
-This word in parentheses is
-the type of its input, if any.
+Слова в скобках - тип входящих аргументов
 
 1871
 01:26:20,920 --> 01:26:24,640
-And if there is nothing, you just
-say void in either or both place.
+А если их нет - просто напишите пусто, void
 
 1872
 01:26:24,640 --> 01:26:26,190
-Now, here's a curiosity--
+Теперь, интересно, 
 
 1873
 01:26:26,190 --> 01:26:30,280
-on line 17, we've not seen this before,
-but this is just a hint to the computer
+на строке 17, мы такого не видели раньше
+здесь просто подсказка для компьютера
 
 1874
 01:26:30,280 --> 01:26:32,425
-saying give me a variable called n.
+говорящая: дай мне переменную n
 
 1875
 01:26:32,425 --> 01:26:34,300
-I'm not sure what I'm
-going to put in it yet.
+Я пока не знаю, что здесь будет, 
 
 1876
 01:26:34,300 --> 01:26:36,580
-So you literally just
-say int n semicolon.
+Так что здесь буквально int n;
 
 1877
 01:26:36,580 --> 01:26:38,405
-You don't need to
-assign it anything yet.
+Присваивать пока нечего.
 
 1878
 01:26:38,405 --> 01:26:40,030
-It has what we'll call a garbage value.
+Оно имеет так называемое мусорное значение.
 
 1879
 01:26:40,030 --> 01:26:42,322
-You have no idea what's in
-it, but that doesn't matter.
+Ни малейшего представления, 
+что там внутри, но и неважно
 
 1880
 01:26:42,322 --> 01:26:43,730
-You'll put something in it later.
+Зададим значение позже
 
 1881
 01:26:43,730 --> 01:26:45,820
-Then there's this loop,
-which we haven't seen yet,
+Затем такой цикл, которого мы еще не видели
 
 1882
 01:26:45,820 --> 01:26:47,800
-but in C, it's called a do-while loop.
+В языке Си это называется do-while цикл
 
 1883
 01:26:47,800 --> 01:26:52,120
-It literally says do the following
-while this Boolean expression is true.
+Это означает "Повторяй, пока это условие верно"
 
 1884
 01:26:52,120 --> 01:26:53,320
-So what do I want to do?
+Итак, что же мне делать
 
 1885
 01:26:53,320 --> 01:26:55,330
-I want to get an int
-from the user, prompting
+Я хочу получить целое число от пользователя,
 
 1886
 01:26:55,330 --> 01:26:58,540
-the human for a positive
-integer, and store it in n.
+Прошу его ввести значение и
+сохраняю в переменной
 
 1887
 01:26:58,540 --> 01:27:03,010
-However, I want to keep doing
-this while n is less than 1.
+Однако, я продолжаю это делать,
+пока число меньше одного
 
 1888
 01:27:03,010 --> 01:27:06,370
-Because if the human types in
-0 or negative 1 or negative 50
+Потому что ессли введен ноль, или минус один
 
 1889
 01:27:06,370 --> 01:27:12,040
-or anything non-positive, I do want to
-prompt them again and again and again.
+Или любое другое не-положительное число, 
+я хочу спросить снова и снова
 
 1890
 01:27:12,040 --> 01:27:14,530
-So a do-while loop is
-kind of neat, because it
+Итак, do-while цикл очень удобный
 
 1891
 01:27:14,530 --> 01:27:17,090
-will do this first thing at least once.
+Потому что он выполняет действие
+минимум один раз
 
 1892
 01:27:17,090 --> 01:27:20,200
-Then it will check the condition
-and potentially do it again
+Затем проверяет условие и
+может выполнить еще раз
 
 1893
 01:27:20,200 --> 01:27:22,450
-if the human has not cooperated.
+Если ввод неверный
 
 1894
 01:27:22,450 --> 01:27:25,900
-A while loop, if you think back,
-actually checked the condition first.
+Обычный цикл while, если вспомнить,
+всегда проверяет условие в начале.
 
 1895
 01:27:25,900 --> 01:27:29,590
-It was while some Boolean expression
-is true, do the following.
+Пока условие выполнено, сделай что-то
 
 1896
 01:27:29,590 --> 01:27:34,210
-This one gives you one such
-iteration, one pass for free,
+А этот цикл всегда выполняется
+хотя бы один раз
 
 1897
 01:27:34,210 --> 01:27:35,767
-and then it checks the condition.
+И уже потом проверяет условие
 
 1898
 01:27:35,767 --> 01:27:37,600
-So it's just a different
-way of programming,
+Это просто другой подход
 
 1899
 01:27:37,600 --> 01:27:40,090
-but we could do everything
-we've done thus far using
+Хотя мы могли бы сделать все при помощи
 
 1900
 01:27:40,090 --> 01:27:46,550
-while loops or even for loops, as well.
+циклов while или даже for
 
 1901
 01:27:46,550 --> 01:27:50,080
