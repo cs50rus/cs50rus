@@ -8787,934 +8787,857 @@ while loops or even for loops, as well.
 
 1901
 01:27:46,550 --> 01:27:50,080
-All right, well let's go ahead now and
-make this a little more user friendly.
+Хорошо, теперь давайте сделаем программу 
+более дружественной к пользователю
 
 1902
 01:27:50,080 --> 01:27:54,790
-Let me go ahead and pull up some
-examples here of some screens that
+Я открою другие примеры, которые
 
 1903
 01:27:54,790 --> 01:27:56,060
-might look familiar.
+могут выглядеть знакомо
 
 1904
 01:27:56,060 --> 01:27:58,488
-So if I go ahead and
-open up, for instance,
+Так что если я открою, например,
 
 1905
 01:27:58,488 --> 01:28:00,280
-this slide here, you
-might recall this game
+вот этот слайд, вы можете вспомнить эту игру
 
 1906
 01:28:00,280 --> 01:28:04,000
-from yesteryear, Super Mario Brothers
-1, from the very original Nintendo.
+прошлых лет, Super Mario Brothers
+от самой Nintendo.
 
 1907
 01:28:04,000 --> 01:28:07,510
-And there's some screens in that game
-that look a little something like this.
+Эта игра может выглядеть вот так:
 
 1908
 01:28:07,510 --> 01:28:09,100
-For instance, these are
-little bricks in the air
+Например, вот эти маленькие кирпичи в воздухе
 
 1909
 01:28:09,100 --> 01:28:11,200
-that if Mario or Luigi
-hits their head up against,
+Если Марио или Луиджи ударят их,
 
 1910
 01:28:11,200 --> 01:28:13,450
-like a coin or something else pops out.
+выскочит монетка или что-нибудь ещё
 
 1911
 01:28:13,450 --> 01:28:16,810
-But this is kind of a nice idea, because
-it lends itself to actually doing
+Давайте подумаем, как такое можно 
 
 1912
 01:28:16,810 --> 01:28:18,535
-something a little programmatically.
+реализовать программно?
 
 1913
 01:28:18,535 --> 01:28:21,160
-For instance, how might I go
-about writing a program that quite
+Например, как мне написать программу,
 
 1914
 01:28:21,160 --> 01:28:23,800
-simply prints out four question marks?
+которая просто печатает 4 
+вопросительных знака?
 
 1915
 01:28:23,800 --> 01:28:26,920
-Well, let me go ahead and open
-up, for instance, in code,
+Я открою один пример,
 
 1916
 01:28:26,920 --> 01:28:30,100
-an example called mario0.c.
+пример под названием mario0.c.
 
 1917
 01:28:30,100 --> 01:28:33,087
-And I claim that this could be one
-way of implementing this program.
+И я утверждаю, что это один из 
+способов выполнить эту задачу
 
 1918
 01:28:33,087 --> 01:28:35,170
-It's very simple, and it
-really doesn't do justice
+Очень просто, исключительно знаки вопроса
 
 1919
 01:28:35,170 --> 01:28:39,400
-to the other graphics on the screen,
-but it does implement that one idea.
+больше ничего не рисует,
+но выполняет эту задачу
 
 1920
 01:28:39,400 --> 01:28:41,800
-And indeed, somewhere
-in the code for Mario,
+И в самом деле, где-то в коде Марио
 
 1921
 01:28:41,800 --> 01:28:43,600
-there was probably
-some line of code that
+есть строка кода вроде такой
 
 1922
 01:28:43,600 --> 01:28:47,950
-told the console game to print
-question mark, question mark, question
+говорящая консольной игре вывести
+вопрос, вопрос
 
 1923
 01:28:47,950 --> 01:28:48,970
-mark, question mark.
+вопрос, вопрос
 
 1924
 01:28:48,970 --> 01:28:51,760
-In C, we could certainly do
-this with four question marks.
+В Си, мы определенно можем это сделать
+с четырьмя вопросительными знаками
 
 1925
 01:28:51,760 --> 01:28:55,048
-Or how else could we do
-something that many times?
+Но есть ли способ лучше?
 
 1926
 01:28:55,048 --> 01:28:55,840
-AUDIENCE: For loop.
+ЗАЛ: Цикл for
 
 1927
 01:28:55,840 --> 01:28:57,465
-DAVID MALAN: Something like a for loop.
+DAVID MALAN: Да, цикл for
 
 1928
 01:28:57,465 --> 01:29:00,310
-So let me go ahead and jump
-ahead a couple of iterations
+Итак, я продолжу и открою
 
 1929
 01:29:00,310 --> 01:29:05,200
-to an example I'll call mario2.c,
-which just does all of this.
+следующий пример mario2.c,
+который все это делает
 
 1930
 01:29:05,200 --> 01:29:08,500
-So this is actually pretty involved,
-but notice what it's doing.
+Обратите внимание, как это работает:
 
 1931
 01:29:08,500 --> 01:29:12,010
-In main, I'm saying, hey,
-give me an integer called n.
+В блоке main, я прошу ввести integer n.
 
 1932
 01:29:12,010 --> 01:29:14,630
-Do the following while n is less than 1.
+Делать следующее пока n меньше 1.
 
 1933
 01:29:14,630 --> 01:29:18,820
-So this is just a way of asking,
-what is the width of the blocks
+Это просто способ спросить,
+сколько нужно блоков напечатать?
 
 1934
 01:29:18,820 --> 01:29:20,140
-that you want to print?
 
 1935
 01:29:20,140 --> 01:29:24,190
-Then, once I have that answer, I
-can go ahead and, just as before,
+Как только я получу ответ, 
+можно двигаться дальше
 
 1936
 01:29:24,190 --> 01:29:28,940
-print that many question
-marks n times, one at a time.
+Напечатать столько-то знаков вопроса,
+один за одним
 
 1937
 01:29:28,940 --> 01:29:32,080
-And at the very end, I'll
-print just a new line.
+И в самом конце, я напечатаю
+знак новой линии
 
 1938
 01:29:32,080 --> 01:29:35,470
-So in short, if you want to
-create a program, albeit in text,
+Итак, вкратце, если хотите 
+создать программу
 
 1939
 01:29:35,470 --> 01:29:37,760
-that does something like
-this, and I make mario2--
+которая делает что-то вроде этого, 
+скомпилирую её make mario2
 
 1940
 01:29:37,760 --> 01:29:38,410
-whoops.
+Упс
 
 1941
 01:29:38,410 --> 01:29:43,510
-And I make mario2,
-Enter, and type ./mario2,
+Итак, make mario2,
+Enter, запустим ./mario2,
 
 1942
 01:29:43,510 --> 01:29:46,510
-I can do a width of four
-and get four question marks.
+Я могу задать ширину в 4
+и получу 4 блока
 
 1943
 01:29:46,510 --> 01:29:49,730
-Or I can do 50 and get many
-more on the screen, all
+Или я могу задать 50 и 
+получу их все на экран
 
 1944
 01:29:49,730 --> 01:29:51,480
-by just using these
-basic building blocks.
+Используя эти простые шаги
 
 1945
 01:29:51,480 --> 01:29:54,660
-But notice, because of that
-do-while loop, if I don't cooperate
+Но заметьте, из-за этого цикла do-while, 
+если я не введу положительное число
 
 1946
 01:29:54,660 --> 01:29:58,110
-and I do something like 0 or
-negative 1 or negative 50,
+А введу ноль, -1 или -50
 
 1947
 01:29:58,110 --> 01:30:02,160
-I just keep getting prompted again
-and again, because n is less than 1.
+Меня попросят ввести значение снова,
+поскольку n меньше 1.
 
 1948
 01:30:02,160 --> 01:30:05,130
-That's the kind of logic
-that you can impose there.
+Вот такая логика здесь реализована
 
 1949
 01:30:05,130 --> 01:30:10,018
-But let's go ahead and skip ahead,
-say, to something like this in Mario,
+Но давайте продолжим и перейдем
+к следующему примеру Mario,
 
 1950
 01:30:10,018 --> 01:30:12,060
-where you have a whole
-lot of bricks underground.
+и кирпичиков у нас будет побольше
 
 1951
 01:30:12,060 --> 01:30:16,000
-And this time, it's not just
-a column or a row of bricks.
+В этот раз, это не просто ряд кирпичей,
 
 1952
 01:30:16,000 --> 01:30:17,755
-This time, it's kind of two dimensions.
+В этот раз они уже двухмерные
 
 1953
 01:30:17,755 --> 01:30:20,130
-Well, this is kind of interesting,
-because now how do you
+Это уже гораздо интереснее,
 
 1954
 01:30:20,130 --> 01:30:23,200
-go about printing block, block, block,
-block, block, block, block, block,
+потому что нам надо 
 
 1955
 01:30:23,200 --> 01:30:25,158
-block, block, block,
-block, and actually making
+из простых напечатанных символов 
 
 1956
 01:30:25,158 --> 01:30:26,700
-a two-dimensional structure instead?
+сделать двухмерную структуру
 
 1957
 01:30:26,700 --> 01:30:30,090
-Well, there's nothing stopping
-us in C, as in Scratch,
+Ну что же, в Си, как и в Scratch,
+это можно сделать
 
 1958
 01:30:30,090 --> 01:30:33,540
-from doing something,
-for instance, with loops.
+с помощью циклов
 
 1959
 01:30:33,540 --> 01:30:35,650
-So let me show this example here.
+Позвольте мне показать вам этот пример:
 
 1960
 01:30:35,650 --> 01:30:38,070
-So suppose that with
-these first lines of code,
+В первой строке кода
 
 1961
 01:30:38,070 --> 01:30:41,938
-I've asked the user for
-the size of this block.
+Я спрошу о размере блока
 
 1962
 01:30:41,938 --> 01:30:44,730
-So I want to create something that's
-square-like like this-- block,
+Я хочу создать квадратный блок
 
 1963
 01:30:44,730 --> 01:30:47,710
-block, block, block, block, block,
-block, block, block, and so forth.
+много-много кирпичиков
 
 1964
 01:30:47,710 --> 01:30:51,270
-Well, I can go ahead and prompt
-them for an int again and again
+Я могу запросить целое число,
 
 1965
 01:30:51,270 --> 01:30:53,500
-and again until I know that size.
+снова и снова и снова,
 
 1966
 01:30:53,500 --> 01:30:54,930
-And then notice this.
+И обратите внимание:
 
 1967
 01:30:54,930 --> 01:30:58,770
-This is starting to escalate
-again, but consider the logic.
+Получается сложновато,
+но логика понятна
 
 1968
 01:30:58,770 --> 01:31:02,520
-This now is for int i get 0,
-i less than n, i plus plus.
+Итак, for int i = 0, i < n, i++
 
 1969
 01:31:02,520 --> 01:31:04,500
-So do the following n times, right?
+Сделай это n раз, верно?
 
 1970
 01:31:04,500 --> 01:31:08,220
-This is a very cryptic, C-like way
-of saying, do the following n times.
+Вот такой способ сказать сделай это n раз
 
 1971
 01:31:08,220 --> 01:31:10,170
-What about line 16?
+А что на строке 16?
 
 1972
 01:31:10,170 --> 01:31:13,740
-What is line 16 saying?
+Что она говорит?
 
 1973
 01:31:13,740 --> 01:31:16,710
-Even though it's using
-a different variable.
+Она использует другую переменную,
 
 1974
 01:31:16,710 --> 01:31:18,869
-I'm using j just because instead of i.
+использует j вместо i.
 
 1975
 01:31:18,869 --> 01:31:19,744
-AUDIENCE: Same thing.
+ЗАЛ: Тоже самое
 
 1976
 01:31:19,744 --> 01:31:20,786
-Do the following n times.
+Сделай это n раз
 
 1977
 01:31:20,786 --> 01:31:24,180
-DAVID MALAN: Yeah, it says the exact
-same thing-- do the following n times.
+DAVID MALAN: Да, тоже самое
+Сделай это n раз
 
 1978
 01:31:24,180 --> 01:31:26,880
-However, it's counting
-using j instead of i,
+Однако, оно считает j вместо i,
 
 1979
 01:31:26,880 --> 01:31:30,100
-just so that my math doesn't
-kind of commingle incorrectly.
+это чтобы счет не перемешался
 
 1980
 01:31:30,100 --> 01:31:32,580
-So if you think about
-what this Mario block is,
+Если вы подумаете о том,
+что такое блок в Mario,
 
 1981
 01:31:32,580 --> 01:31:35,318
-this is like printing rows and columns.
+это как печатать строки и столбцы.
 
 1982
 01:31:35,318 --> 01:31:37,860
-Kind of like an old school
-typewriter that's got to move from
+Как старая печатная машинка, 
+которая печатает 
 
 1983
 01:31:37,860 --> 01:31:41,250
-left to right and then top to
-bottom, top to bottom, left to right,
+слева направа и, затем, одна строка
+вниз - и снова слева направо
 
 1984
 01:31:41,250 --> 01:31:44,610
-and so forth just to print
-different blocks on different lines.
+И так далее, чтобы напечатать 
+различные блоки на разных строчках
 
 1985
 01:31:44,610 --> 01:31:47,010
-So the effect here--
-if I open up mario8--
+Я открою mario8...
 
 1986
 01:31:47,010 --> 01:31:48,730
-might be this, make-- oops.
+make-- упс
 
 1987
 01:31:48,730 --> 01:31:53,193
-Let me go ahead and
-make mario8, ./mario8.
+Итак, make mario8, ./mario8.
 
 1988
 01:31:53,193 --> 01:31:54,360
-What's the size going to be?
+Какой размер мне нужен?
 
 1989
 01:31:54,360 --> 01:31:55,680
-Well, maybe three.
+Допустим, три
 
 1990
 01:31:55,680 --> 01:32:00,030
-And now I've printed out
-three rows and three columns.
+И мы видим три строки и три столбца
 
 1991
 01:32:00,030 --> 01:32:03,930
-These essentially
-represent each of my rows.
+которые представляют мои строки
 
 1992
 01:32:03,930 --> 01:32:05,830
-I'm counting from i up to--
+Я считаю от i и до...
 
 1993
 01:32:05,830 --> 01:32:07,450
-oh.
+Ох
 
 1994
 01:32:07,450 --> 01:32:10,980
-I'm teaching myself now only, OK.
+Учу сам себя, мда
 
 1995
 01:32:10,980 --> 01:32:11,760
-Let's rewind.
+Давайте еще раз
 
 1996
 01:32:11,760 --> 01:32:13,950
-Here is what was
-amazing me a moment ago.
+Вот чему  так радовался
 
 1997
 01:32:13,950 --> 01:32:16,770
-When I was running what's
-the size of this program,
-
+Когда я запустил программу,
 1998
 01:32:16,770 --> 01:32:19,140
-I saw a three-by-three grid of blocks.
+то получил 3 на 3 квадрат блоков
 
 1999
 01:32:19,140 --> 01:32:21,450
-And if I run it again,
-maybe with 10, I now
+И если я запущу ее снова, но уже с десятью,
 
 2000
 01:32:21,450 --> 01:32:24,003
-see an even bigger grid
-of 10-by-10 bricks.
+я получу еще больший объект, 
+уже 10 на 10
 
 2001
 01:32:24,003 --> 01:32:26,670
-It's a little taller than it is
-wide, because the hash marks are
+Он несколько выше, чем шире, потому что 
 
 2002
 01:32:26,670 --> 01:32:27,960
-taller than they are wide.
+этот знак выше. чем шире
 
 2003
 01:32:27,960 --> 01:32:30,390
-And you'll see that now
-this program is dynamic.
+И вы видите, что программа работает
 
 2004
 01:32:30,390 --> 01:32:31,950
-So how is that working?
+Итак, как это работает?
 
 2005
 01:32:31,950 --> 01:32:33,950
-Well, if I actually
-look at the code here,
+Если мы посмотрим на код
 
 2006
 01:32:33,950 --> 01:32:36,750
-notice that, effectively,
-what line 14 is doing
+обратите внимание на строку 14
 
 2007
 01:32:36,750 --> 01:32:39,030
-is it's doing one row at a time.
+Она выводит строку за строкой
 
 2008
 01:32:39,030 --> 01:32:43,170
-It's giving me n rows, and each of those
-rows I'm thinking of this is i at 0,
+Она создает n строк, и каждая из 
+этих строк состоит из i0,
 
 2009
 01:32:43,170 --> 01:32:46,020
-i1, i2, and so forth.
+i1, i2, и так далее.
 
 2010
 01:32:46,020 --> 01:32:50,650
-Meanwhile, within each row,
-I'm using this inner loop,
+Тем временем, для каждой строки, 
+я использую вложенный цикл,
 
 2011
 01:32:50,650 --> 01:32:54,900
-which is deliberately nested inside,
-to kind of do each of the characters
+вложенный цикл выводит эти
+символы слева направа
 
 2012
 01:32:54,900 --> 01:32:55,990
-from left to right.
+слева направо
 
 2013
 01:32:55,990 --> 01:32:58,680
-So within each row, I want
-hash, hash, hash, hash.
+Для каждой строки: hash, hash, hash
 
 2014
 01:32:58,680 --> 01:33:00,750
-Within each row--
-hash, hash, hash, hash.
+Для каждой строки: hash, hash, hash
 
 2015
 01:33:00,750 --> 01:33:03,670
-So it's like implementing
-this two-dimensional process.
+Это и создает двухмерный объект
 
 2016
 01:33:03,670 --> 01:33:06,900
-But again, using the
-same fundamental ideas.
+используя те же самые фундаментальные идеи
 
 2017
 01:33:06,900 --> 01:33:11,370
-Just a for loop that's very
-carefully counting from zero on up
+Просто цикл, который считает
+что-то с нуля и далее
 
 2018
 01:33:11,370 --> 01:33:16,032
-to some value to do something
-again and again and again.
+до заданного значения, делая
+что-то снова и снова
 
 2019
 01:33:16,032 --> 01:33:18,240
-And so if you think about
-really any of today's games
+Так что если вы видите в современных играх
 
 2020
 01:33:18,240 --> 01:33:21,150
-or graphics or programs,
-anytime you see redundancy,
+или в компьютерной графике,
+каждый раз, когда вы видите повторение
 
 2021
 01:33:21,150 --> 01:33:24,600
-whether it's this in two dimensions--
-maybe it's this vertically in one
+Неважно, в двух измерениях,
 
 2022
 01:33:24,600 --> 01:33:26,712
-dimension or this
-horizontally in another.
+или вертикально, или горизонтально
 
 2023
 01:33:26,712 --> 01:33:29,670
-Odds are, there's just some repetition
-that's happening again and again
+Если некое явление повторяется снова и снова
 
 2024
 01:33:29,670 --> 01:33:33,510
-and again that can be reduced in C
-or in Scratch or some other language
+То в Си или в Scracth или в других языках
+это может быть сведено
 
 2025
 01:33:33,510 --> 01:33:36,780
-to ultimately just lines of code.
+буквально к нескольким строкам кода
 
 2026
 01:33:36,780 --> 01:33:39,270
-And indeed, this is an allusion
-to one of the first things
+Это напоминает об одной из первых вещей, 
 
 2027
 01:33:39,270 --> 01:33:41,760
-you'll do for the first
-problem set, problem set 1.
+Которые вы сделаете в качестве 
+домашнего задания, problem set 1.
 
 2028
 01:33:41,760 --> 01:33:45,180
-You'll use CS50 Lab, which is
-identical to CS50 Sandbox, which
+Вы используете CS50 Lab, которая
+идентична CS50 Sandbox
 
 2029
 01:33:45,180 --> 01:33:48,090
-I've been using thus far,
-but which adds instructions,
+которую я использовал,
+но там добавлены инструкции,
 
 2030
 01:33:48,090 --> 01:33:52,170
-the actual problems to solve,
-alongside of your sandbox.
+и настоящие проблемы для решения
 
 2031
 01:33:52,170 --> 01:33:55,470
-But before we tease you
-with that, let's just
+Но перед этим, давайте
 
 2032
 01:33:55,470 --> 01:34:00,720
-consider now that there are a bunch of
-little assumptions I've been making.
+поговорим еще о некоторых нюансах
 
 2033
 01:34:00,720 --> 01:34:03,060
-Like thus far, all of
-the mistakes in my code
+До сих пор, все ошибки в моем коде
 
 2034
 01:34:03,060 --> 01:34:06,990
-have been my own-- some intentional, but
-several unintentional, as well, today.
+были моими собственными, некоторые
+намеренно, некоторые нет
 
 2035
 01:34:06,990 --> 01:34:10,560
-But it turns out that computers
-themselves do have limitations.
+Однако и сами компьютеры имеют некоторые ограничения
 
 2036
 01:34:10,560 --> 01:34:12,810
-Inside of your Mac or PC is
-generally stuff like this.
+Внутри вашего компьютера есть 
 
 2037
 01:34:12,810 --> 01:34:14,372
-This is called memory, or RAM.
+так называемая память, RAM
 
 2038
 01:34:14,372 --> 01:34:16,080
-And you don't typically
-see it unless you
+Обычно ее не видно,
 
 2039
 01:34:16,080 --> 01:34:18,900
-remove the cover from your
-phone or your laptop or desktop.
+пока не снимешь крышку
 
 2040
 01:34:18,900 --> 01:34:22,680
-RAM is where all of your programs
-are stored while they're running.
+В памяти RAM хранится вся информация
+ваших программ, пока они выполняются
 
 2041
 01:34:22,680 --> 01:34:26,190
-RAM is where all of your programs--
-where all of your files are
+В RAM хранятся данные и файлы,
 
 2042
 01:34:26,190 --> 01:34:27,540
-stored while they're open.
+пока они открыты
 
 2043
 01:34:27,540 --> 01:34:30,930
-It's what your computer uses
-to do multiple things at once
+Эту память компьютер использует, 
+чтобы делать несколько дел сразу
 
 2044
 01:34:30,930 --> 01:34:32,440
-and keep things in memory.
+там все это хранится
 
 2045
 01:34:32,440 --> 01:34:35,430
-However, it is, by nature
-of hardware, finite.
+Однако, по природе объем памяти не бесконечен
 
 2046
 01:34:35,430 --> 01:34:38,610
-You have maybe one gigabyte,
-one billion bytes, of memory.
+У вас может быть, допустим, 
+один гигабайт памяти
 
 2047
 01:34:38,610 --> 01:34:41,400
-Maybe you have four gigabytes,
-or four billion bytes, of memory.
+Может быть четыре гигабайта,
 
 2048
 01:34:41,400 --> 01:34:44,280
-You have fixed amount of
-memory in your computer,
+Количество доступной памяти
+ограничено, конечно,
 
 2049
 01:34:44,280 --> 01:34:48,040
-which means there is some fundamental
-limitation on what your computer can
+Что означает, что есть некоторые
+фундаментальные ограничения того,
 
 2050
 01:34:48,040 --> 01:34:48,540
-do.
+что компьютер может делать
 
 2051
 01:34:48,540 --> 01:34:52,350
-It cannot necessarily count to infinity,
-because how could it count to infinity
+Он не может считать до бесконечности,
+как бы он считал до бесконечности,
 
 2052
 01:34:52,350 --> 01:34:57,020
-if it can't store all possible numbers
-using a finite amount of space?
+это невозможно - сохранить бесконечное
+множество цифр в конечной памяти
 
 2053
 01:34:57,020 --> 01:34:59,370
-Indeed, there are some
-limits of computation
+Так что есть некоторые ограничения
 
 2054
 01:34:59,370 --> 01:35:01,230
-that we've only just begun to see.
+которые мы только начинаем видеть
 
 2055
 01:35:01,230 --> 01:35:02,890
-In fact, let me go ahead and do this.
+Итак, давайте кое-что сделаем
 
 2056
 01:35:02,890 --> 01:35:06,445
-Let me write a program that I'm
-going to go ahead and call float.c.
+Напишем программу float.c.
 
 2057
 01:35:06,445 --> 01:35:09,570
-And this is just going to be a program
-that gets a couple of floating point
+это будет программа, которая получит 
+от пользователя 
 
 2058
 01:35:09,570 --> 01:35:11,980
-values from the user.
+пару дробных чисел
 
 2059
 01:35:11,980 --> 01:35:15,000
-Let me go ahead and
-include the CS50 library.
+Подключим библиотеку CS50
 
 2060
 01:35:15,000 --> 01:35:19,420
-Let's go ahead and include
-stdio.h, int main void, as before.
+подключим stdio.h, int main void, 
+как и раньше
 
 2061
 01:35:19,420 --> 01:35:22,488
-And all I want to do here with this
-program is get a couple of floats.
+Все что мне сейчас нужно - это получить пару дробей
 
 2062
 01:35:22,488 --> 01:35:23,280
-So give me a float.
+Итак, введите число с запятой
 
 2063
 01:35:23,280 --> 01:35:24,420
-We'll call it x.
+Назовем переменную икс.
 
 2064
 01:35:24,420 --> 01:35:26,808
-Get_float, and I'll
-prompt the human for x.
+Get_float, попрошу ввести икс.
 
 2065
 01:35:26,808 --> 01:35:28,350
-Then let me go ahead and get another.
+Теперь получим другую
 
 2066
 01:35:28,350 --> 01:35:29,370
-I'll call it y.
+Назову игрек.
 
 2067
 01:35:29,370 --> 01:35:31,380
-Get_float, quote unquote y.
+Get_float, кавычки, игрек.
 
 2068
 01:35:31,380 --> 01:35:34,110
-And recall that a float
-is just a number that
+Помните, float - это число 
 
 2069
 01:35:34,110 --> 01:35:36,475
-has a decimal point in it,
-a so-called real number.
+с точкой, десятичная дробь,
+действительное число
 
 2070
 01:35:36,475 --> 01:35:38,100
-Now let's just do some simple division.
+А теперь сделаем самое простое деление
 
 2071
 01:35:38,100 --> 01:35:40,990
-I claim that computers can do
-addition, subtraction, and so forth.
+Я уже говорил, что компьютеры умеют
+складывать, вычитать и так далее
 
 2072
 01:35:40,990 --> 01:35:41,920
-So let's do that.
+Сделаем это
 
 2073
 01:35:41,920 --> 01:35:46,410
-Let's just tell it that x divided by
-y is going to equal the following--
+Скажем ему поделить икс на игрек
 
 2074
 01:35:46,410 --> 01:35:52,150
-percent f backslash n x
-divided by y semicolon.
+%f бэкслэш n икс / игрек 
+точка с запятой
 
 2075
 01:35:52,150 --> 01:35:55,110
-So that's just sort of a
-very simplistic calculator
+Вот такой крайне простой калькулятор
 
 2076
 01:35:55,110 --> 01:35:57,510
-that I've implemented that
-only supports division.
+который я сделал, 
+поддерживает только деление
 
 2077
 01:35:57,510 --> 01:36:04,170
-Let me go ahead and compile this
-by going and typing make floats.
+продолжим и скомпилируем
+make floats.
 
 2078
 01:36:04,170 --> 01:36:05,820
-And you'll see that it did compile.
+Скомпилировалось
 
 2079
 01:36:05,820 --> 01:36:07,980
-So floats with dot slash.
+./floats
 
 2080
 01:36:07,980 --> 01:36:09,570
-x is going to be, say, 1.
+Икс будет равно одному
 
 2081
 01:36:09,570 --> 01:36:10,960
-y is going to be 10.
+Игрек будет равно 10.
 
 2082
 01:36:10,960 --> 01:36:12,120
-OK, viola.
+Вуаля.
 
 2083
 01:36:12,120 --> 01:36:15,501
-x divided by y equals 0.10000.
+Икс деленное на игрек бует равно 0.10000.
 
 2084
 01:36:15,501 --> 01:36:16,440
-That's pretty nice.
+Неплохо
 
 2085
 01:36:16,440 --> 01:36:19,570
-And recall, if you don't want to see
-all those zeros, you can just say,
+Помните, если лишние нули не нужны,
+можно упростить
 
 2086
 01:36:19,570 --> 01:36:23,160
-show me one decimal point by adding 0.1.
+добавив 0.1.
 
 2087
 01:36:23,160 --> 01:36:25,950
-Recompile and then rerun it.
+Перекомпилируем и перезапустим
 
 2088
 01:36:25,950 --> 01:36:27,790
-And now do 1, 10.
+Итак, 1 поделить на 10
 
 2089
 01:36:27,790 --> 01:36:29,820
-OK, so now it's 1/10.
+Ну вот, равно одной десятой
 
 2090
 01:36:29,820 --> 01:36:30,930
-Or is it?
+Равно ли?
 
 2091
 01:36:30,930 --> 01:36:33,660
-Now that I have this ability
-to look past the decimal point,
+Посмотрим подальше за точку
 
 2092
 01:36:33,660 --> 01:36:36,900
-why don't I look not a
-few places or one place.
+Сделаем число точнее,
 
 2093
 01:36:36,900 --> 01:36:40,440
-Let me go ahead and look maybe 10
-places after the decimal point.
+Допустим, я хочу получить 10
+знаков после точки
 
 2094
 01:36:40,440 --> 01:36:48,210
-Let me rerun this as make
-floats, ./floats, 1, 10.
+перезапустим программу,
+make floats, ./floats, 1, 10.
 
 2095
 01:36:48,210 --> 01:36:49,920
-Interesting.
+Интересно!
 
 2096
 01:36:49,920 --> 01:36:51,627
-All right, that seems a little strange.
+Да, выглядит странно
 
 2097
 01:36:51,627 --> 01:36:52,710
-Maybe it was just a fluke.
+Может, просто случайность?
 
 2098
 01:36:52,710 --> 01:36:54,043
-Let's look out a little further.
+Посмотрим чуть дальше
 
 2099
 01:36:54,043 --> 01:36:56,080
-Let's look 50 decimal places out.
+Допустим, 50 знаков после запятой
 
 2100
 01:36:56,080 --> 01:36:57,887
-Let's go ahead and recompile this.
+Перекомпилируем
 
 2101
 01:36:57,887 --> 01:36:59,970
