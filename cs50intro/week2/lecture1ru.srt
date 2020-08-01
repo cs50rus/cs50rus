@@ -9990,481 +9990,472 @@ keep adding one to it.
 
 2200
 01:41:23,170 --> 01:41:26,630
-And as soon as you hit
-nine, it rolls over to zero.
+И как только вы достигните
+девяти, число округляется до нуля.
 
 2201
 01:41:26,630 --> 01:41:29,240
-You then carry the
-one, and you have 130.
+Затем вы переносите
+единицу, и у вас 130.
 
 2202
 01:41:29,240 --> 01:41:30,380
-That works great.
+Это прекрасно работает.
 
 2203
 01:41:30,380 --> 01:41:36,050
-But of course, even in decimal, if
-you're at 999 using only three digits
+Но, конечно, даже в десятичной системе, если
+вы сейчас на числе 999, и используете при этом только три цифры,
 
 2204
 01:41:36,050 --> 01:41:39,440
-and you try to add one more, you
-carry the one, you carry the one,
+и вы пытаетесь добавить еще единицу, вы ее
+переносите, переносите,
 
 2205
 01:41:39,440 --> 01:41:41,000
-you lose the one.
+и вы теряете одиницу.
 
 2206
 01:41:41,000 --> 01:41:41,840
-Sorry.
+Прошу прощения.
 
 2207
 01:41:41,840 --> 01:41:43,110
-What happens next?
+Что произойдет дальше?
 
 2208
 01:41:43,110 --> 01:41:47,030
-This becomes 1, 0, 0, 0.
+Значение становится 1, 0, 0, 0.
 
 2209
 01:41:47,030 --> 01:41:50,420
-But if you only have three
-digits, you lose that initial one,
+Но если у вас есть только три
+цифры, вы теряете ту начальную,
 
 2210
 01:41:50,420 --> 01:41:51,890
-and you're left with just zero.
+и вы остались только с нулем.
 
 2211
 01:41:51,890 --> 01:41:53,150
-Same thing happens in binary.
+То же самое происходит в двоичном формате.
 
 2212
 01:41:53,150 --> 01:41:54,690
-Now if you context switch--
+Теперь, если вы поменяете контекст--
 
 2213
 01:41:54,690 --> 01:41:58,860
-and this is, in binary, what number?
+а это в двоичном виде какое число?
 
 2214
 01:41:58,860 --> 01:42:01,580
-This is the fours
-place, twos place, ones.
+Это место четверки,
+это место двойки и единицы.
 
 2215
 01:42:01,580 --> 01:42:02,420
-So it's seven.
+Так что это 7.
 
 2216
 01:42:02,420 --> 01:42:04,280
-4 plus 2 plus 1, this is 7.
+4 плюс 2 плюс 1, это 7.
 
 2217
 01:42:04,280 --> 01:42:06,230
-So of course, if you
-add 1 to 7, you'd like
+Так что, конечно, если вы
+добавите 1 к 7, вы бы хотели
 
 2218
 01:42:06,230 --> 01:42:10,010
-to get 8, which would give you 1, 0, 0.
+получить 8, что даст вам 1, 0, 0.
 
 2219
 01:42:10,010 --> 01:42:13,370
-But if you only have
-three bits, three digits,
+Но если у вас есть только
+три бита, три цифры,
 
 2220
 01:42:13,370 --> 01:42:15,740
-you're going to overflow, so to speak.
+у вас будет переполнение (overflow), так сказать.
 
 2221
 01:42:15,740 --> 01:42:19,400
-You're going to lose the carried one so
-that the value you're actually storing
+Вы потеряте ту единицу, которую переносили, так что
+что значение, которое вы действительно храните
 
 2222
 01:42:19,400 --> 01:42:20,600
-is just zero.
+это просто ноль.
 
 2223
 01:42:20,600 --> 01:42:23,600
-That's why if I count high enough
-with an integer in a program,
+Вот почему, если я считаю и получаются достаточно большие
+целые числа в программе,
 
 2224
 01:42:23,600 --> 01:42:28,010
-once I hit the billions, eventually
-that one has gotten carried too far.
+то, как только я наберу миллиарды, в конце концов,
+это будет много -
 
 2225
 01:42:28,010 --> 01:42:30,620
-It's only 32 bits large.
+Так как всего 32 бита.
 
 2226
 01:42:30,620 --> 01:42:33,530
-We can't fit a number
-even bigger than that.
+Мы не можем набрать число больше.
 
 2227
 01:42:33,530 --> 01:42:35,240
-That's what's called integer overflow.
+Это то, что называется избытком целых чисел.
 
 2228
 01:42:35,240 --> 01:42:38,340
-And if you ever heard
-of the Y2K problem,
+И если вы когда-нибудь слышали о проблеме 2000 года,
 
 2229
 01:42:38,340 --> 01:42:43,340
-this was a horrible, very simple problem
-that humans created for themselves
+это была ужасная, очень простая проблема,
+которую люди создали сами для себя
 
 2230
 01:42:43,340 --> 01:42:46,960
-back in the day when computers were
-invented in the mid 1900s, really.
+когда-то, в середине 1900-х годов,
+когда компьютеры были изобретены
 
 2231
 01:42:46,960 --> 01:42:50,410
-Humans decided to save space, very
-reasonable, because space was expensive
+Люди решили сохранить место,
+что было очень разумно, потому что место был дорогим
 
 2232
 01:42:50,410 --> 01:42:51,260
-early on.
+в самом начале.
 
 2233
 01:42:51,260 --> 01:42:58,452
-So instead of storing the year as 1999
-or 1970 for 1970, what did they do?
+Вместо того, чтобы хранить обозначение года как 1999
+или же 1970 как 1970, что они сделали?
 
 2234
 01:42:58,452 --> 01:43:00,160
-Yeah, they just stored
-two digits, right?
+Да, они просто хранили 2 последние цифры, так?
 
 2235
 01:43:00,160 --> 01:43:01,480
-Like oh my god, we're
-not going to be using
+"О конечно же, мы
+не собираюсь использовать
 
 2236
 01:43:01,480 --> 01:43:03,190
-these computers 50 years from now.
+эти компьютеры через 50 лет.
 
 2237
 01:43:03,190 --> 01:43:04,570
-Let's just store two digits.
+Давайте просто хранить две цифры."
 
 2238
 01:43:04,570 --> 01:43:06,573
-Unfortunately, that was not the case.
+К сожалению, это было не так.
 
 2239
 01:43:06,573 --> 01:43:09,490
-And there was a lot of code out there
-and a lot of computers out there
+И было много программ
+и много компьютеров
 
 2240
 01:43:09,490 --> 01:43:12,040
-that were still running in 1999.
+которые все еще продолжали работать в 1999 году.
 
 2241
 01:43:12,040 --> 01:43:17,080
-But if you're only storing two
-digits and you plus plus one value
+Но если вы храните только две
+цифры и вы добавляете единицу к значению
 
 2242
 01:43:17,080 --> 01:43:20,020
-to the year, what you'd
-like to be 2000 was
+года, то вы бы, конечно,
+хотели, чтобы получился 2000
 
 2243
 01:43:20,020 --> 01:43:25,120
-misinterpreted in lots of systems
-as 1900, at which point stuff broke.
+но во многих системах это могло быть неверно истолковано
+как 1900 год, и в этот момент случились ошибки.
 
 2244
 01:43:25,120 --> 01:43:27,580
-And the world spent millions
-of dollars, presumably,
+И мир потратил, предположительно,
+миллионы долларов
 
 2245
 01:43:27,580 --> 01:43:30,160
-having programmers
-start using more memory
+чтобы программы, начали использовать больше памяти
 
 2246
 01:43:30,160 --> 01:43:32,650
-to fix this problem in
-anticipation of what was called
+для решения этой проблемы
+предвидя то, что назали
 
 2247
 01:43:32,650 --> 01:43:35,860
-Y2K to get ahead of this problem.
+рещением Проблемы 2000 года.
 
 2248
 01:43:35,860 --> 01:43:38,890
-And in the end, the world did
-not end in 1999, which was great.
+И в конце концов, мир не закончился
+в 1999 году, что было великолепно.
 
 2249
 01:43:38,890 --> 01:43:40,930
-But it was a very real
-and a very expensive
+Но это была реальная
+и очень дорогая
 
 2250
 01:43:40,930 --> 01:43:43,570
-problem because of
-that lack of foresight.
+проблема из-за
+отсутствия предусмотрительности.
 
 2251
 01:43:43,570 --> 01:43:46,400
-It turns out that there's other
-examples of this, as well.
+Оказывается, есть и другие
+примеры.
 
 2252
 01:43:46,400 --> 01:43:50,980
-So this one, as an example, will
-just about end on Boeing 787.
+Вот этот, например, про почти конец Boeing 787.
 
 2253
 01:43:50,980 --> 01:43:53,737
-So Boeing has not been
-getting great press recently.
+Так что у Боинга не было
+хороших публикаций в прессе в последнее время.
 
 2254
 01:43:53,737 --> 01:43:55,570
-And even a few years
-ago, did they have what
+И даже несколько лет
+назад, у них было то, что
 
 2255
 01:43:55,570 --> 01:43:58,150
-appeared to be a very
-straightforward software bug.
+казалось очень простой ошибкой
+программного обеспечения.
 
 2256
 01:43:58,150 --> 01:44:01,300
-Pictured here is a model 787 airplane.
+Здесь изображён самолёт модели 787.
 
 2257
 01:44:01,300 --> 01:44:04,210
-And the article from The New
-York Times explained as follows--
+И статья New
+York Times объясняет это так--
 
 2258
 01:44:04,210 --> 01:44:09,130
-"A model 787 airplane that has been
-powered continuously for 248 days
+"Самолет модели 787, который
+непрерывно работал 248 дней
 
 2259
 01:44:09,130 --> 01:44:12,070
-can lose all alternating
-current, electrical power,
+может потерять весь переменный ток,
 
 2260
 01:44:12,070 --> 01:44:14,380
-due to the generator
-control units simultaneously
+из-за того, что блоки управлени генератором одновременно
 
 2261
 01:44:14,380 --> 01:44:15,940
-going into failsafe mode.
+перейдут в режим защиты от ошибок.
 
 2262
 01:44:15,940 --> 01:44:17,920
-This condition is caused
-by a software counter
+Это состояние вызывается счетчиком
+программного обеспечения
 
 2263
 01:44:17,920 --> 01:44:20,920
-internal to the counters
-that will overflow
+внутренний счетчик
+переполняется
 
 2264
 01:44:20,920 --> 01:44:24,550
-after 248 days of continuous power.
+после 248 дней непрерывной работы.
 
 2265
 01:44:24,550 --> 01:44:26,920
-Boeing, according to the
-statement, is in the process
+Boeing, как утверждается, находится в процессе
 
 2266
 01:44:26,920 --> 01:44:30,550
-of developing a software upgrade
-that will remedy the safe condition."
+разработки обновления программного обеспечения,
+которое исправит это."
 
 2267
 01:44:30,550 --> 01:44:31,578
-So what does this mean?
+И что это значит?
 
 2268
 01:44:31,578 --> 01:44:33,370
-Well, if you actually
-dig into the numbers,
+Ну, если вы действительно
+погрузитесь в цифры,
 
 2269
 01:44:33,370 --> 01:44:41,560
-248 days is roughly the value
-of 2 raised to the 32nd power,
+248 дней - приблизительное значение
+2 в 32-й степени,
 
 2270
 01:44:41,560 --> 01:44:44,467
-give or take, in 1/100 of a second.
+плюс-минус, через 1/100 секунды.
 
 2271
 01:44:44,467 --> 01:44:47,050
-Which is to say that Boeing, in
-some crucial piece of hardware
+Что означает, что в Боинге,
+какая-то важная часть оборудования
 
 2272
 01:44:47,050 --> 01:44:51,640
-in their 787 actual
-airplanes, were using integers
+в их действующих 787 моделях самолетов,
+использовала целые числа
 
 2273
 01:44:51,640 --> 01:44:56,140
-that were counting so high that after
-the 248th day of the airplane being
+которые в процессе вычислений получают настолько большие числа,
+что после 248-й дня работы самолета
 
 2274
 01:44:56,140 --> 01:44:59,230
-powered on would actually
-overflow, the result of which
+будет переполнение (overflow), результат которого,
+
 
 2275
 01:44:59,230 --> 01:45:01,900
-is that the power in the
-plane could cut off entirely.
+это то, что электричество в самолете
+может полностью отключиться.
 
 2276
 01:45:01,900 --> 01:45:05,140
-And so the solution, if you read through
-all the technical speak and jargon
+Итак, решение, если вы проигнорируете
+все технические слова и жаргон
 
 2277
 01:45:05,140 --> 01:45:09,970
-there, is they literally had to
-reboot their planes every 248 days
+это то, что они буквально должны были
+перезагружать свои самолеты каждые 248 дней
 
 2278
 01:45:09,970 --> 01:45:13,270
-in order to reset that
-variable back to zero.
+чтобы сбросить эту переменную назад к нулю.
 
 2279
 01:45:13,270 --> 01:45:16,870
-This happens even today in the
-real world with issues like that.
+Такие проблемы,происходят даже сегодня,
+в реальном мире.
 
 2280
 01:45:16,870 --> 01:45:19,540
-And so you'll begin to notice
-these trends anytime people talk
+И вы начинаете замечать эти тенденции
+каждый раз, когда люди говорят
 
 2281
 01:45:19,540 --> 01:45:21,760
-about hardware mistakes
-or software mistakes.
+о аппаратных ошибках
+или ошибках программного обеспечения.
 
 2282
 01:45:21,760 --> 01:45:24,700
-Quite honestly, can you
-typically reduce them to problems
+Честно говоря, вы можете их, как правило, свсти к проблемам
 
 2283
 01:45:24,700 --> 01:45:26,690
-you yourselves have run into.
+с которыми вы сами столкнулись.
 
 2284
 01:45:26,690 --> 01:45:30,310
-And let me go ahead and tease just a
-couple of things, a couple of features
+И позвольте мне подразнить вас парой вещей,
+парой особенностей
 
 2285
 01:45:30,310 --> 01:45:31,390
-now ahead.
+сегодня.
 
 2286
 01:45:31,390 --> 01:45:34,450
-It turns out that now that we
-have the ability to write code,
+Оказалось, что теперь, когда у нас
+есть возможность писать код,
 
 2287
 01:45:34,450 --> 01:45:37,630
-our programs, of course, can do any
-number of things, saying or printing
+наши программы, конечно, могут делать любое
+количество вещей, говорить или печатать
 
 2288
 01:45:37,630 --> 01:45:38,657
-things on the screen.
+вещи на экране.
 
 2289
 01:45:38,657 --> 01:45:40,990
-We, of course, might do
-something like this in a program
+Мы, конечно, можем сделать
+что-то вроде этого в программе
 
 2290
 01:45:40,990 --> 01:45:43,900
-we might call figlet, which
-actually comes with some systems.
+Мы можем назвать это Figlet, программа, которая
+действительно идет вместе с некоторыми системами.
+(FIGlet - компьютерная программа,
+генерирующая текстовый баннер с буквами, составленными из букв. Прим. пер)
 
 2291
 01:45:43,900 --> 01:45:46,630
-And I can say something
-like, this is CS50,
+И я могу напечатать,
+например, это СС50,
 
 2292
 01:45:46,630 --> 01:45:49,540
-and actually print it out in what's
-called ASCII art using characters
+и программа  выведет то,
+что называется Искусство ASCII с использованием символов
 
 2293
 01:45:49,540 --> 01:45:51,707
-on the screen that kind of
-sort of look like letters
+на экране - символы похожие на буквы
 
 2294
 01:45:51,707 --> 01:45:55,520
-and create fairly beautiful, if
-old school, art on the screen.
+они созданы довольно красиво,
+это старая школа, искусство на экране.
 
 2295
 01:45:55,520 --> 01:45:58,210
-Of course, if you write
-code and you understand
+Конечно, если Вы пишите
+код и понимаете
 
 2296
 01:45:58,210 --> 01:46:01,450
-not only how numbers and letters
-are represented, but also sounds,
+что не только цифры и буквы
+могут представляться, но также и звуки,
 
 2297
 01:46:01,450 --> 01:46:04,270
-per our chat last week, you can
-do even more powerful things,
+а с помощью нашей встречи на прошлой неделе, вы сможете
+делать еще более впечатляющие вещи,
 
 2298
 01:46:04,270 --> 01:46:08,900
-such as this note, which we
-will literally end on today.
+такие как эта заметка, на которой мы,
+кстати говоря, и остановимся на сегодня.
 
 2299
 01:46:08,900 --> 01:46:10,217
-SPEAKER 2: This is CS50.
+ВТОРОЙ СПИКЕР: Это CS50.
 
 2300
 01:46:10,217 --> 01:46:11,550
-DAVID MALAN: That's it for CS50.
+DAVID MALAN: На сегодня это все, по курсу CS50.
 
 2301
 01:46:11,550 --> 01:46:13,210
-We will see you next week.
+Мы увидимся на следующей неделе.
 
 2302
 01:46:13,210 --> 01:46:15,060
-[APPLAUSE]
+[АПЛОДИСМЕНТЫ]
