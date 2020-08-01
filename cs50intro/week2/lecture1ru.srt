@@ -9711,304 +9711,303 @@ Let's look 50 decimal places out.
 
 2100
 01:36:56,080 --> 01:36:57,887
-Let's go ahead and recompile this.
+Давайте я пересоберу.
 
 2101
 01:36:57,887 --> 01:36:59,970
+Кстати, здесь есть некоторые
+горячие клавиши
 And it turns out, there's
 some keyboard shortcuts.
 
 2102
 01:36:59,970 --> 01:37:02,100
-I'm now hitting up and
-down on my keyboard, which
+я сейчас жму вверх и вниз
+на моей клавиатуре, это
 
 2103
 01:37:02,100 --> 01:37:04,302
-will scroll through your
-entire history of commands
+позволяет мне ходить
+по всей моей истории команд
 
 2104
 01:37:04,302 --> 01:37:06,010
-so you don't have to
-remember everything.
+поэтому вам не надо ничего
+запоминать.
 
 2105
 01:37:06,010 --> 01:37:08,130
-So to save time, I'm now
-just going up and down.
+Итак, чтобы сэкономить время,
+я просто переключаюсь вверх и вниз.
 
 2106
-01:37:08,130 --> 01:37:11,850
-Let me go ahead and do
-./floats now, 1, 10.
+01:37:08,130 --> 01:37:11,85
+Давайте я сделаю
+./floats теперь, 1, 10.
 
 2107
 01:37:11,850 --> 01:37:14,820
-Oh my god, division is a lie.
+Боже мой, деление это ложь.
 
 2108
 01:37:14,820 --> 01:37:18,660
-So when your grade school teachers or
-whatnot taught you that 1 divided by 10
+Так что если ваш школьный учитель,
+или кто бы то ни был учил вас что 1 деленное на 10
 
 2109
 01:37:18,660 --> 01:37:24,690
-is 1/10, or 0.10000 infinitely,
-apparently that's not true.
+это 1/10, или 0.1, с бесконечными нулями,
+это очевидно неправда.
 
 2110
 01:37:24,690 --> 01:37:28,810
-According to this computer,
-1/10 is actually this value.
+В компьютере 1/10 это вот
+это значение.
 
 2111
 01:37:28,810 --> 01:37:31,500
-So how do we reconcile that?
+Так на чем мы остановимся?
 
 2112
 01:37:31,500 --> 01:37:36,180
-Who is right, grade
-school math or computers?
+Кто прав, начальная школа
+или компьютеры?
 
 2113
 01:37:36,180 --> 01:37:39,150
-And what might explain?
+Кто может обьяснить?
 
 2114
 01:37:39,150 --> 01:37:40,860
-Any thoughts?
+Есть какие-то мысли?
 
 2115
 01:37:40,860 --> 01:37:41,850
-Yeah?
+Да?
 
 2116
 01:37:41,850 --> 01:37:45,550
-AUDIENCE: It only stores so
-much so then half of that,
+АУДИТОРИЯ: Компьютер может сохранить
+только ограниченное количество символов,
 
 2117
 01:37:45,550 --> 01:37:47,300
-you don't know what's
-going on over there.
+так что непонятно что происходит
+с тем что не получилось сохранить.
 
 2118
 01:37:47,300 --> 01:37:48,800
-DAVID MALAN: Yeah, that's
-a good way of putting it.
+DAVID MALAN: Да, хорошее обьяснение
 
 2119
 01:37:48,800 --> 01:37:51,200
-Computers can only store so
-much, so after a certain point,
+Компьютеры могут только хранить
+ограниченный обьем информации,
 
 2120
 01:37:51,200 --> 01:37:52,908
-you don't know what's
-going on out there.
+поэтому в какой то момент
+непонятно что происходит дальше.
 
 2121
 01:37:52,908 --> 01:37:53,480
-I like that.
+Мне оно нравится.
 
 2122
 01:37:53,480 --> 01:37:54,710
-Because that's indeed true.
+Потому что оно очень верное.
 
 2123
 01:37:54,710 --> 01:37:57,120
-If you only have a finite
-amount of hardware,
+Если у вас ограниченное количество
+оборудования,
 
 2124
 01:37:57,120 --> 01:38:00,830
-like a finite amount of memory, at
-some point, the computer has to decide,
+например ограниченный обьем памяти,
+в какой то момент компьютер решит:
 
 2125
 01:38:00,830 --> 01:38:02,780
-I can count no higher than this value.
+"я не могу хранить больше чем это значение".
 
 2126
 01:38:02,780 --> 01:38:06,890
-Or I can store no more than this
-many numbers after the decimal point.
+Или "я не могу хранить больше
+чем вот столько знаков после точки".
 
 2127
 01:38:06,890 --> 01:38:09,290
-You might be using 32
-bits, which a float is.
+Мы используем 32 бита,
+которые представлены типом float.
 
 2128
 01:38:09,290 --> 01:38:12,470
-You could use more bits, like a
-double, as I described it earlier,
+Вы можете использовать больше бит, как,
+например double, который я описывал раньше,
 
 2129
 01:38:12,470 --> 01:38:14,720
-literally uses twice
-as many bits, 64 bits.
+он использует буквально
+в два раза больше битов, 64.
 
 2130
 01:38:14,720 --> 01:38:19,580
-So that means we could get farther
-out before we see that imprecision.
+Что значит мы можем пойти дальше от
+точки, прежде чем увидим неточности.
 
 2131
 01:38:19,580 --> 01:38:20,870
-But you will see it.
+Но вы их обязательно увидите.
 
 2132
 01:38:20,870 --> 01:38:24,440
-Computers are, indeed,
-not perfect in this sense.
+Компьютеры не идеальны,
+в этом плане.
 
 2133
 01:38:24,440 --> 01:38:26,780
-They can only store a finite
-amount of information.
+Они могут хранить только
+ограниченный обьем информации.
 
 2134
 01:38:26,780 --> 01:38:31,190
-And so in that sense, the computer
-is storing the closest possible match
+И в этом смысле, компьютер
+хранит настолько точное значение
 
 2135
 01:38:31,190 --> 01:38:34,190
-for 1 divided by 10 that it can.
+для 1 деленного на 10, насколько может.
 
 2136
 01:38:34,190 --> 01:38:38,090
-Because you can't possibly store
-an infinite number of numbers 100%
+Потому что вы вероятно не можете
+хранить бесконечное число цифр
 
 2137
 01:38:38,090 --> 01:38:42,080
-precisely using a finite
-amount of information.
+со 100% точностью, используя
+ограниченный обьем информации.
 
 2138
 01:38:42,080 --> 01:38:44,060
-And we see this in another context, too.
+И мы еще увидим это в
+другом контексте.
 
 2139
 01:38:44,060 --> 01:38:48,530
-Let me go ahead and write one other
-program here called overflow.c.
+Давайте я напишу еще одну
+программу по имени overflow.c.
 
 2140
 01:38:48,530 --> 01:38:50,990
-And we'll see the same
-issue in another context.
+И мы увидим ту же проблему
+в другом свете.
 
 2141
 01:38:50,990 --> 01:38:54,350
-Let me go ahead and include stdio.h.
+Я включаю stdio.h.
 
 2142
 01:38:54,350 --> 01:38:57,410
-Let me go ahead and do int main void.
+Пишу int main void.
 
 2143
 01:38:57,410 --> 01:39:01,190
-Let me go ahead and
-do for int i gets one.
+int i равен единице.
 
 2144
 01:39:01,190 --> 01:39:07,478
-I'm going to go ahead and just say
-no condition and do i times equals 2.
+Тааак, нет условия, потом делать i раз
+умноженное на 2.
 
 2145
 01:39:07,478 --> 01:39:09,020
-And let me go ahead and just do this.
+И затем я просто напишу.
 
 2146
 01:39:09,020 --> 01:39:11,840
-Print out the value of i.
+Напечатать значение i.
 
 2147
 01:39:11,840 --> 01:39:15,440
-So I'm doing the super quickly, but
-I just have written a program here
+Да, я пишу быстро, но
+я только что написал программу, которая
 
 2148
 01:39:15,440 --> 01:39:17,510
-that's going to start counting at zero.
+начнет считать в нуле.
 
 2149
 01:39:17,510 --> 01:39:19,430
-It's going to multiply i.
+Она умножит i.
 
 2150
 01:39:19,430 --> 01:39:22,562
-Star equals just means
-times two again and again.
+Звездочка равно значит на два
+снова и снова.
 
 2151
 01:39:22,562 --> 01:39:25,520
-And it's going to do this forever,
-because I literally and deliberately
+И я буду это делать вечно, потому что,
+я намеренно
 
 2152
 01:39:25,520 --> 01:39:27,380
-didn't ask a Boolean expression here.
+не задал булево условие здесь.
 
 2153
 01:39:27,380 --> 01:39:29,352
-I could actually just
-say something like true,
+Я мог написать что то типа
+true,
 
 2154
 01:39:29,352 --> 01:39:30,810
-but I can also just leave it blank.
+но я также могу оставить его пустым.
 
 2155
 01:39:30,810 --> 01:39:32,310
-So this just means do this forever.
+Это значит делать вечно.
 
 2156
 01:39:32,310 --> 01:39:33,590
-It's an infinite loop.
+Это бесконечный цикл.
 
 2157
 01:39:33,590 --> 01:39:36,950
-Well, let me go ahead and this is
-going to fly past the screen here.
+Оно очень быстро пролетит на этом экране.
 
 2158
 01:39:36,950 --> 01:39:40,190
-So I'm going to also sleep
-for one second in between.
+Поэтому я скажу ему спать
+одну секунду между выполнениями.
 
 2159
 01:39:40,190 --> 01:39:43,010
-And indeed, there's a
-function in C called sleep.
+И это функция в C, по имени sleep.
 
 2160
 01:39:43,010 --> 01:39:45,230
-But to use it, you
-actually have to include
+Но чтобы ее использовать, вам
+нужно подключить
 
 2161
 01:39:45,230 --> 01:39:50,092
-another file called unistandard.h.
+другой файл по имени unistandard.h.
 
 2162
 01:39:50,092 --> 01:39:52,550
-You would only know this from
-looking in the documentation,
+Вы можете узнать об этом только
+прочтя документацию,
 
 2163
 01:39:52,550 --> 01:39:55,820
-but it's a handy function that
-lets me sleep one second at a time.
+но это удобная функция, которая
+позволит мне спать одну секунду.
 
 2164
 01:39:55,820 --> 01:39:57,920
-Let me go ahead and make overflow.
+Давайте сделаем переполнение.
 
 2165
 01:39:57,920 --> 01:39:58,650
@@ -10016,156 +10015,156 @@ No errors.
 
 2166
 01:39:58,650 --> 01:40:00,650
-Let me increase the size of my screen.
+Я увеличу экран.
 
 2167
 01:40:00,650 --> 01:40:02,600
-And let me go ahead and run overflow.
+И запущу переполнение.
 
 2168
 01:40:02,600 --> 01:40:06,530
-And we'll see that every one second,
-it prints out a value starting at one,
+И мы увидим, что каждую секунду оно
+печатает значение начинающееся с одного,
 
 2169
 01:40:06,530 --> 01:40:08,780
-and then it doubles it,
-and then it doubles it,
+потом удваивает,
+и удваивает,
 
 2170
 01:40:08,780 --> 01:40:10,760
-and then it doubles it again.
+и удваивает снова.
 
 2171
 01:40:10,760 --> 01:40:13,220
-So you might recall some of
-these values from last week,
+Вы можете вспомнить некоторые
+из этих значений с прошлой недели,
 
 2172
 01:40:13,220 --> 01:40:16,620
-where I proposed that were
-1,024 pages in a phone book,
+где я предположил что в телефонной
+книге 1024 страницы, а потом
 
 2173
 01:40:16,620 --> 01:40:18,893
-and then it just got smaller
-and smaller and smaller.
+их число становилось меньше и
+меньше и меньше.
 
 2174
 01:40:18,893 --> 01:40:20,310
-Now we're just doing the opposite.
+Теперь мы делаем это в обратную сторону.
 
 2175
 01:40:20,310 --> 01:40:22,970
-We're doubling by two, by two, by two.
+Мы умножаем на два, на два, на два.
 
 2176
 01:40:22,970 --> 01:40:26,090
-We're just past a million now,
-2 million, 4 million, 8 million,
+Мы теперь за миллионом,
+2 миллиона, 4 миллиона, 8 миллионов,
 
 2177
 01:40:26,090 --> 01:40:27,077
-16 million.
+16 миллионов.
 
 2178
 01:40:27,077 --> 01:40:28,160
-So we're getting up there.
+И все еще растет.
 
 2179
 01:40:28,160 --> 01:40:30,770
-So it looks like
-integers are pretty big.
+Так что получается
+integerы достаточно большие.
 
 2180
 01:40:30,770 --> 01:40:35,720
-They're indeed using 32 bits
-in a computer that apparently--
+Они используют 32 бита в компьютере,
+что очевидно--
 
 2181
 01:40:35,720 --> 01:40:38,150
-what just happened?
+что только что произошло?
 
 2182
 01:40:38,150 --> 01:40:39,170
-Another lie.
+Еще одна ложь.
 
 2183
 01:40:39,170 --> 01:40:44,360
-If you just multiply some integer by
-two forever, it eventually becomes zero,
+Если вы постоянно умножаете какой нибудь
+integer на два, он в итоге становится нулем,
 
 2184
 01:40:44,360 --> 01:40:46,310
-it would seem.
+получается так.
 
 2185
 01:40:46,310 --> 01:40:48,153
-That, too, is not right.
+Это как то не очень верно.
 
 2186
 01:40:48,153 --> 01:40:49,070
-But what has happened?
+Но что случилось?
 
 2187
 01:40:49,070 --> 01:40:51,770
-And there's kind of an illusion
-to it, both in my program's name
+Тут есть некоторый трюк, и в имени
+моей программы
 
 2188
 01:40:51,770 --> 01:40:53,240
-and in the red error.
+и в этой красной ошибке.
 
 2189
 01:40:53,240 --> 01:40:56,750
-Well, at some point, you
-only have so many bits
+В какой то момент у вас есть
+вот столько бит
 
 2190
 01:40:56,750 --> 01:40:59,840
-after which if you keep incrementing,
-incrementing, incrementing,
+после которых если продолжать
+увеличивать,
 
 2191
 01:40:59,840 --> 01:41:02,600
-you don't have enough bits to sort
-of carry the one, so to speak,
+у вас уже нет столько битов, чтобы
+продолжать увеличение, чтобы
 
 2192
 01:41:02,600 --> 01:41:04,580
-and remember the even bigger value.
+запомнить еще большие значения.
 
 2193
 01:41:04,580 --> 01:41:08,000
-After all, if we go back to some of
-our discussion last week to discuss now
+В итоге, если мы вернемся к некоторым
+вещам, которые мы обсуждали
 
 2194
 01:41:08,000 --> 01:41:12,240
-what's called floating point
-imprecision or now integer overflow,
+это называется неточностью плавающей точки
+или вот теперь переполнением integer,
 
 2195
 01:41:12,240 --> 01:41:14,720
-which means floats
-can only be so precise
+что значит floatы могут быть
+лишь настолько точными
 
 2196
 01:41:14,720 --> 01:41:16,830
-and integers can only be so big.
+и integerы лишь настолько большими.
 
 2197
 01:41:16,830 --> 01:41:18,670
-What you have is the following scenario.
+Так что у вас есть следующий сценарий.
 
 2198
 01:41:18,670 --> 01:41:21,253
-123 in decimal, in our human world--
+123 десятичная, в нашем человеческом мире--
 
 2199
 01:41:21,253 --> 01:41:23,170
-of course, you can just
-keep adding one to it.
+вы конечно можете продолжать
+добавлять единицы к нему.
 
 2200
 01:41:23,170 --> 01:41:26,630
