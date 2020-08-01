@@ -1408,8 +1408,8 @@ DAVID MALAN: Именно, машинный код.
 
 302
 00:15:14,730 --> 00:15:19,650
-And /a.out means look in this directory,
-and run the program in the file called
+И /a.out значит посмотреть в эту папку,
+и запустить программу в файле, которая называется
 
 303
 00:15:19,650 --> 00:15:20,860
@@ -1417,16 +1417,16 @@ a.out.
 
 304
 00:15:20,860 --> 00:15:23,150
-So let me go ahead and hit Enter.
+Поэтому давайте продолжим и нажмем Enter.
 
 305
 00:15:23,150 --> 00:15:25,980
-And voila, hello world.
+И вуаля, hello world.
 
 306
 00:15:25,980 --> 00:15:29,610
-So you were very impressed last week,
-as I recall, when I made the cat say,
+Итак, насколько я помню, на прошлой неделе Вы были впечатлены,
+когда я сделал так, чтобы кот сказал
 
 307
 00:15:29,610 --> 00:15:30,580
@@ -1434,214 +1434,214 @@ hello world.
 
 308
 00:15:30,580 --> 00:15:32,510
-Here, we seem less than underwhelmed.
+Здесь, кажется мы не в восторге
 
 309
 00:15:32,510 --> 00:15:36,360
-But hello world is now my program in
-C that's done exactly the same thing.
+Но hello world это моя программа на
+Cи, которая делает абсолютно то же самое.
 
 310
 00:15:36,360 --> 00:15:39,870
-But admittedly, it looks a
-little stupid at the moment.
+Но конечно, она выглядит
+немного глупо сейчас.
 
 311
 00:15:39,870 --> 00:15:40,950
-It looks a little buggy.
+И она выглядит немного глючно.
 
 312
 00:15:40,950 --> 00:15:44,373
-What rubs you the wrong way, even
-if you've never programmed before?
+В чем загвоздка, даже
+если Вы не программировали никогда раньше?
 
 313
 00:15:44,373 --> 00:15:45,290
-AUDIENCE: Dollar sign.
+AUDIENCE: Знак доллара.
 
 314
 00:15:45,290 --> 00:15:46,748
-DAVID MALAN: Yeah, the dollar sign.
+DAVID MALAN: Да, знак доллара.
 
 315
 00:15:46,748 --> 00:15:48,660
-I didn't mean to say
-hello world dollar sign,
+Я не хочу сказать
+hello world знак доллара,
 
 316
 00:15:48,660 --> 00:15:50,868
-but that dollar sign is just
-like an artifact, right?
+но знак доллара
+это как артефакт, верно?
 
 317
 00:15:50,868 --> 00:15:52,482
-What is the dollar sign again?
+Что это опять за знак доллара?
 
 318
 00:15:52,482 --> 00:15:53,190
-AUDIENCE: Prompt.
+АУДИТОРИЯ: Подсказка
 
 319
 00:15:53,190 --> 00:15:54,150
-DAVID MALAN: It's just that prompt.
+DAVID MALAN: Это просто подсказка.
 
 320
 00:15:54,150 --> 00:15:57,270
-It's waiting for another command, and
-that's why my cursor is blinking there.
+Он ждет другой команды, и
+вот почему мой курсор мигает там.
 
 321
 00:15:57,270 --> 00:15:58,603
-But it just looks stupid, right?
+Но это выглядит довольно глупо, не так ли?
 
 322
 00:15:58,603 --> 00:16:01,538
-We could argue that this was my
-intent, but frankly, I'd be lying.
+Мы можем утверждать, что таково было
+мое намерение, но, честно говоря, я бы солгал.
 
 323
 00:16:01,538 --> 00:16:03,330
-That doesn't quite do
-what I want it to do.
+Он не делает не совсем то, что я хотел бы,
+чтобы он делал.
 
 324
 00:16:03,330 --> 00:16:05,380
-And this is because, unlike Scratch--
+И это потому что, в отличии от нуля--
 
 325
 00:16:05,380 --> 00:16:06,930
-which, again, is more user friendly--
+который, опять же, более удобен для пользователя--
 
 326
 00:16:06,930 --> 00:16:12,220
-C, and many languages like it, literally
-will only do what you tell them to do.
+Си, и многие языки подобные ему, в прямом смысле
+будут делать только то, что Вы скажете им делать.
 
 327
 00:16:12,220 --> 00:16:16,972
-At no point did I tell the computer
-to move the cursor to a new line.
+Я ни разу не сказал компьютеру
+передвинуть курсор на новую строчку.
 
 328
 00:16:16,972 --> 00:16:18,180
-I didn't finish that thought.
+Я не закончил эту мысль.
 
 329
 00:16:18,180 --> 00:16:20,340
-I said, hello, comma,
-world, and that's it.
+Я сказал, hello, запятая,
+world, и на этом все.
 
 330
 00:16:20,340 --> 00:16:23,650
-I never sent a command to the
-computer to actually move that cursor,
+На самом деле, я никогда не отправлял команду
+компьютеру переместить курсор,
 
 331
 00:16:23,650 --> 00:16:24,660
-but I can.
+но я могу.
 
 332
 00:16:24,660 --> 00:16:26,830
-So let me go back up to my code here.
+Итак, позвольте мне вернуться к моему коду.
 
 333
 00:16:26,830 --> 00:16:30,300
-And it turns out that in
-C, if you tell the computer
+И, оказывается, что в
+Си, если вы скажете компьютеру
 
 334
 00:16:30,300 --> 00:16:33,240
-to print hello, comma, world,
-that is literally all it's
+напечатать hello, запятая, world,
+в буквальном смысле все это,
 
 335
 00:16:33,240 --> 00:16:34,620
-going to print for you.
+это будет напечатано.
 
 336
 00:16:34,620 --> 00:16:36,810
-If you want to print
-a new line, you need
+Если хотите напечатать
+новую строчку, вам нужно
 
 337
 00:16:36,810 --> 00:16:40,950
-to use a special command, a special
-character called a new line character,
+использовать специальную команду, специальный
+символ, который называется новый символ строки,
 
 338
 00:16:40,950 --> 00:16:43,650
-which is represented by backslash n.
+он выглядит следующим образом -  обратный слэш n.
 
 339
 00:16:43,650 --> 00:16:44,672
-Now, why is that?
+А почему так происходит?
 
 340
 00:16:44,672 --> 00:16:46,380
-Well, it's really
-because even though you
+Ну, это действительно так,
+даже несмотря на то, что вы
 
 341
 00:16:46,380 --> 00:16:49,590
-might be inclined to hit
-Enter like this and just hit
+можете быть намерены нажимать
+Enter  и просто нажмете
 
 342
 00:16:49,590 --> 00:16:51,900
-Enter like you would hope
-the computer would do,
+Enter так, как вы надеетесь
+компьютер сделает
 
 343
 00:16:51,900 --> 00:16:54,210
-even if you've never programmed
-before, this probably
+даже если вы никогда не программировали
+раньше, это, вероятней всего
 
 344
 00:16:54,210 --> 00:16:55,950
-should start to rub
-you in the wrong way.
+будет создавать
+неудобства.
 
 345
 00:16:55,950 --> 00:16:57,270
-It just looks a little weird.
+Это выглядит немного странно.
 
 346
 00:16:57,270 --> 00:16:59,460
-It looks a little messy,
-that one line is up here
+Это выглядит немного неопрятно,
+когда одна строка здесь
 
 347
 00:16:59,460 --> 00:17:00,930
-and the second line is down here.
+а вторая строка здесь.
 
 348
 00:17:00,930 --> 00:17:03,180
-So what humans decided
-years ago is let's
+Так что люди решили
+много лет назад,
 
 349
 00:17:03,180 --> 00:17:06,750
-just have a simple
-instruction, backslash n,
+что будет простая
+команда, бэкслэш n,
 
 350
 00:17:06,750 --> 00:17:10,170
-that tells the computer to
-move that new line down.
+которая говорит компьютеру
+переместить эту новую строку вниз.
 
 351
 00:17:10,170 --> 00:17:11,670
-So let me go ahead and zoom out now.
+Итак, позвольте мне пойти дальше и уменьшить масштаб сейчас.
 
 352
 00:17:11,670 --> 00:17:14,010
-In the sandbox, it automatically
-saves like Google Docs,
+В песочнице все автоматически
+сохраняется точно так же как Google Docs,
 
 353
 00:17:14,010 --> 00:17:16,589
-so you don't have to go to File,
-Save or anything like that.
+так что вам не нужно кликать на File,
+Save или что-нибудь в этом духе.
 
 354
 00:17:16,589 --> 00:17:23,440
@@ -1658,20 +1658,20 @@ Notice that the symptom is still there.
 
 357
 00:17:27,210 --> 00:17:28,260
-Why?
+Почему?
 
 358
 00:17:28,260 --> 00:17:31,050
-What mistake have I already made?
+Какую ошибку я только что сделал?
 
 359
 00:17:31,050 --> 00:17:32,700
-Yeah, I didn't recompile it.
+Да, я не перекомпилировал это.
 
 360
 00:17:32,700 --> 00:17:36,120
-So again, the computer is going to
-start taking you very, very literally
+И еще раз напомню,  компьютер будет
+воспринимать вас очень, очень буквально
 
 361
 00:17:36,120 --> 00:17:38,580
@@ -1690,162 +1690,162 @@ have to do something like Clang
 
 364
 00:17:44,880 --> 00:17:48,360
-and then hello.c, Enter.
+и затем hello.c, Enter.
 
 365
 00:17:48,360 --> 00:17:49,810
-And nothing seems to happen.
+И, кажется, ничего не произошло.
 
 366
 00:17:49,810 --> 00:17:52,552
-And frankly, and ironically,
-when you don't see any output,
+И, честно говоря, ирония в том,
+когда вы не видите результатов (output),
 
 367
 00:17:52,552 --> 00:17:53,760
-that usually is a good thing.
+это обычно неплохо.
 
 368
 00:17:53,760 --> 00:17:56,340
-When you do see output, it's usually
-a list of, like, five mistakes
+Когда вы видите результат (output), это обычно
+список, например, из пяти ошибок
 
 369
 00:17:56,340 --> 00:17:58,560
-that you made or error
-messages that we'll soon see.
+которые вы сделали или сообщения
+об ошибке, которые мы скоро увидим.
 
 370
 00:17:58,560 --> 00:18:00,120
-But we still have a.out.
+Но у нас все еще есть a.out.
 
 371
 00:18:00,120 --> 00:18:02,200
-It's just a newer version thereof.
+Это просто новая версия
 
 372
 00:18:02,200 --> 00:18:06,930
-So if I go ahead and zoom in now
-and do this-- ./a.out, Enter--
+Так что, если я продолжу и увеличу сейчас
+и сделаю это-- ./a.out, Enter--
 
 373
 00:18:06,930 --> 00:18:10,070
-now I have a more impressive
-version of hello world.
+теперь у меня есть более впечатляющая
+версия hello world.
 
 374
 00:18:10,070 --> 00:18:12,450
-I've just cleaned it up a little bit.
+Теперь я немного его подкорректирую.
 
 375
 00:18:12,450 --> 00:18:14,190
-All right, let me
-pause for just a moment
+Хорошо, дайте мне
+буквально минутку
 
 376
 00:18:14,190 --> 00:18:18,490
-and see if there are any questions
-on these mechanics thus far.
+и посмотрим, есть ли вопросы
+по этим механикам.
 
 377
 00:18:18,490 --> 00:18:19,066
-Yeah?
+Да?
 
 378
 00:18:19,066 --> 00:18:20,440
-AUDIENCE: Why is line 2 empty?
+АУДИТОРИЯ: Почему вторая строка пустая?
 
 379
 00:18:20,440 --> 00:18:21,940
-DAVID MALAN: Say it a little louder.
+DAVID MALAN: Скажите это чуть громче.
 
 380
 00:18:21,940 --> 00:18:23,640
-AUDIENCE: Why is line 2 empty?
+AUDIENCE: Почему вторая строка пустая?
 
 381
 00:18:23,640 --> 00:18:24,330
-DAVID MALAN: Why is line 2 empty?
+DAVID MALAN: Почему вторая строка пустая?
 
 382
 00:18:24,330 --> 00:18:25,540
-Oh, really good question.
+O, это действвительно хороший вопрос.
 
 383
 00:18:25,540 --> 00:18:29,678
-So line 2 is empty just because
-I have decided stylistically
+Строка 2 пуста только потому, что
+я решил, что стилистически
 
 384
 00:18:29,678 --> 00:18:30,720
-it looks a little better.
+так будет выглядеть немного лучше.
 
 385
 00:18:30,720 --> 00:18:32,553
-Much like in an English
-essay, you might hit
+Так же как при написании эссе,
+вы можете нажать
 
 386
 00:18:32,553 --> 00:18:34,500
-Enter, Enter to just
-separate your paragraphs,
+Enter, Enter - это просто для того, чтобы
+разделить параграфы,
 
 387
 00:18:34,500 --> 00:18:36,810
-so will programmers often
-separate their code, just
+так программисты часто
+разделяют свой  код, просто
 
 388
 00:18:36,810 --> 00:18:39,300
-to make it a little easier
-to digest so it doesn't
+чтобы сделать его немного более
+читательным, чтобы он не
 
 389
 00:18:39,300 --> 00:18:41,610
-look like just one big blob of code.
+выглядел как один большой массив кода.
 
 390
 00:18:41,610 --> 00:18:44,680
-But it's not necessary,
-and I could omit it.
+Но это не обязательно,
+и я мог бы опустить это.
 
 391
 00:18:44,680 --> 00:18:46,880
-Other questions?
+Есть еще какие-то вопросы?
 
 392
 00:18:46,880 --> 00:18:49,036
-Yeah?
+Да?
 
 393
 00:18:49,036 --> 00:18:51,940
-AUDIENCE: Can you rename a.out
-so that you have more than one
+АУДИТОРИЯ: Можно ли переименовать a.out
+таким образом, чтобы был больше, чем один
 
 394
 00:18:51,940 --> 00:18:52,898
-file in your directory?
+файл в папке?
 
 395
 00:18:52,898 --> 00:18:54,315
-DAVID MALAN: Really good question.
+DAVID MALAN: Это очень хороший вопрос.
 
 396
 00:18:54,315 --> 00:18:57,750
-Can you rename a.out so that you can
-have more than one file or program
+Можно ли переименовать a.out таким образом, чтобы была
+больше, чем один файл или программа
 
 397
 00:18:57,750 --> 00:18:58,740
-in the same directory?
+в той же самой папке?
 
 398
 00:18:58,740 --> 00:18:59,430
-Absolutely.
+Конечно.
 
 399
 00:18:59,430 --> 00:19:00,990
-So let me do that right now.
+Давайте я это сделаю прямо сейчас.
 
 400
 00:19:00,990 --> 00:19:04,350
@@ -2304,235 +2304,236 @@ DAVID MALAN: Верно, оно просто
 
 501
 00:23:50,207 --> 00:23:51,000
-I don't have to.
+Я не обязан этого делать.
 
 502
 00:23:51,000 --> 00:23:54,370
-And indeed, a moment ago, my own
-computer prompted me to say yes or no,
+И действительно, мгновение назад, мой
+компьютер ожидал от меня ответа: Да или Нет
 
 503
 00:23:54,370 --> 00:23:56,780
-and it did not move the
-cursor to the next line.
+и он не переместил курсор
+на новую строку.
 
 504
 00:23:56,780 --> 00:23:59,470
-That's because that programmer
-decided not to bother doing that.
+Это произошло потому что программист
+решил не делать этого.
 
 505
 00:23:59,470 --> 00:24:02,120
-But I'll go ahead and keep
-things clean by doing this.
+Но я продолжу с переносом строки.
 
 506
 00:24:02,120 --> 00:24:07,150
-Now, once I ask the user for their name
-by way of this get_string function,
+Когда я запросил имя пользователя
+с помощью функции get_string,
 
 507
 00:24:07,150 --> 00:24:08,680
-I need to do something with it.
+мне нужно что-то с этим сделать.
 
 508
 00:24:08,680 --> 00:24:12,220
-And in C, the way you
-do this is you literally
+И чтобы реализовать это в языке С вы 
+буквально заводите переменную
 
 509
 00:24:12,220 --> 00:24:15,837
-give yourself a variable, which
-is a piece of storage for a value.
+которая хранит
+значения.
 
 510
 00:24:15,837 --> 00:24:18,670
-And I'm going to go ahead and call
-it answer, just like Scratch did.
+Я назову переменную answer,
+точно так же как в Scratch.
 
 511
 00:24:18,670 --> 00:24:21,040
-But in C, I can call
-this anything I want.
+Но в языке С вы можете назвать 
+её как угодно.
 
 512
 00:24:21,040 --> 00:24:22,565
-I could call it xyz.
+Я могу назвать её xyz.
 
 513
 00:24:22,565 --> 00:24:25,690
-None of those are very descriptive, so
-I'm going to call it answer instead.
+Все эти имена не очень наглядны, 
+поэтому я назову её answer (ответ).
 
 514
 00:24:25,690 --> 00:24:27,100
-You can use any word.
+Вы можете использовать любое слово.
 
 515
 00:24:27,100 --> 00:24:28,990
-But C is a little different.
+Но в С все немного по другому.
 
 516
 00:24:28,990 --> 00:24:34,480
-C is old school, and you have to be
-super explicit as to what type of value
+С - олдскульный язык, поэтому вы должны
+явно указать тип значения,
 
 517
 00:24:34,480 --> 00:24:37,630
-you are getting and, therefore,
-storing in the variable.
+которое вы получаете, и, соответственно,
+храните в этой переменной.
 
 518
 00:24:37,630 --> 00:24:40,040
-So to the left of the
-name of the variable,
+Поэтому слева от 
+имени переменной
 
 519
 00:24:40,040 --> 00:24:43,810
-I have to tell the computer the
-type of value I need to store
+я должен сказать компьютеру, что
+тип значения, который мне нужно хранить
 
 520
 00:24:43,810 --> 00:24:45,010
-is going to be a string.
+будет строкой.
 
 521
 00:24:45,010 --> 00:24:49,180
-And we're going to see in a moment,
-there's other types of values.
+Скоро мы узнаем, что
+существуют и другие типы значений.
 
 522
 00:24:49,180 --> 00:24:53,860
-There's numbers and more, but for now,
-we're just going to store a string.
+Есть цифры и прочие, но сейчас
+мы просто будем хранить строку.
 
 523
 00:24:53,860 --> 00:24:56,760
-And there's one thing missing
-from this line of code.
+Но мы кое-что упустили в 
+этой строчке кода.
 
 524
 00:24:56,760 --> 00:24:57,700
-AUDIENCE: Semicolon.
+Зрители: точка с запятой.
 
 525
 00:24:57,700 --> 00:24:58,600
-DAVID MALAN: Semicolon, right?
+DAVID MALAN: точка с запятой, верно?
 
 526
 00:24:58,600 --> 00:25:00,392
-End of thought, and
-that was a big thought,
+Конец мысли,
+и это была не маленькая мысль,
 
 527
 00:25:00,392 --> 00:25:02,200
-but a semicolon finishes this thought.
+и точка с заятой завершает эту мысль.
 
 528
 00:25:02,200 --> 00:25:04,700
-Now, this equals sign is a
-little different from algebra,
+Знак "равно" в этом случае
+отличается от привычного нам в алгебре.
 
 529
 00:25:04,700 --> 00:25:07,750
-if you think back to your math days,
-where you might say x equals y.
+Если вы вспомните математику,
+вы скажите, что Х равен Y.
 
 530
 00:25:07,750 --> 00:25:11,440
-When x equals y, that means,
-literally, x is the same thing as y.
+Когда X равен Y, то это буквально означает,
+что X - это тоже самое, что и Y.
 
 531
 00:25:11,440 --> 00:25:14,740
-But here, the equals sign
-in programming languages
+Но в языках программирования,
+знак "равно"
 
 532
 00:25:14,740 --> 00:25:17,990
-typically is the kind of a
-motion from right to left.
+как правило означает 
+перемещение справа налево.
 
 533
 00:25:17,990 --> 00:25:20,560
-This equal sign doesn't
-technically mean equal.
+Этот знак "равно" 
+не подразумевает равенство.
+
 
 534
 00:25:20,560 --> 00:25:24,070
-It means assign, or the
-assignment operator.
+Он обозначает "присваивание", 
+или "оператор присваивания".
 
 535
 00:25:24,070 --> 00:25:27,200
-Move from the right
-something to the left.
+Перемести что-либо справа
+в левую часть.
 
 536
 00:25:27,200 --> 00:25:31,600
-So if this get_string function,
-just like the ask function,
+Таким образом, если функция get_string,
+точно так же как функция ask,
 
 537
 00:25:31,600 --> 00:25:35,140
-asks the user for their
-name and hands back a value,
+спрашивает у пользователя его имя
+и возвращает значение,
 
 538
 00:25:35,140 --> 00:25:37,930
-you want to put that
-name into a variable
+то вы помещаете это имя
+в переменную,
 
 539
 00:25:37,930 --> 00:25:40,192
-called answer, from right to left.
+которая называется answer.
+Справа налево.
 
 540
 00:25:40,192 --> 00:25:42,650
-So even though we-- just as we
-wrote it from right to left,
+Как мы и написали эту
+строку справа налево,
 
 541
 00:25:42,650 --> 00:25:45,710
-so do you think about it
-executing from right to left.
+вы должны думать о выполнении этой команды
+как справа налево.
 
 542
 00:25:45,710 --> 00:25:48,310
-So at this point in
-the story, we now have
+Итак, на текущий момент,
+у нас есть
 
 543
 00:25:48,310 --> 00:25:52,960
-somewhere in the computer's memory, in
-a so-called variable, the user's answer
+где-то в памяти компьютера так называемая
+переменная - ответ пользователя
 
 544
 00:25:52,960 --> 00:25:54,130
-to their name.
+на вопрос какое у него имя.
 
 545
 00:25:54,130 --> 00:25:55,540
-What do I want to do with it?
+Что мы хотим с этим сделать?
 
 546
 00:25:55,540 --> 00:25:58,093
-Well, in C, there isn't
-a join function, so we're
+В языке С нет функции join,
+поэтому нам
 
 547
 00:25:58,093 --> 00:26:00,010
-going to have to do this
-a little differently.
+придется сделать это
+немного иначе.
 
 548
 00:26:00,010 --> 00:26:03,613
-But there kind of is a say function,
-and what was that say function called?
+В С есть функция аналогичная функции say.
+Как эта функция называется?
 
 549
 00:26:03,613 --> 00:26:04,340
-AUDIENCE: Printf.
+Зрители: Printf.
 
 550
 00:26:04,340 --> 00:26:05,173
@@ -2540,238 +2541,238 @@ DAVID MALAN: Printf.
 
 551
 00:26:05,173 --> 00:26:08,440
-So printf is the go-to function any
-time you want to print or say something
+Printf - это функция, которую мы испольуем 
+когда хотим что-то сказать или вывести
 
 552
 00:26:08,440 --> 00:26:09,320
-on the screen.
+на экране.
 
 553
 00:26:09,320 --> 00:26:10,993
-So I'm going to go ahead and use printf.
+Поэтому я продолжу, используя printf.
 
 554
 00:26:10,993 --> 00:26:13,660
-And I'm going to use parentheses,
-because parentheses mean, here
+И я буду использовать скобки, 
+потому что скобки означают:
 
 555
 00:26:13,660 --> 00:26:18,670
-come my inputs, otherwise known as
-arguments or parameters in programming.
+здесь идут данные, называемые в программировании
+аргументами или параметрами.
 
 556
 00:26:18,670 --> 00:26:21,100
-But these are synonymous
-for our purposes.
+Для нас это  
+синонимы.
 
 557
 00:26:21,100 --> 00:26:23,350
-And now this is a little
-non-obvious, right?
+И сейчас это всё немного 
+неправильно, да?
 
 558
 00:26:23,350 --> 00:26:29,180
-Because I don't want to just put,
-quote unquote, hello, comma, answer.
+Потому что я не хочу просто вывести
+кавычки, привет, запятая, ответ, кавычки.
 
 559
 00:26:29,180 --> 00:26:29,680
-Why?
+Почему?
 
 560
 00:26:29,680 --> 00:26:34,480
-Why would it be incorrect to do
-quote unquote, hello, comma, answer?
+Почему будет неверно сделать
+кавычки, привет, запятая, ответ, кавычки?
 
 561
 00:26:34,480 --> 00:26:35,155
-What's that?
+Что вы сказали?
 
 562
 00:26:35,155 --> 00:26:36,400
-AUDIENCE: It will just print out answer.
+Зрители: Это только выведет на экран answer.
 
 563
 00:26:36,400 --> 00:26:39,323
-DAVID MALAN: Right, it will literally
-say hello, comma, answer, right?
+DAVID MALAN: Верно, этим мы буквально
+скажем привет, запятая, answer. Верно?
 
 564
 00:26:39,323 --> 00:26:40,490
-And that's not what we want.
+А это не то, что мы хотим.
 
 565
 00:26:40,490 --> 00:26:41,530
-We don't want to say "hello answer."
+Мы не хотим сказать "привет answer"
 
 566
 00:26:41,530 --> 00:26:43,450
-We want to say, hello,
-David or hello, Brian,
+Мы хотим сказать: Привет, Дэвид 
+или Привет, Брайан.
 
 567
 00:26:43,450 --> 00:26:45,280
-or whoever is playing this program.
+Или привет любой, кто играет в эту программу.
 
 568
 00:26:45,280 --> 00:26:49,900
-So I somehow do need to join the
-word hello with the user's input.
+То есть я должен как то присоединить слово 
+"привет" к тому, что введёт пользователь.
 
 569
 00:26:49,900 --> 00:26:53,335
-And the way to do this in printf
-is a little different from Scratch.
+То, как это делается с помощью printf,
+немного отличается от Scratch.
 
 570
 00:26:53,335 --> 00:26:55,550
-You use what's called a placeholder.
+Мы будем использовать так называемый плейсхолдер.
 
 571
 00:26:55,550 --> 00:26:57,550
-So you literally write
-the sentence or phrase
+Вы буквально пишете
+предложение или фразу,
 
 572
 00:26:57,550 --> 00:27:00,220
-that you want to say
-or print to the screen,
+которую хотите сказать 
+или вывести на экран,
 
 573
 00:27:00,220 --> 00:27:03,340
-but wherever you don't yet
-know the value in advance,
+но заранее не знаете
+значение этой фразы,
 
 574
 00:27:03,340 --> 00:27:08,570
-you put a placeholder using a percent
-sign and then an s denoting string.
+поэтому вы используете плейсхолдер с помощью
+знака процента и s, обозначающую string (строка).
 
 575
 00:27:08,570 --> 00:27:11,320
-And this is because, of course,
-if I'm writing this program today,
+И это потому, что я пишу
+программу сегодня.
 
 576
 00:27:11,320 --> 00:27:13,840
-I have no idea who's
-going to run it tomorrow.
+Я понятия не имею кто будет 
+пользоваться ей завтра.
 
 577
 00:27:13,840 --> 00:27:15,910
-So I want to dynamically
-put a placeholder
+Поэтому я хочу использовать
+плейсхолдер,
 
 578
 00:27:15,910 --> 00:27:19,400
-so that if someone plays this
-program tomorrow or the next day,
+чтобы если кто-то запустит эту программу
+завтра или в любой другой день,
 
 579
 00:27:19,400 --> 00:27:21,070
-their name gets dynamically inserted.
+его имя вставлялось динамически.
 
 580
 00:27:21,070 --> 00:27:23,410
-I, of course, don't
-know their name today.
+Сегодня я, конечно же, 
+не знаю их имён.
 
 581
 00:27:23,410 --> 00:27:26,350
-So quote unquote,
-hello, comma, percent s.
+Поэтому кавычки, привет, запятая,
+процент, s, кавычки.
 
 582
 00:27:26,350 --> 00:27:30,130
-And that percent s is just a placeholder
-for whatever I want to plug in there.
+%s - это всего лишь плейсхолдер
+для чего угодно, что я хочу вставить в это место.
 
 583
 00:27:30,130 --> 00:27:32,590
-Backslash n, of course,
-just means new line.
+Бэкслеш n, конечно же,
+означает переход на новую строку.
 
 584
 00:27:32,590 --> 00:27:35,590
-So the only new thing
-here is this percent s.
+Единственное, что в этой строке новое - 
+это %s.
 
 585
 00:27:35,590 --> 00:27:39,490
-Now, it turns out that functions
-in C, just like in Scratch,
+Далее, оказыватся, что функции в С,
+так же как в Scratch,
 
 586
 00:27:39,490 --> 00:27:40,990
-can take no arguments.
+могут не принимать аргументы.
 
 587
 00:27:40,990 --> 00:27:42,550
-Or they can take one arguments.
+Или они могут принять один аргумент.
 
 588
 00:27:42,550 --> 00:27:44,650
-Or they can take two or more arguments.
+Или они могут принять два или более аргументов.
 
 589
 00:27:44,650 --> 00:27:49,310
-And if they take two or more, you
-just separate them with commas.
+И если они могут принять два и более аргументов,
+вы просто перечисляете их через запятую.
 
 590
 00:27:49,310 --> 00:27:50,450
-So the way printf works--
+Так работает printf.
 
 591
 00:27:50,450 --> 00:27:53,200
-and you would only know this,
-again, by being taught it or reading
+Вы знали бы это только если 
+вас этому научили,
 
 592
 00:27:53,200 --> 00:27:55,720
-the documentation--
-is that you can, yes,
+или вы прочитали документацию.
+Таким образом, вы можете
 
 593
 00:27:55,720 --> 00:27:59,560
-provide just a single
-string as its input--
+передать одну строку
+в качестве ввода:
 
 594
 00:27:59,560 --> 00:28:00,910
-quote unquote, something.
+кавычки, что-либо, кавычки.
 
 595
 00:28:00,910 --> 00:28:03,010
-But if you have some
-placeholders in there,
+Но если вы используете здесь
+плейсхолдер,
 
 596
 00:28:03,010 --> 00:28:06,520
-you can tell the computer what
-to plug in by adding a comma
+вы говорите компьютеру, 
+что именно нужно подставить, добавляя запятую, 
 
 597
 00:28:06,520 --> 00:28:10,570
-and then the name of the value or
-variable that you want to plug in.
+затем имя переменной, которую хотите
+вставить.
 
 598
 00:28:10,570 --> 00:28:14,120
-So now, these two lines of code
-are equivalent to these here.
+Эти две строчки кода эквивалентны
+этим строчкам здесь.
 
 599
 00:28:14,120 --> 00:28:15,870
-Но опять же, даже несмотря на то, что
-на первый взгляд, это
+Но хотя на первый взгляд, 
+может показаться,
 
 600
 00:28:15,870 --> 00:28:17,620
-может выглядеть особенно
-загадочно, если вы просто
+что это немного загадочно,
+вы просто 
 
 601
 00:28:17,620 --> 00:28:19,480
@@ -3224,44 +3225,45 @@ int main(void)
 
 700
 00:32:20,490 --> 00:32:22,440
-Что бы буквально сказать answer.
+Он буквально скажет "answer".
+
 
 701
 00:32:22,440 --> 00:32:24,750
-I want to do a placeholder, percent s.
+Я хочу сделать плейсхолдер, процент и s.
 
 702
 00:32:24,750 --> 00:32:29,920
-And now backslash n,
-comma, answer, semicolon.
+И теперь обратный слеш n,
+запятая, answer, точка с запятой.
 
 703
 00:32:29,920 --> 00:32:32,910
-So I think I have transcribed
-the code from the slide
+Так что я думаю я перевел
+код со слайда
 
 704
 00:32:32,910 --> 00:32:37,920
-into my programming environment
-now in a file called string.c.
+в мое программное окружение, он теперь
+в файле, по имени string.c.
 
 705
 00:32:37,920 --> 00:32:39,300
-So let me go ahead and zoom out.
+Так что давайте я уменьшу.
 
 706
 00:32:39,300 --> 00:32:41,790
-And if I want to compile
-this program, convert it
+И если я хочу скомпилировать
+программу, превратить ее
 
 707
 00:32:41,790 --> 00:32:46,795
-from source code to machine code,
-what command can I type down here?
+из исходного кода в машинный код,
+что мне нужно тут написать?
 
 708
 00:32:46,795 --> 00:32:47,295
-So Clang.
+Clang.
 
 709
 00:32:47,295 --> 00:32:50,150
@@ -3269,269 +3271,268 @@ So Clang.
 
 710
 00:32:50,150 --> 00:32:51,210
-So string.c.
+string.c.
 
 711
 00:32:51,210 --> 00:32:53,590
-But that's going to give me
-a program, by default, called
+Но он даст мне программу,
+которая по умолчанию зовется
 
 712
 00:32:53,590 --> 00:32:56,030
-a.out, which is just very non-helpful.
+a.out, что не очень то понятно.
 
 713
 00:32:56,030 --> 00:32:58,670
-So let me go ahead and
-say -o string, just so
+Так что давайте я сделаю
+-o string, чтобы моя программа
 
 714
 00:32:58,670 --> 00:33:00,230
-that my program is called string.
+называлась string.
 
 715
 00:33:00,230 --> 00:33:02,090
-But I could call it anything I want.
+Но я могу ее назвать как хочу.
 
 716
 00:33:02,090 --> 00:33:04,975
-I could call it program
-two, if I prefer.
+Я могу назвать ее
+"программа два", если мне угодно.
 
 717
 00:33:04,975 --> 00:33:06,350
-So let me go ahead and hit Enter.
+Так что давайте нажмем Enter.
 
 718
 00:33:06,350 --> 00:33:10,220
-And oh my god, there are more
-errors than there are lines
+И боже мой, ошибок больше
+чем строчек кода,
 
 719
 00:33:10,220 --> 00:33:12,320
-of code, which is a little worrisome.
+что немного тревожно.
 
 720
 00:33:12,320 --> 00:33:15,530
-And this tier two is where you should
-take some comfort that that just means
+И это второй уровень, где вы
+должны расслабиться, так что это значит
 
 721
 00:33:15,530 --> 00:33:17,113
-the computer's gotten confused, right?
+что компьютер чего то не понял, верно?
 
 722
 00:33:17,113 --> 00:33:20,480
-You're not that bad at programming that
-you generate more errors than lines
+Вы не можете быть так плохи в программировании,
+чтобы сделать больше ошибок чем строчек кода
 
 723
 00:33:20,480 --> 00:33:21,860
-of code you've written yourself.
+который вы написали.
 
 724
 00:33:21,860 --> 00:33:25,370
-It's just that the computer got
-really confused at some point,
+Так что реально компьютер просто
+запутался где то,
 
 725
 00:33:25,370 --> 00:33:28,670
-and it kind of starts tripping over
-itself, so to speak, conceptually.
+и начинает спотыкаться о собственные
+ноги, говоря образно.
 
 726
 00:33:28,670 --> 00:33:31,910
-It doesn't know where the error is, so
-it starts misinterpreting correct code
+Он не знает где ошибка, и начинает
+неправильно интерпретировать правильный код
 
 727
 00:33:31,910 --> 00:33:33,020
-as incorrect code.
+как неправильный.
 
 728
 00:33:33,020 --> 00:33:38,100
-So the place to start is always
-with the very first error message.
+Так что нужно начинать всегда с первой
+ошибки.
 
 729
 00:33:38,100 --> 00:33:41,450
-So you'll notice that I already
-scrolled all the way up to the command
+Вы могли заметить, что я уже проскроллил
+на самый верх вывода команды
 
 730
 00:33:41,450 --> 00:33:44,570
-that I typed, which was right
-here, as I've highlighted.
+которую я напечатал, вот тут, где
+подсвечено.
 
 731
 00:33:44,570 --> 00:33:47,270
-Focus on the first error you
-see, and maybe the others
+Сфокусируйтесь на первой ошибке,
+может остальные
 
 732
 00:33:47,270 --> 00:33:50,985
-are just phantom errors,
-confusion that arose instead.
+просто "фантомные" ошибки.
 
 733
 00:33:50,985 --> 00:33:53,360
-So let me go ahead and zoom
-in on this part of the screen
+Так что давайте приблизим
+эту часть экрана
 
 734
 00:33:53,360 --> 00:33:55,700
-and see if we can't diagnose this issue.
+и посмотрим что мы можем с ней сделать.
 
 735
 00:33:55,700 --> 00:33:59,420
-The command I ran was
+Команда которую я запустил:
 Clang -o string string.c.
 
 736
 00:33:59,420 --> 00:34:02,480
-That just means my input is
-my source code in string.c.
+И это значит что мой входной параметр
+это исходный код в string.c.
 
 737
 00:34:02,480 --> 00:34:06,500
-I want my output to be machine
-code in a file called string.
+Я хочу чтобы вывод был машинным кодом
+в файл по имени string.
 
 738
 00:34:06,500 --> 00:34:09,409
-All right, string.c line 5
-is where the error begins,
+Итак, ошибка начинается в
+string.c на пятой строчке,
 
 739
 00:34:09,409 --> 00:34:11,540
-so that seems to be a familiar location.
+и это очень знакомое нам место.
 
 740
 00:34:11,540 --> 00:34:13,820
-Use of undeclared identifier string.
+Использование неопределенного идентификатора string.
 
 741
 00:34:13,820 --> 00:34:19,960
-Did you mean-- anticipation-- stdin?
+Вы имели в виду-- ожидается-- stdin?
 
 742
 00:34:19,960 --> 00:34:21,280
-No, I didn't.
+Не, я не это имел в виду.
 
 743
 00:34:21,280 --> 00:34:22,600
-I meant string in this case.
+Я имел в виду string в этом случае.
 
 744
 00:34:22,600 --> 00:34:25,159
-So here, too, the
-computer's gotten confused,
+И вот здесь, тоже,
+компьютер запутался,
 
 745
 00:34:25,159 --> 00:34:28,179
-and even it's green helpful
-message is actually not helpful.
+и даже зеленое сообщение с помощью,
+не очень то помогает.
 
 746
 00:34:28,179 --> 00:34:29,679
-No, I want a string.
+Нет, я хочу string.
 
 747
 00:34:29,679 --> 00:34:31,270
-I don't want standard n.
+Я не хочу стандартный in.
 
 748
 00:34:31,270 --> 00:34:34,060
-But the reason for this
-is that technically,
+Но причина для ошибки
+в том, что технически
 
 749
 00:34:34,060 --> 00:34:37,420
-at least this point in the story,
-there is no such thing as a string,
+во всяком случае, сейчас,
+нет такой вещи как string,
 
 750
 00:34:37,420 --> 00:34:41,699
-S-T-R-I-N-G in C. That's actually
-a training wheel of sorts that
+S-T-R-I-N-G в Си. Это реально
+иллюстративный пример, который
 
 751
 00:34:41,699 --> 00:34:44,949
-we're going to use for just a couple of
-weeks until, to your question earlier,
+мы будет использовать пару недель, пока, отвечая
+на ваш вопрос,
 
 752
 00:34:44,949 --> 00:34:48,340
-we're going to show what's really going
-on underneath the hood of the computer,
+мы не покажем, что реально происходит
+"под капотом" у компьютера,
 
 753
 00:34:48,340 --> 00:34:51,130
-so to speak, when it comes
-to implementing a string.
+и то что происходит, чтобы
+имплементировать string.
 
 754
 00:34:51,130 --> 00:34:56,620
-So string is something that
-the CS50 course provides to you
+Так вот, string это штука,
+которую курс CS50 вам дает
 
 755
 00:34:56,620 --> 00:35:01,570
-in a file called CS50.h.
+в файле под названием CS50.h
 
 756
 00:35:01,570 --> 00:35:06,355
-So just as there's a file
-called standard I/O--
+Так же как файл под названием
+стандартный I/O--
 
 757
 00:35:06,355 --> 00:35:10,330
-where I/O just means input/output,
-like printing and getting input.
+где I/O значит ввод(input)/вывод(output),
+типа печатать строчку, получить строчку из ввода.
 
 758
 00:35:10,330 --> 00:35:16,060
-Just as there's a file called
-stdio.h, in which printf was invented,
+Как здесь, в файле stdio.h,
+где обьявлен printf,
 
 759
 00:35:16,060 --> 00:35:19,420
-all of these other functions
-that I might use in this program,
+все функции, которые я буду
+использовать в этой программе,
 
 760
 00:35:19,420 --> 00:35:25,000
-like get_string, happen to be
-stored in a file called CS50.h.
+типа get_string, они хранятся
+в файле CS50.h
 
 761
 00:35:25,000 --> 00:35:28,150
-So my problem arose a moment
-ago when compiling this code,
+Так что моя ошибка просто подняла
+проблему, когда я компилировал этот код,
 
 762
 00:35:28,150 --> 00:35:30,640
-because the computer had
-no idea what a string is.
+компьютер не имел
+никакого понятия что такое string.
 
 763
 00:35:30,640 --> 00:35:34,870
-And it has no idea-- we'll see
-what the function get_string is.
+И не понимает-- мы увидим это
+что такое get_string.
 
 764
 00:35:34,870 --> 00:35:37,570
-So let me go ahead and
-recompile this now.
+Так что давайте я перекомпилирую
+это сейчас.
 
 765
 00:35:37,570 --> 00:35:46,130
-I'm going to go ahead and do Clang
--o string string.c and zoom in.
+Я печатаю Clang -o string string.c
+и приближаю.
 
 766
 00:35:46,130 --> 00:35:46,630
-Here we go.
+Отлично.
 
 767
 00:35:46,630 --> 00:35:47,820
@@ -3539,148 +3540,148 @@ Enter.
 
 768
 00:35:47,820 --> 00:35:49,930
-OK, progress.
+OK, выполняется.
 
 769
 00:35:49,930 --> 00:35:51,100
-Still a bug.
+Все еще баг.
 
 770
 00:35:51,100 --> 00:35:53,230
-There's still a mistake,
-because red can't possibly
+Тут ошибка, потому что красный
+цвет не может
 
 771
 00:35:53,230 --> 00:35:54,850
-mean anything good in this context.
+значить ничего хорошего, в этом контексте.
 
 772
 00:35:54,850 --> 00:35:56,590
-And indeed, it's an error.
+Ну да, точно, это ошибка.
 
 773
 00:35:56,590 --> 00:35:58,940
-But it's many fewer errors.
+Но их число намного меньше.
 
 774
 00:35:58,940 --> 00:36:02,080
-So there's the last piece of commands
-that we need to introduce now.
+Так что время последнего набора команд,
+про который мы поговорим сейчас.
 
 775
 00:36:02,080 --> 00:36:04,240
-Notice what the error message is saying.
+Обратите внимание, что нам говорит сообщение об ошибке.
 
 776
 00:36:04,240 --> 00:36:07,450
-So after I run Clang -o
-string string.c, there's
+После того как я запустил Clang -o
+string string.c, тут
 
 777
 00:36:07,450 --> 00:36:09,490
-still a problem in my function main.
+все еще проблема в моей функции main.
 
 778
 00:36:09,490 --> 00:36:11,170
-What is the problem?
+Какая проблема?
 
 779
 00:36:11,170 --> 00:36:13,480
-Undefined reference to get_string.
+Неопределенная ссылка на get_string.
 
 780
 00:36:13,480 --> 00:36:18,490
-So it turns out that when using the
-CS50 library, you have to do two things.
+Так что получается, когда вы используете
+библиотеку CS50, вам нужно сделать две вещи.
 
 781
 00:36:18,490 --> 00:36:21,100
-In your source code, you
-have to tell the computer
+В исходниках, вы должны сказать
+компьютеру
 
 782
 00:36:21,100 --> 00:36:23,800
-to include this file
-CS50.h, where, again,
+включить этот файл
+CS50.h, где, снова,
 
 783
 00:36:23,800 --> 00:36:26,860
-functions like get_string
-and the word string
+функции подобные get_string
+и слово string
 
 784
 00:36:26,860 --> 00:36:28,870
-are actually implemented for you.
+уже созданы для вас.
 
 785
 00:36:28,870 --> 00:36:32,170
-But when compiling your code,
-you need to, somewhat redundantly
+Но когда вы компилируете код,
+вам нужно, наверное немного избыточно,
 
 786
 00:36:32,170 --> 00:36:37,060
-but for different reasons, tell
-the computer to add all of the code
+но по другим причинам, сказать компьютеру
+чтобы он добавил весь этот код
 
 787
 00:36:37,060 --> 00:36:40,600
-that the CS50 staff wrote to
-implement get_string and string
+который сотрудники CS50 написали, чтобы
+создать get_string и string
 
 788
 00:36:40,600 --> 00:36:44,110
-and other functions like this.
+и другие функции, подобные им.
 
 789
 00:36:44,110 --> 00:36:50,530
-I'm going to go ahead and write Clang
--o string string.c, just like before,
+Поэтому я напишу Clang
+-o string string.c, точно как только что,
 
 790
 00:36:50,530 --> 00:36:54,400
-but I need to tell the computer
-this special instruction
+но надо дать компьютеру эту
+специальную инструкцию
 
 791
 00:36:54,400 --> 00:36:56,410
-to link it with CS50.
+чтобы слинковать с CS50.
 
 792
 00:36:56,410 --> 00:36:59,320
-And this will make more sense
-in just a couple of weeks' time.
+И вы поймете зачем, в течение
+следующих двух недель
 
 793
 00:36:59,320 --> 00:37:02,620
-But this is just a -l for link and CS50.
+Но пока это просто -l для линкования и CS50.
 
 794
 00:37:02,620 --> 00:37:04,720
-And all this tells
-the computer is this--
+И все вот это говорит
+компьютеру, что
 
 795
 00:37:04,720 --> 00:37:10,550
-the zeros and ones for my actual program
-are going to come from string.c right
+единицы и нули моей программы, должны
+придти из string.c прямо
 
 796
 00:37:10,550 --> 00:37:11,050
-here.
+сюда.
 
 797
 00:37:11,050 --> 00:37:12,400
-This is my source code.
+Это мой исходный код.
 
 798
 00:37:12,400 --> 00:37:16,780
-But CS50 staff, years ago,
-also wrote code in C in order
+Но сотрудники CS50, годы назад,
+также написали код для Си, чтобы
 
 799
 00:37:16,780 --> 00:37:19,420
-to give you functions
-like get_string, in order
+дать вам функции get_string
+и другие, чтобы
 
 800
 00:37:19,420 --> 00:37:22,390
@@ -4131,476 +4132,467 @@ Mac OS или другой системе.
 
 899
 00:41:46,700 --> 00:41:48,500
-And to run the program
-thereafter, you say
+Для последующего запуска программы
+мы вводим
 
 900
 00:41:48,500 --> 00:41:50,920
-dot, which just refers
-to your current folder,
+точку, которая соответствует
+текущему каталогу,
 
 901
 00:41:50,920 --> 00:41:54,140
-because we'll see that you can have
-multiple folders on a server, and hello
+потому что, как мы увидим далее, на сервере
+может быть множество каталогов, а затем hello,
 
 902
 00:41:54,140 --> 00:41:55,510
-is the name of the program.
+то есть имя программы.
 
 903
 00:41:55,510 --> 00:41:58,760
-All right, let's take a look at a couple
-of other types of features of Scratch
+Хорошо, давайте разберём пару
+других особенностей Scratch
 
 904
 00:41:58,760 --> 00:42:00,510
-and see what it's going
-to look like in C,
+и то, как они будут выглядеть в Си,
 
 905
 00:42:00,510 --> 00:42:04,560
-and then we'll start to implement
-some programs in C more manually.
+а затем начнём реализовывать на Си
+более сложные программы.
 
 906
 00:42:04,560 --> 00:42:07,130
-So consider this example
-here, which was an example
+Рассмотрим вот такой пример.
+Какой тип функционала
 
 907
 00:42:07,130 --> 00:42:11,450
-of what type of feature in Scratch?
+он демонстрировал в Scratch?
 
 908
 00:42:11,450 --> 00:42:13,300
-This did what for us?
+Что он позволял делать?
 
 909
 00:42:13,300 --> 00:42:14,260
-AUDIENCE: Variable.
+ЗАЛ: Это переменная.
 
 910
 00:42:14,260 --> 00:42:16,000
-DAVID MALAN: So this was
-an example of a variable.
+DAVID MALAN: Это был
+пример переменной.
 
 911
 00:42:16,000 --> 00:42:18,167
-And that variable, in this
-case, was called counter.
+И эта переменная, в данном случае,
+называлась counter (счётчик).
 
 912
 00:42:18,167 --> 00:42:21,130
-And we initialized it to-- that
-is, we set it equal to-- zero.
+Мы инициализировали её-- то есть,
+установили её равной-- нулём.
 
 913
 00:42:21,130 --> 00:42:24,220
-In C, on the right-hand side, if
-we want to achieve this same result
+В Си (справа на экране), чтобы
+добиться того же результата,
 
 914
 00:42:24,220 --> 00:42:27,190
-today onward, you're literally going
-to say the name of the variable,
+нужно написать буквально следующее:
+переменная (например,
 
 915
 00:42:27,190 --> 00:42:30,490
-like counter, but you can call it
-anything you want, equals zero.
+counter, но в целом это может быть
+любое имя) равна нулю.
 
 916
 00:42:30,490 --> 00:42:33,198
-Because recall that the equal
-sign is the assignment operator.
+Как мы помним, знак равенства —
+это оператор присваивания.
 
 917
 00:42:33,198 --> 00:42:34,990
-So whatever is on the
-right is going to get
+Поэтому то, что находится справа
+от него, будет
 
 918
 00:42:34,990 --> 00:42:37,210
-copied into whatever is on the left.
+скопировано в то, что находится слева.
 
 919
 00:42:37,210 --> 00:42:41,200
-However, that's not quite sufficient,
-because when you declare a variable
+Однако этого недостаточно, потому что
+когда вы объявляете переменную
 
 920
 00:42:41,200 --> 00:42:44,230
-and you say, hey, computer, I
-need some storage for some value,
+и говорите: "Эй, компьютер, мне нужно
+немного места для кое-какого значения",
 
 921
 00:42:44,230 --> 00:42:47,950
-you have to tell the computer
-what the type of that variable is.
+вы должны явно указать компьютеру
+тип этой переменной.
 
 922
 00:42:47,950 --> 00:42:52,000
-We've seen strings are variables
-that store multiple words.
+Мы знаем, что строки — это переменные,
+хранящие набор слов.
 
 923
 00:42:52,000 --> 00:42:55,000
-But in this case, we
-want to store a number.
+Но в данном случае мы хотим
+хранить число.
 
 924
 00:42:55,000 --> 00:42:58,390
-And in C, that type of number
-is called an int or an integer,
+Поэтому в Си такой тип чисел называется
+int или integer.
 
 925
 00:42:58,390 --> 00:43:00,070
-but I-N-T for short.
+I-N-T — для краткости.
 
 926
 00:43:00,070 --> 00:43:02,147
-There's one thing missing
-from this line of code.
+Кстати, в этой строке кода
+кое-чего не хватает.
 
 927
 00:43:02,147 --> 00:43:02,980
-AUDIENCE: Semicolon.
+ЗАЛ: Точки с запятой.
 
 928
 00:43:02,980 --> 00:43:03,610
-DAVID MALAN: Semicolon.
+DAVID MALAN: Да, точки с запятой.
 
 929
 00:43:03,610 --> 00:43:04,840
-Just finishes the thought.
+Иначе мысль не завершена.
 
 930
 00:43:04,840 --> 00:43:05,830
-So what does this do?
+Что это всё значит?
 
 931
 00:43:05,830 --> 00:43:10,270
-Hey, computer, give me a variable
-whose type is integer, or int.
+Эй, компьютер, дай мне переменную
+с целочисленным типом (типом int).
 
 932
 00:43:10,270 --> 00:43:15,280
-Call that variable counter, and
-store the value zero in that variable
+Назови её counter и помести в неё
+нулевое значение
 
 933
 00:43:15,280 --> 00:43:19,970
-by default. So it turns out that we can
-do other such operations on variables.
+по умолчанию. Оказывается, мы можем
+делать и другие вещи с переменными.
 
 934
 00:43:19,970 --> 00:43:23,460
-For instance, here we have the
-incrementation feature of Scratch.
+Например, вот так в Scratch
+у нас реализовано приращение.
 
 935
 00:43:23,460 --> 00:43:27,080
-Change the counter by one
-by adding 1 to the variable.
+Мы изменяем значение счётчика на единицу,
+прибавляя 1 к переменной.
 
 936
 00:43:27,080 --> 00:43:28,510
-So how do we do this in C?
+А как сделать это в Си?
 
 937
 00:43:28,510 --> 00:43:30,800
-In C, you would do something like this.
+В Си это выглядело бы примерно так.
 
 938
 00:43:30,800 --> 00:43:35,110
-And this is a little paradoxical if
-you're coming at this from algebra,
+С точки зрения алгебры выглядит
+немного парадоксально,
 
 939
 00:43:35,110 --> 00:43:38,110
-because how could counter possibly
-be equal to counter plus 1?
+потому что как может значение counter
+быть равным counter + 1?
 
 940
 00:43:38,110 --> 00:43:39,560
-But it's not equality.
+Только вот это не равенство.
 
 941
 00:43:39,560 --> 00:43:41,780
-This is assignment from right to left.
+Это присваивание справа налево.
 
 942
 00:43:41,780 --> 00:43:43,780
-So on the left-hand side,
-you're saying counter.
+То есть, с левой стороны у нас counter.
 
 943
 00:43:43,780 --> 00:43:45,190
-That's the name of your variable.
+Имя переменной.
 
 944
 00:43:45,190 --> 00:43:47,500
-On the right-hand side,
-you're saying counter plus 1,
+С правой стороны — counter + 1,
 
 945
 00:43:47,500 --> 00:43:49,390
-whatever that arithmetic answer is.
+чему бы это выражение ни было равно.
 
 946
 00:43:49,390 --> 00:43:53,260
-And you're copying counter
-plus 1 into counter.
+И мы копируем значение counter + 1
+в переменную counter.
 
 947
 00:43:53,260 --> 00:43:56,420
-I'm still missing something
-here, which is that semicolon.
+У меня тут опять чего-то не хватает.
+Точки с запятой.
 
 948
 00:43:56,420 --> 00:44:00,580
-But I do not need to
-say int in this example.
+Но в этом примере мне уже
+не нужно писать int.
 
 949
 00:44:00,580 --> 00:44:05,200
-At this point in the story, it
-is assumed that counter exists
+На этом этапе предполагается,
+что counter существует
 
 950
 00:44:05,200 --> 00:44:08,020
-and that I've used a line of
-code like the previous one
+и что я использовал подобную
+предыдущей строку кода
 
 951
 00:44:08,020 --> 00:44:10,270
-somewhere else in my program.
+в каком-то другом месте программы.
 
 952
 00:44:10,270 --> 00:44:13,330
-Because that tells the computer once,
-give me a variable called counter,
+Ведь это разовое указание для компьютера:
+"дай мне переменную с именем counter
 
 953
 00:44:13,330 --> 00:44:14,950
-and let me store ints in it.
+и позволь мне хранить в ней значения int".
 
 954
 00:44:14,950 --> 00:44:17,110
-This line of code assumes
-that counter exists,
+Данная строка кода предполагает,
+что counter уже существует
 
 955
 00:44:17,110 --> 00:44:20,410
-and so we do not specify
-the word int again.
+и что нам больше не нужно
+ничего говорить про int.
 
 956
 00:44:20,410 --> 00:44:22,060
-You specify it just once.
+Мы это указываем всего один раз.
 
 957
 00:44:22,060 --> 00:44:24,040
-Now, we need the
-semicolon, as I proposed.
+Так, нам всё ещё нужна точка с запятой.
 
 958
 00:44:24,040 --> 00:44:26,680
-But frankly, this is such a
-common operation in programming,
+Но если честно, это крайне типичная
+операция в программировании.
 
 959
 00:44:26,680 --> 00:44:28,930
-as we'll see, to just
-increment a variable.
+В смысле, приращение значения переменной.
 
 960
 00:44:28,930 --> 00:44:31,280
-Turns out there's other ways to do this.
+И оказывается, что сделать это можно
+разными способами.
 
 961
 00:44:31,280 --> 00:44:33,520
-You can, instead,
-equivalently say this--
+Можно вместо этого сделать вот так--
 
 962
 00:44:33,520 --> 00:44:36,250
-counter plus equals 1 semicolon.
+counter плюс-равно 1, точка с запятой.
 
 963
 00:44:36,250 --> 00:44:37,800
-It is literally the same thing.
+Это буквально то же самое.
 
 964
 00:44:37,800 --> 00:44:39,550
-And if that's too many
-keystrokes for you,
+А если и это для вас слишком длинно,
 
 965
 00:44:39,550 --> 00:44:42,910
-you can literally just say
-counter plus plus semicolon,
+вы можете написать так:
+counter плюс-плюс, точка с запятой,
 
 966
 00:44:42,910 --> 00:44:44,500
-and that, too, does the same thing.
+и это по-прежнему всё та же операция.
 
 967
 00:44:44,500 --> 00:44:47,650
-This is what's known in
-programming as syntactic sugar.
+В программировании такие вещи
+называются синтаксическим сахаром.
 
 968
 00:44:47,650 --> 00:44:51,110
-It doesn't add any functionality
-that you couldn't do some other way.
+Они не добавляют уникального функционала,
+который нельзя было бы реализовать иначе.
 
 969
 00:44:51,110 --> 00:44:53,800
-But it does it in a prettier,
-often more succinct way.
+Но они зачастую делают код более
+красивым и лаконичным.
 
 970
 00:44:53,800 --> 00:44:56,680
-And it's just more common to
-write lines of code like this.
+Поэтому чаще пишут именно так.
 
 971
 00:44:56,680 --> 00:44:58,430
-All right, let's
-consider another example.
+Хорошо, давайте рассмотрим
+другой пример.
 
 972
 00:44:58,430 --> 00:45:01,750
-This was called what in Scratch?
+Как это называлось в Scratch?
 
 973
 00:45:01,750 --> 00:45:03,980
-Yeah, a condition, a decision
-that you have to make.
+Точно, условие. Решение,
+которое нужно принять.
 
 974
 00:45:03,980 --> 00:45:06,310
-So if something is true, then do this.
+Если что-то истинно — сделай это.
 
 975
 00:45:06,310 --> 00:45:08,720
-In C, we might convert it as follows.
+В Си это выглядит следующим образом.
 
 976
 00:45:08,720 --> 00:45:11,260
-If x less than y in parentheses--
+Если x меньше y (в скобках)--
 
 977
 00:45:11,260 --> 00:45:15,300
-which isn't quite the angled shape
-that we have here in green, but in C,
+да, они не очень похожи на вот эту
+зелёную угловатую фигуру, но в Си
 
 978
 00:45:15,300 --> 00:45:16,780
-you use parentheses here.
+мы используем скобки.
 
 979
 00:45:16,780 --> 00:45:20,380
-So if x is less than y,
-open paren, close paren,
+Итак, если x меньше y (скобка
+открывается, скобка закрывается),
 
 980
 00:45:20,380 --> 00:45:21,970
-then go ahead and do the following.
+то — выполнить следующее.
 
 981
 00:45:21,970 --> 00:45:25,720
-And just as this yellow or orange
-puzzle piece kind of looks like it's
+И так же, как этот жёлто-оранжевый
+кусочек паззла как будто
 
 982
 00:45:25,720 --> 00:45:29,920
-hugging the purple puzzle piece,
-so does this open curly brace
+обнимает фиолетовый кусочек,
+эта открывающая фигурная скобка
 
 983
 00:45:29,920 --> 00:45:32,830
-and this close curly brace,
-so to speak, is kind of there
+и эта закрывающая фигурная скобка,
+так сказать,
 
 984
 00:45:32,830 --> 00:45:36,050
-ready to hug or encapsulate
-one or more lines of code.
+готовы "обнять" или инкапсулировать
+одну или несколько строк кода.
 
 985
 00:45:36,050 --> 00:45:37,090
-What's the line of code?
+Что это может быть за строка?
 
 986
 00:45:37,090 --> 00:45:42,640
-It might be something like this--
-printf x is less than y backslash n.
+Например, что-то такое--
+printf, x меньше y, обратная косая черта, n.
 
 987
 00:45:42,640 --> 00:45:47,080
-So, again, new syntax, but we've
-seen the curly braces before
+И снова новый синтаксис, но
+фигурные скобки мы уже видели
 
 988
 00:45:47,080 --> 00:45:48,490
-in the context of main.
+в контексте функции main.
 
 989
 00:45:48,490 --> 00:45:52,280
-And we've seen parentheses
-before in the context of inputs.
+А круглые скобки мы видели,
+когда говорили про входные значения.
 
 990
 00:45:52,280 --> 00:45:54,520
-So this is just kind
-of a pattern that we'll
+Так что это просто своего рода
+шаблон языка Си, который
 
 991
 00:45:54,520 --> 00:45:58,530
-start to follow in C whenever we
-want to do something conditionally.
+мы будем использовать при каждой
+операции с условием.
 
 992
 00:45:58,530 --> 00:46:01,000
-OK, in Scratch, we saw
-something like this--
+Ладно, в Scratch мы видели вот такое--
 
 993
 00:46:01,000 --> 00:46:04,300
-if x is less than y, then
-say x is less than y.
+если x меньше y, то
+вывести на экран "x меньше, чем y".
 
 994
 00:46:04,300 --> 00:46:06,730
-Else, conclude that
-x is not less than y.
+Иначе вывести "x не меньше, чем y".
 
 995
 00:46:06,730 --> 00:46:11,380
-In C, it almost looks the same, but
-you set yourself up with an else block
+В Си такая конструкция выглядит почти
+так же, разве что добавляется блок else,
 
 996
 00:46:11,380 --> 00:46:15,010
-with two sets of curly braces,
-sort of two characters ready to hug
+и в итоге у нас два набора фигурных скобок,
+готовых "обнять"
 
 997
 00:46:15,010 --> 00:46:16,600
-the lines of code in between them.
+код между ними.
 
 998
 00:46:16,600 --> 00:46:19,660
-And we can just plug in now,
-literally, the translations to printf
+А затем нам остаётся буквально
+"вставить" наши переводы в printf,
 
 999
 00:46:19,660 --> 00:46:25,060
-by saying printf x is less than
-y or printf x is not less than y.
+написав printf, "x меньше, чем y", или же
+printf, "x не меньше, чем y".
 
 1000
 00:46:25,060 --> 00:46:28,450
@@ -6011,277 +6003,274 @@ and print this if I want.
 
 1300
 01:00:04,800 --> 01:00:09,090
-So printf something like,
-you are at least percent--
+Выведем что-нибудь такое: printf,
+"ваш возраст — не менее", символ %--
 
 1301
 01:00:09,090 --> 01:00:13,620
-not s, because it's not a string, but
-percent i because it's an integer now--
+тут не s, потому что это не строка,
+а i — для целого числа--
 
 1302
 01:00:13,620 --> 01:00:15,900
-days old, backslash n.
+дней, обратная косая черта, n.
 
 1303
 01:00:15,900 --> 01:00:18,190
-But again, this is a
-placeholder, so I'm not done yet.
+Это ещё не всё, потому что
+у нас тут заполнитель.
 
 1304
 01:00:18,190 --> 01:00:23,580
-What do I need to put inside of
-these parentheses also on line 8?
+Что ещё мне нужно поместить в скобки
+на восьмой строке?
 
 1305
 01:00:23,580 --> 01:00:27,990
-Yeah, so comma, days, if that's
-the value that I want to plug in.
+Именно. Поэтому: запятая, days, если мне
+нужно использовать именно это значение.
 
 1306
 01:00:27,990 --> 01:00:29,377
-And I'm missing one more thing.
+И я ещё кое-что пропустил.
 
 1307
 01:00:29,377 --> 01:00:30,210
-AUDIENCE: Semicolon.
+ЗАЛ: Точку с запятой.
 
 1308
 01:00:30,210 --> 01:00:32,127
-DAVID MALAN: Semicolon
-at the end of the line.
+DAVID MALAN: Точку с запятой
+в конце строки.
 
 1309
 01:00:32,127 --> 01:00:33,503
-Now, hopefully, I got this right.
+Надеюсь, теперь всё верно.
 
 1310
 01:00:33,503 --> 01:00:35,670
-But odds are the first time
-you write your programs,
+Но скорее всего, поначалу
+в своих программах
 
 1311
 01:00:35,670 --> 01:00:37,150
-you're going to see error messages.
+вы будете видеть море ошибок.
 
 1312
 01:00:37,150 --> 01:00:41,040
-But let's see, make int is the
-quickest way now to compile this code.
+Так, make int — самый быстрый
+способ компиляции этого кода.
 
 1313
 01:00:41,040 --> 01:00:41,850
-Enter.
+Жмём Enter.
 
 1314
 01:00:41,850 --> 01:00:43,860
-All right, the big, long
-white command is OK.
+Отлично, длинная белая надпись —
+это хорошо.
 
 1315
 01:00:43,860 --> 01:00:47,490
-So long as you don't see red or yellow
-or colored output that indicates
+Пока в выводе отсутствуют красный,
+жёлтый или другие цвета, означающие
 
 1316
 01:00:47,490 --> 01:00:49,590
-warnings or errors, you should be OK.
+предупреждения или ошибки, всё в порядке.
 
 1317
 01:00:49,590 --> 01:00:53,910
-I'm going to clear my screen now so I
-can just now run this program, ./int.
+Я очищу экран и просто запущу
+эту программу: ./int.
 
 1318
 01:00:53,910 --> 01:00:56,150
-And suppose your age is, say, 50.
+Предположим, ваш возраст — 50.
 
 1319
 01:00:56,150 --> 01:01:00,422
-Well, you are at least 18,250 days old.
+Ну, в днях это будет как минимум 18,250.
 
 1320
 01:01:00,422 --> 01:01:03,630
-But let me use this as an opportunity
-to not just do something correct, which
+Но позвольте мне использовать эту возможность
+для создания не только правильного, каким,
 
 1321
 01:01:03,630 --> 01:01:06,690
-I claim this code is, but to
-just make it better designed.
+я полагаю, этот код и является,
+но ещё и хорошего кода.
 
 1322
 01:01:06,690 --> 01:01:11,580
-It's fine to be storing this value,
-age, in a variable called age.
+Вполне нормально хранить значение
+возраста в переменной age.
 
 1323
 01:01:11,580 --> 01:01:13,950
-And it's fine to be creating
-a second variable called
+И так же нормально иметь
+вторую переменную с именем
 
 1324
 01:01:13,950 --> 01:01:19,300
-days, in which my mathematical
-answer is age times 365.
+days, где хранится значение,
+равное age, умноженному на 365.
 
 1325
 01:01:19,300 --> 01:01:22,530
-But strictly speaking, I don't
-need that additional line of code.
+Но строго говоря, мне не нужна
+эта дополнительная строка кода.
 
 1326
 01:01:22,530 --> 01:01:26,520
-I could also just do age times 365 here.
+Я мог бы написать age * 365 прямо здесь.
 
 1327
 01:01:26,520 --> 01:01:27,660
-So C is nice like that.
+Этим Си и хорош.
 
 1328
 01:01:27,660 --> 01:01:32,370
-You can compose, just like in Scratch,
-bigger ideas from multiple smaller
+Как и в Scratch, здесь можно составлять
+большие идеи из нескольких маленьких
 
 1329
 01:01:32,370 --> 01:01:33,090
-pieces.
+кусочков.
 
 1330
 01:01:33,090 --> 01:01:35,550
-And frankly, if I really
-want to get crazy,
+А если уж совсем сходить с ума,
 
 1331
 01:01:35,550 --> 01:01:38,040
-notice I can actually
-highlight that whole function
+заметьте, что я могу выделить
+весь этот вызов
 
 1332
 01:01:38,040 --> 01:01:42,000
-call, so to speak, get rid
-of the age all together,
+функции, так сказать, полностью
+избавиться от переменной age,
 
 1333
 01:01:42,000 --> 01:01:49,330
-and just plug this in here times 365.
+и просто вставить его сюда,
+умножив на 365.
 
 1334
 01:01:49,330 --> 01:01:53,190
-But at this point, we're starting
-to cross an inflection point.
+Но таким образом мы начинаем
+перегибать палку.
 
 1335
 01:01:53,190 --> 01:01:55,342
-Yes, this is correct,
-because I, strictly speaking,
+Да, всё написанное верно, потому что мне,
+строго говоря,
 
 1336
 01:01:55,342 --> 01:01:56,550
-don't need a variable, right?
+не нужна переменная, так?
 
 1337
 01:01:56,550 --> 01:01:58,020
-I can pass-- we saw last week--
+Я могу передавать-- как мы видели
+на прошлой неделе--
 
 1338
 01:01:58,020 --> 01:02:00,870
-one function's output as
-another function's input
+выход одной функции на вход другой,
 
 1339
 01:02:00,870 --> 01:02:02,540
-by just nesting them in this way.
+просто вкладывая их друг в друга.
 
 1340
 01:02:02,540 --> 01:02:05,040
-But honestly, now we're at the
-point where this line of code
+Но если подумать, в данный момент
+эта строка кода
 
 1341
 01:02:05,040 --> 01:02:08,080
-is so relatively long,
-it's just too hard to read.
+стала настолько длинной, что
+её очень трудно читать.
 
 1342
 01:02:08,080 --> 01:02:10,830
-And so this is an example where,
-for design's sake, you know what?
+И вот это как раз пример того,
+когда из соображений читаемости
 
 1343
 01:02:10,830 --> 01:02:13,210
-The previous version was
-probably a bit better,
+лучше вернуть предыдущий вариант,
 
 1344
 01:02:13,210 --> 01:02:16,950
-because I can read the code more
-top to bottom than left to right.
+потому что он позволяет читать код
+скорее сверху вниз, чем слева направо.
 
 1345
 01:02:16,950 --> 01:02:18,900
-But this is a design decision.
+Это проектное решение.
 
 1346
 01:02:18,900 --> 01:02:21,000
-And indeed, you might agree or disagree.
+Вы можете быть согласны или несогласны,
 
 1347
 01:02:21,000 --> 01:02:24,420
-You might agree or disagree with your
-teaching fellow, or TF, ultimately.
+в том числе и с вашим наставником.
 
 1348
 01:02:24,420 --> 01:02:28,770
-These are the kinds of decisions
-that go into writing good or bad code
+Выбор здесь стоит между написанем
+хорошего и плохого кода,
 
 1349
 01:02:28,770 --> 01:02:30,300
-or good or better code.
+ну или хорошего и более хорошего кода.
 
 1350
 01:02:30,300 --> 01:02:33,000
-Much like in an English essay
-or in any written language,
+Почти как в сочинении по английскому
+или любому другому языку:
 
 1351
 01:02:33,000 --> 01:02:36,030
-you could argue that one person
-has written their document better
+работа одного человека может
+понравиться вам больше,
 
 1352
 01:02:36,030 --> 01:02:36,730
-than another.
+чем работа другого.
 
 1353
 01:02:36,730 --> 01:02:40,140
-So we'll begin to appreciate
-these nuances over time.
+Так что со временем мы начнём
+ценить эти нюансы.
 
 1354
 01:02:40,140 --> 01:02:41,310
-What about float?
+А что насчёт действительных чисел?
 
 1355
 01:02:41,310 --> 01:02:45,758
-Well, let me go ahead and write another
-program real quick called float.c.
+Давайте я быстренько напишу другую
+программу под названием float.c.
 
 1356
 01:02:45,758 --> 01:02:47,550
-And this one is going
-to use floating point
+И в ней мы будем использовать дробные
 
 1357
 01:02:47,550 --> 01:02:50,800
-values, which again, is just synonymous
-with real numbers with decimal points.
+значения, соответствующие
+действительным числам.
 
 1358
 01:02:50,800 --> 01:02:54,150
-Let me go ahead and include
-CS50.h, include stdio.h.
+Так, теперь заголовочные файлы:
+include CS50.h, include stdio.h.
 
 1359
 01:02:54,150 --> 01:02:57,840
@@ -6289,124 +6278,121 @@ CS50.h, include stdio.h.
 
 1360
 01:02:57,840 --> 01:03:02,003
-And then int main void and
-then my open curly braces.
+Затем int main void и фигурные скобки.
 
 1361
 01:03:02,003 --> 01:03:02,920
-And now let's do this.
+А теперь сделаем вот что.
 
 1362
 01:03:02,920 --> 01:03:04,680
-Let me get the price of something.
+Давайте посчитаем стоимость чего-нибудь.
 
 1363
 01:03:04,680 --> 01:03:10,290
-So int price equals get float,
-what's the price, for instance.
+Пишем: int price, равно, get float,
+какова цена, например.
 
 1364
 01:03:10,290 --> 01:03:11,450
-Semicolon.
+Точка с запятой.
 
 1365
 01:03:11,450 --> 01:03:13,660
-And now let me do something
-mathematical with this.
+А теперь применим кое-какие вычисления.
 
 1366
 01:03:13,660 --> 01:03:18,120
-Let me go ahead and say, your total is.
+Напишем, например: "общая сумма составляет".
 
 1367
 01:03:18,120 --> 01:03:21,330
-And now let me just do the total
-price with tax, for instance.
+И далее посчитаем, например, общую
+стоимость с учётом налогов.
 
 1368
 01:03:21,330 --> 01:03:24,353
-In Massachusetts, sales tax is 6.25%.
+В штате Массачусетс налог с продаж
+составляет 6.25%.
 
 1369
 01:03:24,353 --> 01:03:26,520
-So let's just write a little
-program that does that.
+Напишем небольшую программу,
+учитывающую его.
 
 1370
 01:03:26,520 --> 01:03:30,540
-Your total is-- not percent
-s, because it's not a string.
+Общая сумма составляет-- не %s,
+потому что это не строка.
 
 1371
 01:03:30,540 --> 01:03:33,190
-Not percent i, because
-it's not an integer.
+И не %i, потому что это не целое число.
 
 1372
 01:03:33,190 --> 01:03:37,990
-It should be percent f for float.
+Для действительного числа это будет %f.
 
 1373
 01:03:37,990 --> 01:03:39,350
-And in fact, I goofed.
+Кстати, я тут облажался.
 
 1374
 01:03:39,350 --> 01:03:41,860
-I actually made a mistake
-here accidentally.
+Случайно сделал эту ошибку.
 
 1375
 01:03:41,860 --> 01:03:44,997
-I don't want to store the price in
-an int if I'm getting it as a float.
+Я не хочу хранить цену в переменной
+типа int, если вычисляю её как float.
 
 1376
 01:03:44,997 --> 01:03:47,080
-If I'm getting a real
-number with a decimal point,
+Если я получаю действительное число
+с десятичной точкой,
 
 1377
 01:03:47,080 --> 01:03:49,310
-I probably want to store
-it as a float, as well.
+то мне и хранить его следует
+как действительное число.
 
 1378
 01:03:49,310 --> 01:03:52,480
-So again, different format
-codes, different placeholders
+Опять же, каждому формату соответствует
+свой заполнитель
 
 1379
 01:03:52,480 --> 01:03:53,787
-for different contexts.
+в зависимости от контекста.
 
 1380
 01:03:53,787 --> 01:03:55,120
-Now let me go ahead and do this.
+Теперь я сделаю следующее.
 
 1381
 01:03:55,120 --> 01:03:56,995
-And if I want to plug
-in the price, I'm going
+Если я хочу подставить переменную
+price, мне нужно
 
 1382
 01:03:56,995 --> 01:04:05,230
-to do price times 1.0625, which just
-mathematically means add 106.25%--
+написать price * 1.0625, что соответствует
+добавлению 106.25%--
 
 1383
 01:04:05,230 --> 01:04:08,770
-or multiply, rather,
-the price by 106.25%
+или, иначе говоря, умножению цены
+на 106.25%,
 
 1384
 01:04:08,770 --> 01:04:11,203
-so that you actually
-see the total with tax.
+и теперь мы видим общую сумму
+с налогом.
 
 1385
 01:04:11,203 --> 01:04:13,120
-All right, so let's go
-ahead and compile this.
+Хорошо, давайте скомпилируем
+этот код.
 
 1386
 01:04:13,120 --> 01:04:14,980
@@ -6414,8 +6400,8 @@ Make float, Enter.
 
 1387
 01:04:14,980 --> 01:04:17,320
-No error messages, so
-that's already promising.
+Сообщений об ошибках нет,
+уже неплохо.
 
 1388
 01:04:17,320 --> 01:04:18,730
@@ -6423,47 +6409,47 @@ that's already promising.
 
 1389
 01:04:18,730 --> 01:04:19,990
-And what's the price?
+"Какова цена"?
 
 1390
 01:04:19,990 --> 01:04:23,170
-How about $100.
+Ну, как насчёт $100?
 
 1391
 01:04:23,170 --> 01:04:25,180
-OK, that's a little excessively precise.
+Кажется, результат чересчур точный.
 
 1392
 01:04:25,180 --> 01:04:29,932
-The total price is $106.250000.
+Общая сумма составляет $106.250000.
 
 1393
 01:04:29,932 --> 01:04:33,130
-But that's just because the
-computer, per last week,
+Это всё потому, что компьютер,
+как мы помним,
 
 1394
 01:04:33,130 --> 01:04:35,440
-is using some number of
-bits to store values.
+использует определённое количество бит
+для хранения значений.
 
 1395
 01:04:35,440 --> 01:04:40,120
-And the computer happens to be
-capable of showing this many digits
+И он, оказывается, способен
+показывать вот столько знаков
 
 1396
 01:04:40,120 --> 01:04:41,140
-after the decimal point.
+после десятичной точки.
 
 1397
 01:04:41,140 --> 01:04:42,830
-But what if you don't want to do that?
+Но что если нам столько не нужно?
 
 1398
 01:04:42,830 --> 01:04:46,660
-Well, it turns out there's some
-pretty arcane tricks you can do.
+Оказывается, для этого существуют
+кое-какие хитрости.
 
 1399
 01:04:46,660 --> 01:04:48,910
@@ -6472,28 +6458,28 @@ f, I can actually
 
 1400
 01:04:48,910 --> 01:04:52,360
-do percent dot 2f, which
-again, you would only
+сделать процент точка 2f, которую,
+опять же, вы могли знать только
 
 1401
 01:04:52,360 --> 01:04:55,570
-know from having heard it before
-looking it up in a book or reference.
+если встречали раньше,
+или видели ее в книжке или справке.
 
 1402
 01:04:55,570 --> 01:04:59,150
-That's going to show me only two
-digits after the decimal point.
+Это покажет мне две цифры после
+точки.
 
 1403
 01:04:59,150 --> 01:05:02,560
-So if I recompile this code
-and make float and do ./float,
+Так что, если я рекомпилирую код
+и сделаю ./float,
 
 1404
 01:05:02,560 --> 01:05:07,720
-now notice if the price is $100, now my
-total is a little more user friendly--
+заметьте, если цена 100 долларов, теперь
+моя сумма немного более читаема--
 
 1405
 01:05:07,720 --> 01:05:09,790
@@ -6501,245 +6487,247 @@ total is a little more user friendly--
 
 1406
 01:05:09,790 --> 01:05:11,953
+Если кратко, это f в printf
 So in short, this is the f in printf.
 
 1407
 01:05:11,953 --> 01:05:13,870
-Just as you can print
-something to the screen,
+Так же как вы можете
+что то напечатать на экране,
 
 1408
 01:05:13,870 --> 01:05:19,380
-you can format it as by telling
-printf to only show so many digits.
+вы можете форматировать это,
+сказав printf сколько символов после точки
+показать.
 
 1409
 01:05:19,380 --> 01:05:20,810
-Well, let me try something else.
+Давайте я попробую кое что еще.
 
 1410
 01:05:20,810 --> 01:05:23,470
-Let me go ahead and copy/paste
-the beginnings of this code,
+Давайте я скопирую начало
+этого кода,
 
 1411
 01:05:23,470 --> 01:05:24,940
-just to speed things up.
+просто чтобы ускориться.
 
 1412
 01:05:24,940 --> 01:05:27,190
-So I can implement a
-program called parity.c.
+Чтобы я смог сделать программу
+которая называется parity.c.
 
 1413
 01:05:27,190 --> 01:05:30,343
-So parity is a fancy way of
-saying is a value even or odd.
+"Parity" это прикольный способ
+сказать четное ли число.
 
 1414
 01:05:30,343 --> 01:05:32,260
-And I've gone ahead and
-just copied and pasted
+И я просто скопировал и
+вставил
 
 1415
 01:05:32,260 --> 01:05:35,708
-the setup of the code, not the
-essence of my main function.
+подготовительный код, но не
+главную функцию.
 
 1416
 01:05:35,708 --> 01:05:38,500
-But let's go ahead, in this program,
-and ask the user for a number.
+Но давайте спросим число у пользователя.
 
 1417
 01:05:38,500 --> 01:05:39,540
-We'll call it n.
+И назовем его n.
 
 1418
 01:05:39,540 --> 01:05:41,620
-And we'll use get_int to get that value.
+И мы используем get_int чтобы получить значение.
 
 1419
 01:05:41,620 --> 01:05:44,620
-And we're just going to say to
-the human, what's the value of n?
+И мы просто спросим человека,
+каково значение n?
 
 1420
 01:05:44,620 --> 01:05:49,540
-And I'm just going to say n colon space
-to just prompt them for some integer.
+И я просто скажу n двоеточие пробел
+чтобы запросить какое нибудь число.
 
 1421
 01:05:49,540 --> 01:05:51,460
-Then I'm going to go
-ahead and ask a question.
+Потом я задам вопрос.
 
 1422
 01:05:51,460 --> 01:05:55,570
+И я хочу написать "even" если
+число четное или "odd"
 I want to ultimately print out
 even if the number is even or odd
 
 1423
 01:05:55,570 --> 01:05:56,830
-if the number is odd.
+если нечетное.
 
 1424
 01:05:56,830 --> 01:06:02,650
-So you could imagine doing this the very
-tedious way, like if n equals equals 1,
+Вы можете представить как это сделать
+очень утомительным образом, например
+если n = 1,
 
 1425
 01:06:02,650 --> 01:06:06,130
-I could go ahead and print out odd.
+я напишу "odd".
 
 1426
 01:06:06,130 --> 01:06:12,340
-And then else if n equals equals
-2, I could print out even.
+И если n = 2, я могу написать "even".
 
 1427
 01:06:12,340 --> 01:06:16,190
-And then after that, I could support
-the number three, else if n--
+И потом если я хочу поддерживать
+номер три, тогде если n--
 
 1428
 01:06:16,190 --> 01:06:17,440
-I mean, this is stupid, right?
+это довольно глупо, не так ли?
 
 1429
 01:06:17,440 --> 01:06:18,880
-I could do this forever.
+Я могу делать это вечно.
 
 1430
 01:06:18,880 --> 01:06:21,632
-But it's at least
-showing a pattern, right?
+Но по крайней мере
+мы видим паттерн, верно?
 
 1431
 01:06:21,632 --> 01:06:24,340
-One and then three and then five,
-of course, are going to be odd,
+Один, потом три, потом пять,
+конечно, будут нечетными,
 
 1432
 01:06:24,340 --> 01:06:26,990
-and two and four and six are
-going to be even, and so forth.
+а два, четыре и шесть будут
+четными, и так далее.
 
 1433
 01:06:26,990 --> 01:06:29,240
-Well, it turns out we can
-compute this mathematically.
+Выглядит так, как будто можно
+это вычислить математически.
 
 1434
 01:06:29,240 --> 01:06:30,970
-And a very common trick might be this--
+И есть очень распространенный
+способ это сделать--
 
 1435
 01:06:30,970 --> 01:06:32,500
-we can actually do this.
+мы можем щас его воспроизвести.
 
 1436
 01:06:32,500 --> 01:06:39,070
-If n divided by 2 has a
-remainder of, for instance, 0,
+Если n делится на 2, и остаток,
+например, 0,
 
 1437
 01:06:39,070 --> 01:06:42,850
-then I'm going to go ahead and
-conclude that the number is even.
+мы сделаем вывод что номер
+четный.
 
 1438
 01:06:42,850 --> 01:06:45,430
-So this percent sign
-is a new construction.
+Вот этот значок процента -
+это новая конструкция.
 
 1439
 01:06:45,430 --> 01:06:46,090
-It's not plus.
+Это не плюс.
 
 1440
 01:06:46,090 --> 01:06:47,440
-It's not minus.
+Это не минус.
 
 1441
 01:06:47,440 --> 01:06:49,240
-It's not multiplication or division.
+Не умножение и не деление.
 
 1442
 01:06:49,240 --> 01:06:53,150
-This is the remainder operation, or
-the modulo operation, so to speak.
+Это операция остатка от деления.
 
 1443
 01:06:53,150 --> 01:06:59,470
-And this just means divide n by 2, and
-if the answer has a remainder of 0,
+И это значит поделить на 2, и
+если у ответа остаток 0,
 
 1444
 01:06:59,470 --> 01:07:02,670
-you can conclude, by definition
-of even, that the number is even.
+вы можете заключить, по определению
+четности, что номер четный.
 
 1445
 01:07:02,670 --> 01:07:04,100
-So I'm going to print that.
+И я выведу это на экран.
 
 1446
 01:07:04,100 --> 01:07:08,320
-Else-- I could do else if
-n percent 2 equals equals 1
+В противном случае-- Я могу сделать else if
+n процент 2 равно равно 1
 
 1447
 01:07:08,320 --> 01:07:11,380
-and has a remainder of 1,
-you could imagine saying odd.
+а значит имеет остаток 1,
+и сказать нечетное.
 
 1448
 01:07:11,380 --> 01:07:15,405
-But as you noted earlier,
-this is not necessary.
+Но как вы заметили раньше,
+это не нужно.
 
 1449
 01:07:15,405 --> 01:07:18,280
-What could I instead do to make the
-program a little better designed,
+Что я могу сделать вмето этого -
+структурировать программу чуть лучше,
 
 1450
 01:07:18,280 --> 01:07:19,600
-a little more efficient?
+более эффективной?
 
 1451
 01:07:19,600 --> 01:07:20,248
-Yeah?
+Да?
 
 1452
 01:07:20,248 --> 01:07:22,440
-AUDIENCE: You could just use
-else and that would be fine.
+АУДИТОРИЯ: Ты можешь просто
+использовать else и все будет отлично.
 
 1453
 01:07:22,440 --> 01:07:22,770
-DAVID MALAN: Yeah.
+DAVID MALAN: Да.
 
 1454
 01:07:22,770 --> 01:07:24,687
-So if we're talking about
-integers, I can just
+Поэтому если мы говорим о
+целых числах, я могу
 
 1455
 01:07:24,687 --> 01:07:28,360
-conclude, well, if it's not even,
-it must be odd, by definition.
+заключить, что, если это не четное,
+это нечетное, по определению.
 
 1456
 01:07:28,360 --> 01:07:30,510
-And so here, we can
-just do even and odd.
+И здесь, мы можем
+просто сделать четные и нечетные.
 
 1457
 01:07:30,510 --> 01:07:33,510
-So this program, once run,
-is going to look like this.
+Так что эта программа, будет
+выглядеть вот так при запуске.
 
 1458
 01:07:33,510 --> 01:07:35,400
@@ -6747,189 +6735,189 @@ Make parity.
 
 1459
 01:07:35,400 --> 01:07:36,630
-Looks like it compiled OK.
+Скомпилировалось нормально.
 
 1460
 01:07:36,630 --> 01:07:38,880
-So ./parity is how I run it.
+И я запускаю ее с помощью ./parity.
 
 1461
 01:07:38,880 --> 01:07:40,290
-Let's type the number 50.
+Вводим 50.
 
 1462
 01:07:40,290 --> 01:07:40,950
-That's even.
+Четное.
 
 1463
 01:07:40,950 --> 01:07:42,510
-Let's type the number 49.
+Вводим 49.
 
 1464
 01:07:42,510 --> 01:07:43,380
-That's odd.
+Нечетное.
 
 1465
 01:07:43,380 --> 01:07:44,850
-Proof by example.
+Доказательство на примере.
 
 1466
 01:07:44,850 --> 01:07:48,060
-This is not very compelling, but I
-bet this is going to be correct, just
+Не то чтобы железно доказано, но я могу
+предположить что будет работать верно,
 
 1467
 01:07:48,060 --> 01:07:49,480
-based on those two examples alone.
+основываясь на этих двух примерах.
 
 1468
 01:07:49,480 --> 01:07:49,980
-Yeah?
+Верно?
 
 1469
 01:07:49,980 --> 01:07:52,938
-AUDIENCE: [INAUDIBLE] user did not
-understand our comment that answer's
+АУДИТОРИЯ: [НЕРАЗБОРЧИВО] пользователь
+не понял наш комментарий что ответ
 
 1470
 01:07:52,938 --> 01:07:54,332
-a float or not an integer?
+float а не целое число?
 
 1471
 01:07:54,332 --> 01:07:55,790
-DAVID MALAN: Sorry, say that again?
+DAVID MALAN: Извините, еще раз?
 
 1472
 01:07:55,790 --> 01:07:58,207
-AUDIENCE: What if the user
-doesn't understand, I'm saying?
+АУДИТОРИЯ: Что если пользователь
+не понимает, что ему надо сделать?
 
 1473
 01:07:58,207 --> 01:08:02,783
-Like I just do something
-like 1 and 1/2 [INAUDIBLE]..
+Например просто введу что
+нибудь, 1 и 1/2 [НЕРАЗБОРЧИВО].
 
 1474
 01:08:02,783 --> 01:08:04,200
-DAVID MALAN: Really good question.
+DAVID MALAN: Очень хороший вопрос.
 
 1475
 01:08:04,200 --> 01:08:06,950
-One of the reasons we provide for
-the first few weeks of the class
+Одна из причин почему мы показываем
+в первые недели курса
 
 1476
 01:08:06,950 --> 01:08:10,700
-a few functions in the CS50 library like
-get_string and get_int and get_float
+функции в библиотеке CS50 типа
+get_string и get_int и get_float
 
 1477
 01:08:10,700 --> 01:08:14,960
-is that it forces the user to behave as
-you expect so that your program doesn't
+потому что они заставляют пользователя
+действовать как вы этого ожиадете и ваше приложение
 
 1478
 01:08:14,960 --> 01:08:17,149
-crash because of unexpected user input.
+не падает от неправильно введенных данных.
 
 1479
 01:08:17,149 --> 01:08:20,180
-So to your point, suppose the user
-is being a little difficult and says,
+Так что, предположим пользователь
+немного тормозит и вводит,
 
 1480
 01:08:20,180 --> 01:08:22,939
-my number is going to be 1.5.
+мой номер это 1.5.
 
 1481
 01:08:22,939 --> 01:08:27,854
-Get_int is going to prompt them for the
-same question again and again and again
+Get_int задаст им тот же вопрос
+еще раз и еще раз и еще раз
 
 1482
 01:08:27,854 --> 01:08:28,729
-until they cooperate.
+пока до них не дойдет.
 
 1483
 01:08:28,729 --> 01:08:31,819
-If you type in apple, it's
-going to prompt you again.
+Если вы введете "apple", он
+спросит вас снова.
 
 1484
 01:08:31,819 --> 01:08:34,880
-Only once you provide an actual
-integer will it cooperate.
+И когда вы введете целое число,
+только тогда оно заработает.
 
 1485
 01:08:34,880 --> 01:08:37,540
-So those are among the features
-you get from the CS50 library,
+Это одна из вещей которые идут
+с бибилотекой CS50,
 
 1486
 01:08:37,540 --> 01:08:39,410
-just so that we can
-focus on ideas and not
+чтобы мы могли сосредоточиться
+на идеях, а не
 
 1487
 01:08:39,410 --> 01:08:44,270
-on what we would call error checking,
-or malicious users, in this case.
+на проверках на ошибки, или подозрительных
+действиях пользователя.
 
 1488
 01:08:44,270 --> 01:08:46,670
-All right, so what
-else can we do once we
+Окей, что еще
+мы можем сделать, с
 
 1489
 01:08:46,670 --> 01:08:49,279
-have the ability to express conditions?
+возможностью выражать условия?
 
 1490
 01:08:49,279 --> 01:08:52,010
-Well, let me go ahead and open
-one that I brought with me.
+Так, давайте я открою исходники,
+которые принес с собой.
 
 1491
 01:08:52,010 --> 01:08:54,109
-So rather than type all
-of these from Scratch,
+Вместо того чтобы печатать
+все с нуля,
 
 1492
 01:08:54,109 --> 01:08:56,618
-let me go ahead and open conditions1.c.
+я просто открою conditions1.c.
 
 1493
 01:08:56,618 --> 01:08:58,660
-So this is a program that's
-already been written.
+Это приложение которое
+уже было написано.
 
 1494
 01:08:58,660 --> 01:09:00,920
-And it turns out, it's got
-some other lines in it,
+И видите, у нас есть
+какие другие строчки там,
 
 1495
 01:09:00,920 --> 01:09:03,643
-these grayed-out outlines
-that begin with slash slash.
+эти серые линии,
+которые начинаются со слеш слеш.
 
 1496
 01:09:03,643 --> 01:09:05,810
-You might not have noticed
-this, but in Scratch, you
+Вы могли не заметить, но в Scratch,
+у вас была штука,
 
 1497
 01:09:05,810 --> 01:09:06,979
-can have what are called comments.
+которая называлась "комментарии".
 
 1498
 01:09:06,979 --> 01:09:09,050
-They're like little sticky
-notes that you can add
+Они как будто маленькие липкие
+бумажки которые вы можете добавить
 
 1499
 01:09:09,050 --> 01:09:10,550
-that don't do anything functionally.
+и не делают ничего функционально.
 
 1500
 01:09:10,550 --> 01:09:13,825
