@@ -2776,384 +2776,381 @@ DAVID MALAN: Верно, этим мы буквально
 
 601
 00:28:17,620 --> 00:28:19,480
-break it down to the
-individual components
+разберете это до конца 
+на отдельные компоненты
 
 602
 00:28:19,480 --> 00:28:23,020
-from right to left and then
-from outside to inside,
+справа налево и затем 
+снаружи внутрь, 
 
 603
 00:28:23,020 --> 00:28:28,150
-you can generally infer even what new
-code that you've never seen before
+вы обычно можете сделать вывод даже о том, 
+что делает новый код, который вы никогда 
 
 604
 00:28:28,150 --> 00:28:29,860
-is doing.
+раньше не видели.
 
 605
 00:28:29,860 --> 00:28:33,880
-Any questions on these
-two lines of Scratch or C?
+Есть ли вопросы по этим 
+двум строкам Scratch или по C?
 
 606
 00:28:33,880 --> 00:28:34,594
-Yeah?
+Да?
 
 607
 00:28:34,594 --> 00:28:36,570
-AUDIENCE: Can you add [INAUDIBLE]?
+АУДИТОРИЯ: Можно ли добавлять [неразборчиво]?
 
 608
 00:28:36,570 --> 00:28:40,220
-
+...
 
 609
 00:28:40,220 --> 00:28:41,220
-DAVID MALAN: Absolutely.
+DAVID MALAN: Безусловно.
 
 610
 00:28:41,220 --> 00:28:42,450
-Can you add other variables?
+Можно ли добавлять другие переменные?
 
 611
 00:28:42,450 --> 00:28:46,290
-If I had more variables in this
-program, thanks to more lines of code,
+Если бы я имел больше переменных в этой
+программе, благодаря большему количеству строк кода,
 
 612
 00:28:46,290 --> 00:28:49,740
-I could just do comma, something
-else, comma, something else, comma.
+Я мог бы написать: запятая, что-то
+еще, запятая, что-то еще, запятая.
 
 613
 00:28:49,740 --> 00:28:52,620
-And I could just have one
-placeholder in that quoted
+И я бы просто взял один плейсхолдер
+из этого выражения
 
 614
 00:28:52,620 --> 00:28:56,340
-expression for all of those
-variables that I want to plug in.
+в кавычках для всех переменных,
+которые я хочу подключить.
 
 615
 00:28:56,340 --> 00:28:57,670
-And they go from left to right.
+И они будут идти слева направо.
 
 616
 00:28:57,670 --> 00:29:00,510
-So if I had two percent
-s's here, the first one
+Итак, если бы я имел два %s здесь, 
+то 
 
 617
 00:29:00,510 --> 00:29:01,890
-would come after the first comma.
+первый бы шел после первой запятой.
 
 618
 00:29:01,890 --> 00:29:04,481
-The second one would come
-after the second comma.
+А второй шел бы после второй запятой.
 
 619
 00:29:04,481 --> 00:29:06,485
-AUDIENCE: So you need a
-percent s [INAUDIBLE]??
+АУДИТОРИЯ: Так вам нужен %s [НЕРАЗБОРЧИВО]
 
 620
 00:29:06,485 --> 00:29:07,360
-DAVID MALAN: Correct.
+DAVID MALAN: Верно.
 
 621
 00:29:07,360 --> 00:29:10,962
-You need a percent s for any placeholder
-you want to plug in if it's a string.
+Вам нужен %s после каждого плейсхолдера,
+который вы хотите подключить если это срока.
 
 622
 00:29:10,962 --> 00:29:13,420
-And we're going to see other
-placeholders in just a moment.
+И мы собираемся увидеть остальные 
+плейсхолдеры через мгновение.
 
 623
 00:29:13,420 --> 00:29:14,720
-Good question.
+Хороший вопрос.
 
 624
 00:29:14,720 --> 00:29:16,464
-Other questions?
+Еще вопросы?
 
 625
 00:29:16,464 --> 00:29:17,230
-No?
+Нет?
 
 626
 00:29:17,230 --> 00:29:18,440
-Oh, yeah, in back.
+Ах да, сзади.
 
 627
 00:29:18,440 --> 00:29:20,705
-AUDIENCE: Is there another
-way to concatenate strings?
+АУДИТОРИЯ: Есть ли другие способы 
+конкатенации строк?
 
 628
 00:29:20,705 --> 00:29:23,080
-DAVID MALAN: Is there another
-way to concatenate strings?
+DAVID MALAN: Есть ли другие способы 
+конкатенации строк?
 
 629
 00:29:23,080 --> 00:29:26,533
-Short answer-- yes, many
-ways, none of them easy.
+Короткий ответ - да, много 
+способов, но все они непростые.
 
 630
 00:29:26,533 --> 00:29:29,200
-So we'll build up to that, actually,
-in a couple of weeks' time.
+Мы займемся этим, вообще-то,
+через пару недель.
 
 631
 00:29:29,200 --> 00:29:33,290
-Printf, for now, is by far
-the easiest way to do it.
+Printf, на данный момент, безусловно
+самый простой способ сделать это.
 
 632
 00:29:33,290 --> 00:29:34,175
-Other questions?
+Еще вопросы?
 
 633
 00:29:34,175 --> 00:29:36,550
-And if I ever miss your hand,
-there's just lots of glare.
+И если я когда-нибудь пропущу
+ваши руки, то это из-за яркого света.
 
 634
 00:29:36,550 --> 00:29:37,510
-Do just call out.
+Просто призови меня.
 
 635
 00:29:37,510 --> 00:29:38,200
-Over here.
+Сюда.
 
 636
 00:29:38,200 --> 00:29:40,550
-OK, all three of you.
+Ок, вы трое.
 
 637
 00:29:40,550 --> 00:29:41,571
-Over here on the right.
+Вон там справа.
 
 638
 00:29:41,571 --> 00:29:43,890
-AUDIENCE: [INAUDIBLE].
+АУДИТОРИЯ: [НЕРАЗБОРЧИВО]
 
 639
 00:29:43,890 --> 00:29:44,640
-DAVID MALAN: Sure.
+DAVID MALAN: Уверен.
 
 640
 00:29:44,640 --> 00:29:45,420
-What is a string?
+Что такое строка?
 
 641
 00:29:45,420 --> 00:29:50,530
-A string is a sequence of zero or
-more characters in double quotes.
+Строка это последовательность нулей
+или других символов в двойных кавычках.
 
 642
 00:29:50,530 --> 00:29:54,060
-So put another way, it's a word, a
-phrase, a sentence, a paragraph-- zero
+Иными словами, это слово, фраза, 
+предложение, абзац - ноль
 
 643
 00:29:54,060 --> 00:29:58,883
-or more characters, alphabetical
-letters, in double quotes.
+или больше символов, в алфавитном 
+порядке, в двойных ковычках.
 
 644
 00:29:58,883 --> 00:29:59,550
-Other questions?
+Еще вопросы?
 
 645
 00:29:59,550 --> 00:30:01,100
-Yeah?
+Да?
 
 646
 00:30:01,100 --> 00:30:07,083
-AUDIENCE: What would happen if your
-backslash n was outside the quotations.
+АУДИТОРИЯ: Что произойдет, если \n
+окажется за пределами кавычек?
 
 647
 00:30:07,083 --> 00:30:08,500
-DAVID MALAN: Really good question.
+DAVID MALAN: Действительно хороший вопрос.
 
 648
 00:30:08,500 --> 00:30:11,270
-What would happen if your backslash
-n is outside the quotations?
+Что произойдет, если \n
+окажется за пределами кавычек?
 
 649
 00:30:11,270 --> 00:30:12,210
-Well, let me go ahead and do this.
+Что ж, позвольте мне попробовать сделать это.
 
 650
 00:30:12,210 --> 00:30:14,210
-And frankly, this is the
-right instinct to have.
+И, честно говоря, это 
+правильный подход.
 
 651
 00:30:14,210 --> 00:30:17,250
-Any time, moving forward, you have
-those same instinctive questions,
+В любое время, двигаясь вперед, у вас будут 
+возникать те же самые  инстинктивные вопросы,
 
 652
 00:30:17,250 --> 00:30:17,880
-just try it.
+просто попробуйте это.
 
 653
 00:30:17,880 --> 00:30:19,770
-You can do no harm to the computer.
+Вы не сможете причинить времд компьютеру.
 
 654
 00:30:19,770 --> 00:30:22,170
-So let me go ahead and just
-accidentally, if you will,
+Так что позвольте мне пойти вперед
+и просто случайно, если хотите,
 
 655
 00:30:22,170 --> 00:30:24,510
-put the backslash n
-outside of the quotes,
+ввести \n вне кавычек,
 
 656
 00:30:24,510 --> 00:30:25,978
-is what I think your question is.
+ваш вопрос именно об этом, я полагаю.
 
 657
 00:30:25,978 --> 00:30:27,520
-All right, so let's see what happens.
+Окей, давайте посмотрим что произойдет.
 
 658
 00:30:27,520 --> 00:30:29,490
-So I'm going to go
-ahead now and run Clang.
+Так что я сейчас пойду и 
+запущу Clang.
 
 659
 00:30:29,490 --> 00:30:31,470
-I know how to make a
-customized name now,
+Теперь я знаю, как сделать
+нужное мне имя,
 
 660
 00:30:31,470 --> 00:30:34,380
-so I'm going to adopt
-that convention. -o hello.
+поэтому воспользуюсь 
+этим знанием: -o hello.
 
 661
 00:30:34,380 --> 00:30:36,720
-And now I'm going to go
-ahead and say hello.c,
+И теперь я пойду 
+дальше и говорю hello.c,
 
 662
 00:30:36,720 --> 00:30:38,940
-which I think is going to be broken.
+который, я думаю, будет сломан.
 
 663
 00:30:38,940 --> 00:30:41,910
-And indeed, something,
-indeed, has broken here.
+И в самом деле, что-то, 
+действительно тут сломано.
 
 664
 00:30:41,910 --> 00:30:43,420
-Let's see what the error is.
+Давайте посмотрим в чем ошибка.
 
 665
 00:30:43,420 --> 00:30:48,210
-So it's a little arcane, too,
-but hello.c, colon 5, colon 26.
+И это тоже немного загадочно, 
+но текст ошибки такой: hello.c двоеточие 5 двоеточие 26.
 
 666
 00:30:48,210 --> 00:30:49,240
-What's going on there?
+Что здесь происходит?
 
 667
 00:30:49,240 --> 00:30:50,370
-Well, let me zoom out.
+Давайте я уменьшу это.
 
 668
 00:30:50,370 --> 00:30:53,110
-Anytime you make a mistake
-in your code like this,
+После любой сделаной ошибки в вашем коде
+на подобии этой, 
 
 669
 00:30:53,110 --> 00:30:57,870
-Clang is going to try to help you figure
-out where that mistake or that bug is.
+Clang попытается помочь вам выяснить
+где эта ошибка или баг находятся.
 
 670
 00:30:57,870 --> 00:31:02,760
-So hello.c colon five means
-look on line 5 for your mistake.
+Надпись "colon 5" в hello.c означает
+что вашу ошибку стоит искать в строке 5
 
 671
 00:31:02,760 --> 00:31:07,930
-Then, see, it says error-- expected
-close parentheses right around here.
+Далее, видите, там написана ошибка - ожидается
+что круглые скобки будут закрыты прямо здесь.
 
 672
 00:31:07,930 --> 00:31:11,500
-So it's a little weird, because no,
-I don't want a close parentheses,
+Так что это немного странно, потому что нет,
+я не хочу закрывать скобки,
 
 673
 00:31:11,500 --> 00:31:12,000
-I think.
+Я думаю.
 
 674
 00:31:12,000 --> 00:31:13,170
-I want the new line.
+Я хочу начать с новой строчки.
 
 675
 00:31:13,170 --> 00:31:16,080
-So it's not perfectly
-able to tell you, hey,
+Так что система не в состоянии
+сказать вам, эй
 
 676
 00:31:16,080 --> 00:31:18,450
-that backslash n should
-be inside of the quotes.
+этот \n должен быть 
+внутри кавычек
 
 677
 00:31:18,450 --> 00:31:21,780
-But it can at least help you
-hone in on where the mistake is.
+Но это может в конечном счете помочь вам
+выяснить где находится ошибка.
 
 678
 00:31:21,780 --> 00:31:24,000
-So it's somewhere around
-there, at which point
+И так, она где-то тут 
+рядом, и в какой-то момент
 
 679
 00:31:24,000 --> 00:31:26,850
-your own memory or your own googling
-should kick in to figure out,
+ваша собственная память или гугление
+помогут вам понять,
 
 680
 00:31:26,850 --> 00:31:29,717
-oh, that's got to be
-inside of the quotes.
+что да, это должно быть
+снаружи кавычек.
 
 681
 00:31:29,717 --> 00:31:30,300
-Good question.
+Хороший вопрос.
 
 682
 00:31:30,300 --> 00:31:31,883
-Was there a third question back there?
+Был ли там еще третий вопрос?
 
 683
 00:31:31,883 --> 00:31:32,430
-Yeah?
+Да?
 
 684
 00:31:32,430 --> 00:31:32,930
-No?
+Нет?
 
 685
 00:31:32,930 --> 00:31:33,480
@@ -3161,74 +3158,75 @@ OK.
 
 686
 00:31:33,480 --> 00:31:37,860
-All right, so let's go ahead now and
-transition to a few other features
+Итак, давайте перейдем к нескольким
+другим функциям
 
 687
 00:31:37,860 --> 00:31:39,360
-that we can do, as well--
+которые мы также можем сделать - 
 
 688
 00:31:39,360 --> 00:31:42,630
-namely, implementing the
-same program that I just had.
+а именно, реализуем ту же самую программу,
+которая у меня только что была.
 
 689
 00:31:42,630 --> 00:31:45,600
-Let me go ahead and close this
-file and create a new one called,
+Позвольте мне продолжить и закрыть этот
+файл, а затем создать новый,
 
 690
 00:31:45,600 --> 00:31:49,173
-say, string.c, because I'm now
-experimenting with strings.
+скажем, string.c, потому что я сейчас
+эксперементирую со строками.
 
 691
 00:31:49,173 --> 00:31:50,590
-And I'm going to start as before--
+И я собираюсь начать как и раньше - 
 
 692
 00:31:50,590 --> 00:31:55,260
-include stdio.h int main void.
+с #include <stdio.h> 
+int main(void)
 
 693
 00:31:55,260 --> 00:32:01,470
-And then I'm going to go ahead here
-and say string answer get get_string,
+А потом я собираюсь пойти дальше и 
+сказать string answer равно get_string,
 
 694
 00:32:01,470 --> 00:32:07,020
-quote unquote, what's your name,
-question mark, backslash n, semicolon.
+скобка открывается, кавычка, 
+как тебя зовут, знак вопроса, \n, кавычка, скобка и ;
 
 695
 00:32:07,020 --> 00:32:09,448
-And as an aside, everything
-I type on the keyboard
+И в качестве отступления, все, 
+что я печатал на клавиатуре сегодня,
 
 696
 00:32:09,448 --> 00:32:11,490
-today we will post on the
-course's website after.
+позже мы разместим на сайте курса.
 
 697
 00:32:11,490 --> 00:32:15,010
-So no need to type down every little
-character if you'd prefer not.
+Так что нет необходимости набирать 
+каждый маленький символ, если вы не хотите.
 
 698
 00:32:15,010 --> 00:32:18,448
-And then I'm going to go ahead and say
-printf, quote unquote, hello answer.
+И затем я продолжаю и пишу printf,
+открываю ковычки, hello answer. 
 
 699
 00:32:18,448 --> 00:32:20,490
-Not answer, because we
-claimed that that was bad.
+Не answer, потому что мы 
+утверждали, что это плохо.
 
 700
 00:32:20,490 --> 00:32:22,440
 Он буквально скажет "answer".
+
 
 701
 00:32:22,440 --> 00:32:24,750
